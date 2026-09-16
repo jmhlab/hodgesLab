@@ -1,0 +1,123 @@
+---
+layout: base.njk
+title: Team
+permalink: /team/
+---
+{% macro photo(file, folder, cls, alt) %}
+  <div class="photo {{ cls }}{% if not file %} ph{% endif %}">
+    {% if file %}<img src="{{ ('/assets/img/' ~ folder ~ '/' ~ file) | url }}" alt="{{ alt }}" loading="lazy" onerror="this.parentNode.classList.add('ph'); this.remove();">{% else %}Photo{% endif %}
+  </div>
+{% endmacro %}
+
+<section class="page-head">
+  <div>
+    <div class="kicker">// Team</div>
+    <h1>The people.</h1>
+  </div>
+  <div class="head-aside links">
+    <a href="#pi">PI</a><a href="#graduate">Graduate</a><a href="#undergraduate">Undergraduate</a><a href="#accomplishments">Accomplishments</a><a href="#alumni">Alumni</a>
+  </div>
+</section>
+
+{% set pi = team.pi %}
+<section class="pi" id="pi">
+  <div class="eyebrow">Principal investigator</div>
+  {{ photo(pi.photo, 'team', 'portrait', pi.name) }}
+  <div class="pi-body">
+    <div>
+      <h2 class="pi-name">{{ pi.name }}</h2>
+      <div class="muted" style="margin-top: 8px;">{{ pi.title }}, {{ pi.institution }}</div>
+    </div>
+    <p>{{ pi.bio | trim }}</p>
+    <div class="history">
+      {% for h in pi.history %}<span class="years">{{ h.years }}</span><span>{{ h.what }}</span>{% endfor %}
+    </div>
+    <div class="links">
+      <a href="mailto:{{ pi.email }}">{{ pi.email }}</a>
+      {% for l in pi.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="graduate">
+  <div class="section-head"><h2 class="eyebrow">Graduate students</h2></div>
+  <div class="people">
+    {% for p in team.graduate %}
+    <div class="person">
+      {{ photo(p.photo, 'team', 'square', p.name) }}
+      <h3 class="person-name">{{ p.name }}</h3>
+      <div class="person-meta">Joined {{ p.joined }} · {{ p.from }}<br>{{ p.degree }}{% if p.interests %}<br><span class="dim">{{ p.interests }}</span>{% endif %}</div>
+      <div class="tags">{{ p.research | join(' · ') }}</div>
+      {% if p.email %}<a class="person-email" href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" id="undergraduate">
+  <div class="section-head"><h2 class="eyebrow">Undergraduate students</h2></div>
+  <div class="people">
+    {% for p in team.undergraduate %}
+    <div class="person">
+      {{ photo(p.photo, 'team', 'square', p.name) }}
+      <h3 class="person-name">{{ p.name }}</h3>
+      <div class="person-meta">Joined {{ p.joined }} · {{ p.major }}<br>Expected graduation {{ p.graduation }}{% if p.note %}<br><span class="dim">{{ p.note }}</span>{% endif %}</div>
+      <div class="tags">{{ p.research | join(' · ') }}</div>
+    </div>
+    {% endfor %}
+    {% for p in team.others %}
+    <div class="person">
+      {{ photo(p.photo, 'team', 'square', p.name) }}
+      <h3 class="person-name">{{ p.name }}</h3>
+      <div class="person-meta">Joined {{ p.joined }} · {{ p.from }}<br>{{ p.role }}</div>
+      {% if p.email %}<span class="person-email">{{ p.email }}</span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="grid-2" id="accomplishments">
+  <div class="section" style="border-bottom: 0;">
+    <div class="section-head"><h2 class="eyebrow">Accomplishments</h2></div>
+    <div class="news-list">
+      {% for a in accomplishments.awards | byDateDesc %}
+      <div class="news-item"><span class="news-date">{{ a.date | dotDate }}</span><span class="news-title">{{ a.who }} — {{ a.what }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="section" style="border-bottom: 0;">
+    <div class="section-head"><h2 class="eyebrow">Group presentations</h2></div>
+    <div>
+      {% for p in accomplishments.presentations | byDateDesc %}
+      <div class="pres">
+        <div class="pres-title">{{ p.title | chem | safe }}</div>
+        <div class="pres-meta">{{ p.who }} · {{ p.where }} · {{ p.date | monthYear }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="alumni">
+  <div class="section-head"><h2 class="eyebrow">Alumni</h2></div>
+  <div class="grid-2" style="gap: 48px;">
+    <div style="border-left: 0;">
+      <div class="alumni-group">
+        <h3>Postdoctoral researchers</h3>
+        {% for a in team.alumni.postdocs %}<div class="alumni-row"><span class="who">{{ a.name }}</span><span class="now">{{ a.years }}{% if a.now %} → {{ a.now }}{% endif %}</span></div>{% endfor %}
+      </div>
+      <div class="alumni-group">
+        <h3>Graduate students</h3>
+        {% if team.alumni.graduate | length %}
+          {% for a in team.alumni.graduate %}<div class="alumni-row"><span class="who">{{ a.name }}</span><span class="now">{{ a.years }}{% if a.now %} → {{ a.now }}{% endif %}</span></div>{% endfor %}
+        {% else %}<div class="eyebrow">Coming soon</div>{% endif %}
+      </div>
+    </div>
+    <div style="border-left: 0;">
+      <div class="alumni-group">
+        <h3>Undergraduate researchers</h3>
+        {% for a in team.alumni.undergraduate %}<div class="alumni-row"><span class="who">{{ a.name }}</span><span class="now">{{ a.years }}{% if a.now %} → {{ a.now }}{% endif %}</span></div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

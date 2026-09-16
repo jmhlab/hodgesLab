@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# Lab news. Add new items at the TOP. Only "date" and "title" are required.
+#
+#   - date: 2025-09-01          # YYYY-MM-DD
+#     title: Something happened
+#     body: Optional longer text. Markdown is fine.
+#     image: /assets/img/news/photo.jpg   # optional, put the file in src/assets/img/news/
+#     link: https://...          # optional external link
+# ---------------------------------------------------------------------------
+- date: 2025-08-01
+  title: Brendan and Pedro present posters at the ACS National Fall Meeting in Chicago
+
+- date: 2025-07-01
+  title: Ayat represents Penn State at the 74th Lindau Nobel Laureate Meeting
+  body: Thirty-five Nobel Laureates were in attendance.
+
+- date: 2025-06-01
+  title: Ayat wins first place in the poster competition at the North American Solid-State Chemistry Conference in Ames, IA
+
+- date: 2025-02-28
+  title: Laine, Azamat, and Mary join the group!
+
+- date: 2024-11-27
+  title: Ayat receives the PSU Chemistry Excellence in Graduate Research Award!
+
+- date: 2024-11-27
+  title: Pedro attends ABRCMS in Pittsburgh!
+
+- date: 2024-11-27
+  title: Ayat's paper accepted at JACS!
+  link: https://doi.org/10.1021/jacs.4c11617
+
+- date: 2024-11-27
+  title: Pedro attends ACS LEADS conference in DC
+
+- date: 2024-10-25
+  title: Daniel passes his comprehensive exam!
+
+- date: 2024-10-17
+  title: Pedro passes his comprehensive exam!!!
+
+- date: 2024-08-07
+  title: Alex passes his comprehensive exam!!!
+
+- date: 2024-08-07
+  title: Ayat and Jim attend the Solid State Chemistry Gordon Research Conference
+
+- date: 2024-05-02
+  title: Pedro is awarded the NSF GRFP!!!

@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------------------
+# Research areas. Order = order on the page. "structure" names an entry in
+# structures.yml that rotates beside the text; leave blank to show an image
+# instead (image: /assets/img/research/xxx.jpg).
+# ---------------------------------------------------------------------------
+intro: >
+  The group is broadly interested in the synthesis and applications of new
+  inorganic solids, with a particular emphasis on microporous oxides, metal
+  chalcogenides, and multi-anion materials for energy-related applications.
+  Members learn a variety of synthesis and characterization techniques and have
+  opportunities to study the properties of newly discovered compounds —
+  skillsets that translate to a wide range of careers.
+
+areas:
+  - id: oxides
+    title: Microporous Oxides
+    short: Porous oxides with synthetically challenging combinations of elements for adsorbent and catalysis applications.
+    long: >
+      Mixed-metal oxides and zeolitic materials with challenging combinations
+      of elements, made by innovative synthesis. Porous oxides with
+      synthetically challenging combinations of elements for adsorbent and
+      catalysis applications.
+    keywords: [MoVBiOx, Polyoxometalates, Oxidative dehydrogenation, M1-type catalysts]
+    structure: pharmacosiderite
+    caption: Ti-pharmacosiderite framework — TiO₆ octahedra and SiO₄ tetrahedra
+    paper: 20
+
+  - id: synthesis
+    title: Exploratory Synthesis
+    short: Exploratory synthesis of multi-anion solids for energy applications using high-temperature solid-state methods.
+    long: >
+      Exploratory synthesis of narrow-gap semiconductors and multi-anion
+      materials using flux growth methods. Multi-anion solids for energy
+      applications using high-temperature solid-state methods.
+    keywords: [Chalcogenides, Oxychalcogenides, Chalcohalides, Anion ordering, Flux growth]
+    structure: Cs2Hf3S6O
+    caption: Cs₂Hf₃S₆O — ribbons of HfS₆ and HfS₅O polyhedra, viewed down c
+    paper: 19
+
+  - id: applications
+    title: Material Applications
+    short: Design, synthesis, and high-temperature transport properties of narrow bandgap semiconductors.
+    long: >
+      Thermoelectrics and gas-phase heterogeneous catalysis with newly
+      discovered materials. Design, synthesis, and high-temperature transport
+      properties of narrow bandgap semiconductors.
+    keywords: [Thermoelectrics, Thermal conductivity, Seebeck, Heterogeneous catalysis]
+    structure: HfSSe
+    caption: HfSSe — Hf layers between S and Se sheets
+    paper: 24

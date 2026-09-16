@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Gallery
+permalink: /gallery/
+---
+<section class="page-head">
+  <div>
+    <div class="kicker">// Crystal gallery &amp; photos</div>
+    <h1>Things we grew.</h1>
+  </div>
+  <p class="intro">Single crystals from the flux, micrographs, and the group out of the lab. Drop photos into <code class="mono" style="text-transform: none; font-size: 13px;">src/assets/img/gallery/</code> and list them in <code class="mono" style="text-transform: none; font-size: 13px;">gallery.yml</code>.</p>
+</section>
+
+<section class="gallery">
+  {% for g in gallery %}
+  <figure class="photo ph" style="margin: 0; position: relative;">
+    <img src="{{ ('/assets/img/gallery/' ~ g.file) | url }}" alt="{{ g.caption }}" loading="lazy" onerror="this.remove();">
+    <figcaption class="cap" style="position: absolute; left: 12px; bottom: 10px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: var(--muted); text-shadow: 0 1px 4px rgba(0,0,0,0.8);">{{ g.caption }}</figcaption>
+  </figure>
+  {% endfor %}
+</section>

@@ -1,0 +1,15 @@
+{
+  "name": "hodgeschemistry",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website of the Hodges Research Group, Penn State Chemistry",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "structures": "python3 tools/build_structures.py"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}

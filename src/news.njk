@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: News
+permalink: /news/
+---
+<section class="page-head">
+  <div>
+    <div class="kicker">// Lab log</div>
+    <h1>What's been happening.</h1>
+  </div>
+  <p class="intro">Awards, papers, conferences, comprehensive exams passed, and new faces. Newest first.</p>
+</section>
+
+<section class="section" style="border-bottom: 0;">
+  <div class="news-list" style="max-width: 900px;">
+    {% for n in news | byDateDesc %}
+    <div class="news-item">
+      <span class="news-date">{{ n.date | dotDate }}</span>
+      <div>
+        <div class="news-title">{% if n.link %}<a href="{{ n.link }}">{{ n.title }} ↗</a>{% else %}{{ n.title }}{% endif %}</div>
+        {% if n.body %}<div class="news-body">{{ n.body }}</div>{% endif %}
+        {% if n.image %}<img src="{{ n.image }}" alt="" loading="lazy" style="margin-top: 12px; max-width: 480px; border: 1px solid var(--line);">{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

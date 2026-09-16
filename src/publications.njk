@@ -1,0 +1,84 @@
+---
+layout: base.njk
+title: Publications
+permalink: /publications/
+---
+<section class="page-head">
+  <div>
+    <div class="kicker">// Publications</div>
+    <h1>Papers &amp; patents.</h1>
+  </div>
+  <div class="head-aside">
+    <div><div class="stat-value" style="font-size: 36px;">{{ publications | selectattr("era", "equalto", "psu") | list | length }}</div><div class="eyebrow">At Penn State</div></div>
+    <div><div class="stat-value" style="font-size: 36px;">{{ publications | length }}</div><div class="eyebrow">Total papers</div></div>
+    <div><div class="stat-value" style="font-size: 36px;">{{ patents | length }}</div><div class="eyebrow">Patents</div></div>
+    <a class="btn" href="{{ site.contact.scholar }}">Google Scholar →</a>
+  </div>
+</section>
+
+<div class="filters" role="group" aria-label="Filter publications">
+  <button class="chip" data-filter="all" aria-pressed="true">All</button>
+  <button class="chip" data-filter="era:psu" aria-pressed="false">Penn State 2023–</button>
+  <button class="chip" data-filter="era:earlier" aria-pressed="false">Earlier 2014–2020</button>
+  <a class="chip" href="#patents">Patents ↓</a>
+  <span class="spacer"></span>
+  <button class="chip" data-filter="tag:oxides" aria-pressed="false">Oxides</button>
+  <button class="chip" data-filter="tag:chalcogenides" aria-pressed="false">Chalcogenides</button>
+  <button class="chip" data-filter="tag:thermoelectrics" aria-pressed="false">Thermoelectrics</button>
+  <button class="chip" data-filter="tag:nanoparticles" aria-pressed="false">Nanoparticles</button>
+</div>
+
+<section class="wrap" id="papers">
+  {% for g in publications | groupByYear %}
+  <div class="pub-year eyebrow" data-year="{{ g.year }}">{{ g.year }}</div>
+  {% for p in g.items %}
+  <article class="pub" data-era="{{ p.era }}" data-tags="{{ p.tags | join(' ') }}">
+    <div class="pub-n">{{ p.n }}</div>
+    <div>
+      <h2 class="pub-title">{{ p.title | chem | safe }}</h2>
+      <div class="pub-authors">{{ p.authors | boldMembers(site.member_names) | safe }}</div>
+    </div>
+    <div class="pub-ref">
+      {% if p.status %}{{ p.status | upper }} {{ p.year }}{% else %}{{ p.journal | upper }} {{ p.year }}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% endif %}
+      {% if p.doi or p.url %}<br><a href="{{ p.url or ('https://doi.org/' ~ p.doi) }}">{% if p.doi %}DOI{% else %}Link{% endif %} ↗</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+  {% endfor %}
+</section>
+
+<section class="section" id="patents" style="margin-top: 48px; border-top: 1px solid var(--line);">
+  <div class="section-head"><h2 class="eyebrow">Patents &amp; applications</h2></div>
+  {% for p in patents %}
+  <article class="pub">
+    <div class="pub-n">P{{ p.n }}</div>
+    <div>
+      <h3 class="pub-title" style="font-size: 20px;">{{ p.title }}</h3>
+      <div class="pub-authors">{{ p.inventors | boldMembers(site.member_names) | safe }}</div>
+    </div>
+    <div class="pub-ref">{{ p.number }}<br>{{ p.year }}</div>
+  </article>
+  {% endfor %}
+</section>
+
+<script>
+  // simple client-side filters: era chips are exclusive; tag chips are exclusive too; "All" clears
+  const chips = [...document.querySelectorAll('.chip[data-filter]')];
+  const pubs = [...document.querySelectorAll('#papers .pub')];
+  const years = [...document.querySelectorAll('#papers .pub-year')];
+  let active = 'all';
+  function apply() {
+    chips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.filter === active)));
+    const [kind, val] = active.split(':');
+    pubs.forEach(p => {
+      const show = active === 'all' || (kind === 'era' && p.dataset.era === val) || (kind === 'tag' && p.dataset.tags.split(' ').includes(val));
+      p.hidden = !show;
+    });
+    years.forEach(y => {
+      let el = y.nextElementSibling, any = false;
+      while (el && !el.classList.contains('pub-year')) { if (el.classList.contains('pub') && !el.hidden) any = true; el = el.nextElementSibling; }
+      y.hidden = !any;
+    });
+  }
+  chips.forEach(c => c.addEventListener('click', () => { active = (active === c.dataset.filter) ? 'all' : c.dataset.filter; apply(); }));
+</script>

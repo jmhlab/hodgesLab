@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------------------
+# Live 3D crystal structures. Each entry points at a JSON file produced from a
+# CIF by tools/build_structures.py (see README). Options:
+#   file:   JSON in src/assets/structures/
+#   view:   c | a | b | oblique | c-tilt | a-tilt | b-tilt   (starting orientation)
+#   ortho:  true = parallel projection (best for chains/channels); false = perspective
+#   alpha:  polyhedra opacity 0–1
+#   scale:  per-element sphere scaling, e.g. "Cs:0.5"
+#   spin:   rotation speed (0 = still)
+# ---------------------------------------------------------------------------
+KCu7Se4:
+  file: KCu7Se4_RT.json
+  label: KCu₇Se₄
+  view: c
+  ortho: true
+  spin: 0.08
+pharmacosiderite:
+  file: pharm_final.json
+  label: Na₄[(TiO)₄(SiO₄)₃]·6H₂O
+  view: c
+  ortho: true
+  alpha: 0.9
+  spin: 0.08
+Cs2Hf3S6O:
+  file: cshf_poly.json
+  label: Cs₂Hf₃S₆O
+  view: c
+  ortho: true
+  alpha: 0.9
+  scale: "Cs:0.5"
+  spin: 0.08
+HfSSe:
+  file: HfSSe_room_temp.json
+  label: HfSSe
+  view: a-tilt
+  ortho: false
+  spin: 0.08
+CsFeSTe:
+  file: Cs3Fe4S2.5Te3.5.json
+  label: Cs₃Fe₄S₂.₅Te₃.₅
+  view: a-tilt
+  ortho: false
+  spin: 0.08

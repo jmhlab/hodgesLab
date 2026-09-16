@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Lab tour. Photos go in src/assets/img/lab/ and are referenced by filename.
+# ---------------------------------------------------------------------------
+intro: >
+  Located on the 5th floor of the Chemistry Building at Penn State, the
+  facilities of the Hodges Solid State Lab are equipped for wet-chemical
+  synthesis, air-free chemistry, solid-state reactions, and hydrothermal
+  chemistry.
+
+spaces:
+  - { name: Furnace and equipment lab, photo: furnace-lab.jpg, wide: true }
+  - { name: Wet chemistry hoods, photo: hoods.jpg }
+  - { name: Nitrogen glovebox, photo: glovebox.jpg }
+  - { name: Chemicals storage, photo: storage.jpg }
+  - { name: Group offices, photo: offices.jpg }
+  - { name: Group computer, photo: computer.jpg }
+  - { name: Group room, photo: group-room.jpg }
+
+sections:
+  - title: Solid state infrastructure
+    items:
+      - { name: Flame sealing, detail: Quartz tube sealing station, multiple tube sizes, argon backfill }
+      - { name: Diamond cutting saws, detail: For quartz tubes and single-crystal samples }
+      - { name: Hot centrifuge, detail: With Canfield crucibles for separating flux from crystals }
+      - { name: Hydraulic press, detail: 20 ton, with dies for making pellets }
+      - { name: Inert-atmosphere press, detail: 15 ton, inside the nitrogen glovebox for pressing samples and precursors }
+      - { name: Induction heating press, detail: Low- to high-temperature sintering of powders }
+  - title: Furnaces
+    items:
+      - { name: 6 box furnaces, detail: 1100 °C }
+      - { name: 3 high-temperature box furnaces, detail: "> 1000 °C" }
+      - { name: 6 tube furnaces, detail: 1200 °C, with nitrogen and oxygen gas lines }
+      - { name: Bridgman furnace, detail: 1000 °C, two-zone with drop-wire mechanism }
+      - { name: 4 hydrothermal / solvothermal ovens, detail: "< 225 °C" }
+      - { name: Tumble oven, detail: 200 °C max }
+      - { name: Vacuum oven, detail: Salt storage }
+  - title: Characterization
+    items:
+      - { name: Benchtop XRD, detail: Powder X-ray diffractometer }
+      - { name: Benchtop single-crystal XRD, detail: Mo source }
+      - { name: Optical microscope }
+      - { name: UV-Vis spectrometer }
+      - { name: FT-IR spectrometer }
+      - { name: Physisorption / chemisorption }
+      - { name: Simultaneous thermal analysis, detail: DSC / TG-DTA }
+      - { name: Light / laser flash analyzer, detail: Variable-temperature thermal conductivity }
+      - { name: SBA, detail: Variable-temperature electrical conductivity and Seebeck }
+  - title: Penn State shared facilities
+    items:
+      - { name: Single-crystal diffractometer }
+      - { name: Scanning electron microscopy }
+      - { name: Physics student machine shop }
+      - { name: Materials Research Institute, detail: Shared characterization facilities }

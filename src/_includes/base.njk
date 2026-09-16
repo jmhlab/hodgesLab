@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }} — {{ site.tagline }}</title>
+  <meta name="description" content="{{ description or site.description | trim }}">
+  <meta property="og:title" content="{% if title %}{{ title }} · {% endif %}{{ site.name }}">
+  <meta property="og:description" content="{{ description or site.description | trim }}">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f1113">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
+</head>
+<body class="page-{{ page.fileSlug or 'home' }}">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="{{ '/' | url }}">
+    <svg class="brand-mark" width="28" height="28" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="15" cy="15" r="3.2" fill="currentColor" stroke="none"/><circle cx="15" cy="3" r="2.2"/><circle cx="25.4" cy="9" r="2.2"/><circle cx="25.4" cy="21" r="2.2"/><circle cx="15" cy="27" r="2.2"/><circle cx="4.6" cy="21" r="2.2"/><circle cx="4.6" cy="9" r="2.2"/><path d="M15 5.2V12M23.5 10.1l-5.8 3.3M23.5 19.9l-5.8-3.3M15 24.8V18M6.5 19.9l5.8-3.3M6.5 10.1l5.8 3.3"/></svg>
+    <span class="brand-name">{{ site.name }}</span>
+    <span class="brand-sub">PSU Chemistry</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+  <nav id="nav-menu" class="nav-menu">
+    {% for item in site.nav %}
+      <a href="{{ item.url | url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a>
+    {% endfor %}
+    <a class="nav-join" href="mailto:{{ site.contact.email }}?subject=Joining%20the%20Hodges%20Group">Join →</a>
+  </nav>
+</header>
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+{% if not hideRecruit %}
+<section class="recruit">
+  <div class="recruit-text">
+    <div class="eyebrow">Open positions</div>
+    <h2 class="recruit-headline">{{ site.recruiting.headline }}</h2>
+    <p class="recruit-sub">{{ site.recruiting.sub }}</p>
+  </div>
+  <a class="btn btn-dark" href="mailto:{{ site.contact.email }}?subject=Joining%20the%20Hodges%20Group">{{ site.recruiting.button }} →</a>
+</section>
+{% endif %}
+
+<footer class="footer">
+  <div class="footer-contact">
+    <span>{{ site.contact.name }}</span>
+    <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    <span>{{ site.contact.address }}</span>
+  </div>
+  <div class="footer-links">
+    <a href="{{ site.contact.scholar }}">Scholar</a>
+    <a href="{{ site.contact.twitter }}">Twitter</a>
+    <a href="{{ site.contact.linkedin }}">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+  // mobile nav toggle
+  const t = document.querySelector('.nav-toggle'), m = document.getElementById('nav-menu');
+  t.addEventListener('click', () => { const open = t.getAttribute('aria-expanded') === 'true'; t.setAttribute('aria-expanded', String(!open)); m.classList.toggle('open', !open); });
+</script>
+{% if structuresOnPage %}
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }</script>
+<script type="module" src="{{ '/assets/js/structures.js' | url }}"></script>
+{% endif %}
+</body>
+</html>

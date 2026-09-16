@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Lab Tour
+permalink: /lab-tour/
+---
+<section class="page-head">
+  <div>
+    <div class="kicker">// Lab tour — 5th floor, Chemistry Building</div>
+    <h1>Where it gets made.</h1>
+  </div>
+  <p class="intro">{{ lab.intro | trim }}</p>
+</section>
+
+<section class="lab-photos">
+  {% for s in lab.spaces %}
+  <div class="photo{% if s.wide %} wide{% endif %} ph">
+    {% if s.photo %}<img src="{{ ('/assets/img/lab/' ~ s.photo) | url }}" alt="{{ s.name }}" loading="lazy" onerror="this.remove();">{% endif %}
+    <span class="cap">{{ s.name }}</span>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="specs">
+  {% for sec in lab.sections %}
+  <div class="section spec-block">
+    <div class="eyebrow" style="margin-bottom: 8px;">0{{ loop.index }}</div>
+    <h2 class="h-lg">{{ sec.title }}</h2>
+    {% for it in sec.items %}
+    <div class="spec"><span>{{ it.name }}</span><span class="v">{{ it.detail or '' }}</span></div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>
+<style>
+  .specs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .spec-block:nth-child(odd) { border-right: 1px solid var(--line); }
+  @media (max-width: 900px) { .specs { grid-template-columns: 1fr; } .spec-block:nth-child(odd) { border-right: 0; } }
+</style>

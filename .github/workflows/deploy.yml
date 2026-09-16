@@ -1,0 +1,52 @@
+# Builds the site and publishes it to GitHub Pages on every push to main.
+# Nothing to configure: in the repository settings, under Pages, set
+# "Source" to "GitHub Actions" once and this takes care of the rest.
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Work out the URL prefix
+        # A user/organization site (name ends in .github.io) or a custom domain
+        # (src/CNAME present) is served from "/"; a project site from "/<repo>/".
+        run: |
+          if [[ "${{ github.event.repository.name }}" == *.github.io ]] || [ -f src/CNAME ]; then
+            echo "PREFIX=/" >> "$GITHUB_ENV"
+          else
+            echo "PREFIX=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
+          fi
+      - run: npx eleventy --pathprefix "$PREFIX"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,158 @@
+# ---------------------------------------------------------------------------
+# Group members. Each person is one block. Photos go in src/assets/img/team/
+# and are referenced by filename (e.g. photo: ayat.jpg). Leave photo blank
+# until you have one; a placeholder is shown.
+#
+# When someone graduates, move their block to the "alumni" list at the bottom
+# and add "now:" with where they went.
+# ---------------------------------------------------------------------------
+
+pi:
+  name: James M. Hodges
+  short: Jim
+  title: Assistant Professor of Chemistry
+  institution: The Pennsylvania State University
+  photo: jim.jpg
+  email: hodges@psu.edu
+  bio: >
+    Jim is a materials chemist with a background in exploratory synthesis and
+    thermoelectrics. After earning his Ph.D. from Penn State and completing
+    postdoctoral work at Northwestern, he developed materials for catalysis and
+    adsorbent technologies at Honeywell UOP.
+  history:
+    - years: 2019–2021
+      what: R&D Scientist, New Materials Group, Honeywell UOP
+    - years: 2016–2019
+      what: Postdoctoral Fellow, Northwestern University · Mercouri G. Kanatzidis
+    - years: 2012–2016
+      what: Ph.D. Chemistry, Penn State · Raymond E. Schaak
+    - years: 2008–2012
+      what: B.S. Chemistry, Rider University
+  links:
+    - { label: Google Scholar, url: "https://scholar.google.com/citations?user=X3Gtbc8AAAAJ&hl=en" }
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/jameshodges12/" }
+    - { label: Twitter, url: "https://twitter.com/HodgesChem" }
+
+graduate:
+  - name: Ayat Tassanov
+    joined: 2021
+    from: Aqtobe, Kazakhstan
+    degree: BS Chemistry (2021), Ulsan National Institute of Science and Technology
+    interests: Cooking, fishing, gaming, hiking, being a dad
+    research: [Exploratory synthesis, Multianion materials, Chalcogenides, Thermoelectrics, Magnetic systems]
+    email: akt5745@psu.edu
+    photo: ayat.jpg
+
+  - name: Brendan Troesch
+    joined: 2021
+    from: Pittsburgh, Pennsylvania
+    degree: BA Chemistry & German (2021), Washington & Jefferson College
+    research: [Porous oxides, Thermal catalysis, Polyoxometalates]
+    email: bqt5271@psu.edu
+    photo: brendan.jpg
+
+  - name: Pedro R. Trinidad-Pérez
+    joined: 2022
+    from: San Juan, Puerto Rico
+    degree: BS Chemistry (2022), University of Puerto Rico, Río Piedras
+    interests: Woodworking, metalworking, 3D printing, making things
+    research: [Exploratory synthesis, Chalcogenides, Thermoelectrics, Silicates]
+    email: prt5096@psu.edu
+    photo: pedro.jpg
+
+  - name: Daniel Spainhouer
+    joined: 2022
+    from: Tallahassee, Florida
+    degree: BS Chemistry (2022), Florida State University
+    research: [Exploratory synthesis, Chalcohalides]
+    email: dws6003@psu.edu
+    photo: daniel.jpg
+
+  - name: Alex Leffel
+    joined: 2022
+    from: Crystal Lake, Illinois
+    degree: BS Chemistry (2022), Iowa State University
+    interests: Coffee, videogames, reality TV, cat
+    research: [Exploratory synthesis, Chalcogenides, Magnetic systems, Topochemical chemistry]
+    email: apl5868@psu.edu
+    photo: alex.jpg
+
+  - name: Sonali Thanthrige
+    joined: 2023
+    from: Colombo, Sri Lanka
+    degree: BS Chemistry (2020), University of Sri Jayewardenepura
+    interests: Reading, traveling, cooking, trying new restaurants
+    research: [Porous oxides, Polyoxometalates]
+    email: kbt5408@psu.edu
+    photo: sonali.jpg
+
+  - name: Laine Brotherton
+    joined: 2024
+    from: Ann Arbor, Michigan
+    degree: BS Chemistry (2024), University of Michigan
+    research: [Porous oxides, Polyoxometalates]
+    email: lcb5577@psu.edu
+    photo: laine.jpg
+
+  - name: Azamat Yessengazin
+    joined: 2024
+    from: Astana, Kazakhstan
+    degree: BS Chemistry (2024), Nazarbayev University
+    research: [Chalcogenides, Oxychalcogenides]
+    email: azy5231@psu.edu
+    photo: azamat.jpg
+
+  - name: Keela Zambra
+    joined: 2025
+    from: West Lafayette, Indiana
+    degree: BS Chemistry (2025), Purdue University
+    research: [Chalcogenides]
+    email: kkz5242@psu.edu
+    photo: keela.jpg
+
+  - name: Shibartha Dutta
+    joined: 2025
+    from: India
+    degree: M.Sc. Chemistry (2025), IIT Kharagpur; B.Sc. Chemistry (2023), RKMRC Narendrapur
+    research: [Chalcogenides, Crystal growth]
+    email: smd7390@psu.edu
+    photo: shibartha.jpg
+
+undergraduate:
+  - name: Matias S. Moreno
+    joined: 2025
+    major: Materials Science and Engineering
+    graduation: Spring 2027
+    note: Penn State Millennium Scholar
+    research: [Chalcogenides, Thermoelectrics]
+    photo: matias.jpg
+
+# The non-human members. Delete this section if it stops being funny.
+others:
+  - name: Jaime Bruker
+    joined: 2021
+    from: Billerica, Massachusetts
+    role: Benchtop X-ray diffractometer
+    email: jaimebruker@psu.edu
+    photo: jaime.jpg
+  - name: The Wooden Duck
+    joined: 2021
+    from: Bellefonte, Pennsylvania
+    role: Safeguards the mints in the group room
+    email: woodenduck@psu.edu
+    photo: duck.jpg
+
+alumni:
+  postdocs:
+    - name: Dr. Daniel G. Chica
+      years: "2025"
+      now: Research Scientist, Materials Synthesis, Periodic Labs
+  graduate: []      # coming soon
+  undergraduate:
+    - name: Matthew Sedgwick
+      years: "2024"
+      now: PhD student, University of Illinois Urbana-Champaign
+    - name: Nathan Baumann
+      years: "2023"
+    - name: Paige Grice
+      years: "2023"

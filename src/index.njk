@@ -1,0 +1,84 @@
+---
+layout: base.njk
+permalink: /
+structuresOnPage: true
+---
+{% set heroStruct = structures[site.hero.structure] %}
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="structure" data-structure="{{ heroStruct.file }}" data-view="{{ heroStruct.view }}" data-ortho="{{ heroStruct.ortho }}" data-spin="{{ heroStruct.spin }}" data-alpha="{{ heroStruct.alpha or 0.85 }}" data-scale="{{ heroStruct.scale or '' }}" data-cell="0" data-fit="0.95"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="kicker">// Solid state chemistry — Penn State — 5th floor, Chemistry Building</div>
+    <h1>{{ site.hero.line1 }}<br><em>{{ site.hero.line2 }}</em></h1>
+    <p>{{ site.hero.blurb | trim }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-amber" href="{{ '/research/' | url }}">Research</a>
+      <a class="btn" href="{{ '/publications/' | url }}">Publications</a>
+    </div>
+  </div>
+  <div class="hero-caption">{{ heroStruct.label }} · rendered from the group's crystal structure</div>
+</section>
+
+<section class="stats" aria-label="Group at a glance">
+  {% for s in site.stats %}
+  <div class="stat"><div class="stat-value">{{ s.value }}</div><div class="eyebrow">{{ s.label }}</div></div>
+  {% endfor %}
+</section>
+
+<section aria-labelledby="areas-h">
+  <div class="section-head" style="padding: 40px var(--gutter) 0;">
+    <h2 id="areas-h" class="eyebrow">Research areas</h2>
+    <a class="more" href="{{ '/research/' | url }}">All research →</a>
+  </div>
+  {% for a in research.areas %}
+  {% set st = structures[a.structure] %}
+  <div class="area-row">
+    <div class="area-n">0{{ loop.index }}</div>
+    <h3 class="area-title"><a href="{{ ('/research/#' ~ a.id) | url }}">{{ a.title }}</a></h3>
+    <p class="area-desc">{{ a.short }}</p>
+    <div class="area-media">
+      {% if st %}
+      <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" aria-label="{{ st.label }}"></div>
+      {% elif a.image %}
+      <img src="{{ a.image }}" alt="{{ a.title }}">
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+{% set latest = publications[0] %}
+<section class="latest" aria-label="Latest paper">
+  <div class="eyebrow amber">Latest paper</div>
+  <div>
+    <div class="latest-title">{{ latest.title | chem | safe }}</div>
+    <div class="latest-cite">{{ latest.authors | boldMembers(site.member_names) | safe }} — <em>{{ latest.journal }}</em>, {{ latest.year }}</div>
+  </div>
+  {% if latest.doi or latest.url %}<a class="btn" href="{{ latest.url or ('https://doi.org/' ~ latest.doi) }}">Read the paper →</a>{% endif %}
+</section>
+
+<section class="grid-2">
+  <div class="section" style="border-bottom: 0;">
+    <div class="section-head">
+      <h2 class="eyebrow">Lab log</h2>
+      <a class="more" href="{{ '/news/' | url }}">All news →</a>
+    </div>
+    <div class="news-list">
+      {% for n in news | byDateDesc | take(6) %}
+      <div class="news-item"><span class="news-date">{{ n.date | dotDate }}</span><span class="news-title">{{ n.title }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="section" style="border-bottom: 0;">
+    <div class="section-head">
+      <h2 class="eyebrow">Recent honours</h2>
+      <a class="more" href="{{ '/team/#accomplishments' | url }}">All →</a>
+    </div>
+    <div class="news-list">
+      {% for a in accomplishments.awards | byDateDesc | take(5) %}
+      <div class="news-item"><span class="news-date">{{ a.date | dotDate }}</span><span class="news-title">{{ a.who }} — {{ a.what }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

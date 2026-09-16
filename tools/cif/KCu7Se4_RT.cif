@@ -1,0 +1,1081 @@
+data_at203_auto
+_audit_creation_date               2025-08-17
+_audit_creation_method
+;
+Olex2 1.5
+(compiled 2024.02.16 svn.r378c4104 for OlexSys, GUI svn.r6928)
+;
+_shelx_SHELXL_version_number       '2019/3'
+_audit_contact_author_address      ?
+_audit_contact_author_email        ?
+_audit_contact_author_name         ''
+_audit_contact_author_phone        ?
+_publ_contact_author_id_orcid      ?
+_publ_section_references
+;
+Dolomanov, O.V., Bourhis, L.J., Gildea, R.J, Howard, J.A.K. & Puschmann, H.
+ (2009), J. Appl. Cryst. 42, 339-341.
+
+Sheldrick, G.M. (2015). Acta Cryst. C71, 3-8.
+;
+_chemical_name_common              ?
+_chemical_name_systematic          ?
+_chemical_formula_moiety           'Cu6.906 K Se4'
+_chemical_formula_sum              'Cu6.91 K Se4'
+_chemical_formula_weight           794.00
+_chemical_melting_point            ?
+_chemical_oxdiff_formula           KCuSe
+_chemical_oxdiff_usercomment       'AT-286 at RT'
+loop_
+  _atom_type_symbol
+  _atom_type_description
+  _atom_type_scat_dispersion_real
+  _atom_type_scat_dispersion_imag
+  _atom_type_scat_source
+ 'Cu' 'Cu' -1.9646 0.5888
+ 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+ 'K' 'K' 0.3868 1.0657 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+ 'Se' 'Se' -0.7943 1.1372
+ 'International Tables Vol C Tables 4.2.6.8 and 6.1.1.4'
+
+_shelx_space_group_comment
+;
+The symmetry employed for this shelxl refinement is uniquely defined
+by the following loop, which should always be used as a source of
+symmetry information in preference to the above space-group names.
+They are only intended as comments.
+;
+_space_group_crystal_system        'tetragonal'
+_space_group_IT_number             87
+_space_group_name_H-M_alt          'I 4/m'
+_space_group_name_Hall             '-I 4'
+loop_
+  _space_group_symop_operation_xyz
+ 'x, y, z'
+ '-y, x, z'
+ '-x, -y, z'
+ 'y, -x, z'
+ 'x+1/2, y+1/2, z+1/2'
+ '-y+1/2, x+1/2, z+1/2'
+ '-x+1/2, -y+1/2, z+1/2'
+ 'y+1/2, -x+1/2, z+1/2'
+ '-x, -y, -z'
+ 'y, -x, -z'
+ 'x, y, -z'
+ '-y, x, -z'
+ '-x+1/2, -y+1/2, -z+1/2'
+ 'y+1/2, -x+1/2, -z+1/2'
+ 'x+1/2, y+1/2, -z+1/2'
+ '-y+1/2, x+1/2, -z+1/2'
+
+_cell_length_a                     10.4619(8)
+_cell_length_b                     10.4619(8)
+_cell_length_c                     3.9927(6)
+_cell_angle_alpha                  90
+_cell_angle_beta                   90
+_cell_angle_gamma                  90
+_cell_volume                       437.01(10)
+_cell_formula_units_Z              2
+_cell_measurement_reflns_used      279
+_cell_measurement_temperature      293(2)
+_cell_measurement_theta_max        70.4790
+_cell_measurement_theta_min        5.9560
+_shelx_estimated_absorpt_T_max     ?
+_shelx_estimated_absorpt_T_min     ?
+_exptl_absorpt_coefficient_mu      40.822
+_exptl_absorpt_correction_T_max    1.00000
+_exptl_absorpt_correction_T_min    0.05160
+_exptl_absorpt_correction_type     multi-scan
+_exptl_absorpt_process_details
+;
+CrysAlisPro 1.171.43.144a (Rigaku Oxford Diffraction, 2024)
+Empirical absorption correction using spherical harmonics,
+implemented in SCALE3 ABSPACK scaling algorithm.
+;
+_exptl_absorpt_special_details     ?
+_exptl_crystal_colour              ?
+_exptl_crystal_density_diffrn      6.034
+_exptl_crystal_density_meas        ?
+_exptl_crystal_density_method      ?
+_exptl_crystal_description         ?
+_exptl_crystal_F_000               711
+_exptl_crystal_size_max            ?
+_exptl_crystal_size_mid            ?
+_exptl_crystal_size_min            ?
+_exptl_transmission_factor_max     ?
+_exptl_transmission_factor_min     ?
+_diffrn_reflns_av_R_equivalents    0.0222
+_diffrn_reflns_av_unetI/netI       0.0370
+_diffrn_reflns_Laue_measured_fraction_full  0.978
+_diffrn_reflns_Laue_measured_fraction_max  0.933
+_diffrn_reflns_limit_h_max         12
+_diffrn_reflns_limit_h_min         -9
+_diffrn_reflns_limit_k_max         13
+_diffrn_reflns_limit_k_min         -4
+_diffrn_reflns_limit_l_max         4
+_diffrn_reflns_limit_l_min         -4
+_diffrn_reflns_number              458
+_diffrn_reflns_point_group_measured_fraction_full  0.978
+_diffrn_reflns_point_group_measured_fraction_max  0.933
+_diffrn_reflns_theta_full          67.684
+_diffrn_reflns_theta_max           73.900
+_diffrn_reflns_theta_min           5.982
+_diffrn_ambient_temperature        293(2)
+_diffrn_detector                   'Hybrid Pixel Array Detector'
+_diffrn_detector_area_resol_mean   10.0000
+_diffrn_detector_type              'HyPix-Arc 150'
+_diffrn_measured_fraction_theta_full  0.978
+_diffrn_measured_fraction_theta_max  0.933
+_diffrn_measurement_details
+;
+List of Runs (angles in degrees, time in seconds):
+
+  # Type    Start    End  Width  t~exp~   \w     \q     \k     \f   Frames
+--------------------------------------------------------------------------
+  1  \w    -93.00 -65.00   0.50    0.05    --  -81.31 125.00 120.00   56
+  2  \w   -105.00 -43.00   0.50    0.05    --  -78.21 125.00  60.00  124
+  3  \w    -67.00 -41.00   0.50    0.05    --  -70.86 -15.00 -90.00   52
+  4  \w   -113.00 -87.00   0.50    0.05    --  -70.86 -15.00 -90.00   52
+  5  \w   -106.00 -72.00   0.50    0.05    --  -81.31   0.00 150.00   68
+  6  \w     38.00  72.00   0.50    0.05    --   66.83 -95.00-150.00   68
+  7  \w     52.00  77.00   0.50    0.05    --   71.01 -95.00-150.00   50
+;
+_diffrn_measurement_device         'four-circle diffractometer'
+_diffrn_measurement_device_type    'ROD, Synergy Custom system, HyPix-Arc 150'
+_diffrn_measurement_method         '\w scans'
+_diffrn_orient_matrix_type        
+ 'CrysAlisPro convention (1999,Acta A55,543-557)'
+_diffrn_orient_matrix_UB_11        -0.0693019000
+_diffrn_orient_matrix_UB_12        -0.0322664000
+_diffrn_orient_matrix_UB_13        -0.3298279000
+_diffrn_orient_matrix_UB_21        -0.0483097000
+_diffrn_orient_matrix_UB_22        0.1388597000
+_diffrn_orient_matrix_UB_23        -0.0228985000
+_diffrn_orient_matrix_UB_31        0.1207300000
+_diffrn_orient_matrix_UB_32        0.0370872000
+_diffrn_orient_matrix_UB_33        -0.1981681000
+_diffrn_radiation_monochromator    mirror
+_diffrn_radiation_probe            x-ray
+_diffrn_radiation_type             'Cu K\a'
+_diffrn_radiation_wavelength       1.54184
+_diffrn_source                     'Rotating-anode X-ray tube'
+_diffrn_source_type                'Rigaku (Cu) X-ray Source'
+_reflns_Friedel_coverage           0.000
+_reflns_Friedel_fraction_full      .
+_reflns_Friedel_fraction_max       .
+_reflns_number_gt                  217
+_reflns_number_total               238
+_reflns_special_details
+;
+ Reflections were merged by SHELXL according to the crystal
+ class for the calculation of statistics and refinement.
+ 
+ _reflns_Friedel_fraction is defined as the number of unique
+ Friedel pairs measured divided by the number that would be
+ possible theoretically, ignoring centric projections and
+ systematic absences.
+;
+_reflns_threshold_expression       'I > 2\s(I)'
+_computing_cell_refinement         'CrysAlisPro 1.171.43.144a (Rigaku OD, 2024)'
+_computing_data_collection         'CrysAlisPro 1.171.43.144a (Rigaku OD, 2024)'
+_computing_data_reduction          'CrysAlisPro 1.171.43.144a (Rigaku OD, 2024)'
+_computing_molecular_graphics      'Olex2 1.5 (Dolomanov et al., 2009)'
+_computing_publication_material    'Olex2 1.5 (Dolomanov et al., 2009)'
+_computing_structure_refinement    'SHELXL 2019/3 (Sheldrick, 2015)'
+_computing_structure_solution      'SHELXS  (Sheldrick, 2008)'
+_refine_diff_density_max           2.601
+_refine_diff_density_min           -2.446
+_refine_diff_density_rms           0.676
+_refine_ls_extinction_coef         0.0011(10)
+_refine_ls_extinction_expression  
+ 'Fc^*^=kFc[1+0.001xFc^2^\l^3^/sin(2\q)]^-1/4^'
+_refine_ls_extinction_method       'SHELXL-2019/2 (Sheldrick 2019)'
+_refine_ls_goodness_of_fit_ref     1.318
+_refine_ls_hydrogen_treatment      undef
+_refine_ls_matrix_type             full
+_refine_ls_number_parameters       23
+_refine_ls_number_reflns           238
+_refine_ls_number_restraints       0
+_refine_ls_R_factor_all            0.1052
+_refine_ls_R_factor_gt             0.1026
+_refine_ls_restrained_S_all        1.318
+_refine_ls_shift/su_max            0.008
+_refine_ls_shift/su_mean           0.002
+_refine_ls_structure_factor_coef   Fsqd
+_refine_ls_weighting_details      
+ 'w=1/[\s^2^(Fo^2^)+(0.2000P)^2^] where P=(Fo^2^+2Fc^2^)/3'
+_refine_ls_weighting_scheme        calc
+_refine_ls_wR_factor_gt            0.2849
+_refine_ls_wR_factor_ref           0.2863
+_refine_special_details            ?
+_olex2_refinement_description
+;
+;
+_atom_sites_solution_hydrogens     .
+_atom_sites_solution_primary       direct
+_atom_sites_solution_secondary     ?
+loop_
+  _atom_site_label
+  _atom_site_type_symbol
+  _atom_site_fract_x
+  _atom_site_fract_y
+  _atom_site_fract_z
+  _atom_site_U_iso_or_equiv
+  _atom_site_adp_type
+  _atom_site_occupancy
+  _atom_site_site_symmetry_order
+  _atom_site_calc_flag
+  _atom_site_refinement_flags_posn
+  _atom_site_refinement_flags_adp
+  _atom_site_refinement_flags_occupancy
+  _atom_site_disorder_assembly
+  _atom_site_disorder_group
+ Se1 Se 0.25708(19) 0.0685(2) 0.000000 0.0180(14) Uani 1 2 d S T P . .
+ Cu2 Cu 0.4789(3) 0.1324(4) 0.000000 0.0281(15) Uani 1 2 d S T P . .
+ Cu3 Cu 0.1775(5) 0.2815(5) 0.000000 0.038(2) Uani 0.727(16) 2 d S T . . .
+ K4 K 0.000000 0.000000 -0.500000 0.028(2) Uani 1 8 d S T P . .
+
+loop_
+  _atom_site_aniso_label
+  _atom_site_aniso_U_11
+  _atom_site_aniso_U_22
+  _atom_site_aniso_U_33
+  _atom_site_aniso_U_23
+  _atom_site_aniso_U_13
+  _atom_site_aniso_U_12
+ Se1 0.0134(15) 0.0163(16) 0.024(2) 0.000 0.000 -0.0007(6)
+ Cu2 0.024(2) 0.027(2) 0.033(3) 0.000 0.000 -0.0107(14)
+ Cu3 0.047(4) 0.020(3) 0.046(4) 0.000 0.000 0.009(2)
+ K4 0.026(3) 0.026(3) 0.031(5) 0.000 0.000 0.000
+
+_geom_special_details
+;
+ All esds (except the esd in the dihedral angle between two l.s. planes)
+ are estimated using the full covariance matrix.  The cell esds are taken
+ into account individually in the estimation of esds in distances, angles
+ and torsion angles; correlations between esds in cell parameters are only
+ used when they are defined by crystal symmetry.  An approximate (isotropic)
+ treatment of cell esds is used for estimating esds involving l.s. planes.
+;
+loop_
+  _geom_bond_atom_site_label_1
+  _geom_bond_atom_site_label_2
+  _geom_bond_distance
+  _geom_bond_site_symmetry_2
+  _geom_bond_publ_flag
+ Se1 Cu2 2.415(3) . ?
+ Se1 Cu2 2.490(3) 6_544 ?
+ Se1 Cu2 2.490(3) 6_545 ?
+ Se1 Cu3 2.379(5) . ?
+ Se1 Cu3 2.629(4) 13_554 ?
+ Se1 Cu3 2.587(6) 10 ?
+ Se1 Cu3 2.629(4) 13 ?
+ Se1 K4 3.4253(16) . ?
+ Se1 K4 3.4253(16) 1_556 ?
+ Cu2 Cu2 2.814(4) 6_544 ?
+ Cu2 Cu2 2.814(4) 14 ?
+ Cu2 Cu2 2.814(4) 6_545 ?
+ Cu2 Cu2 2.805(8) 9_655 ?
+ Cu2 Cu2 2.814(4) 14_554 ?
+ Cu2 Cu3 2.734(4) 13 ?
+ Cu2 Cu3 2.734(4) 13_554 ?
+ Cu2 Cu3 2.550(7) 2_655 ?
+ Cu2 K4 3.852(4) 5 ?
+ Cu3 Cu3 2.592(7) 13 ?
+ Cu3 Cu3 2.592(7) 13_554 ?
+ Cu3 K4 4.014(5) . ?
+ Cu3 K4 4.014(5) 1_556 ?
+
+loop_
+  _geom_angle_atom_site_label_1
+  _geom_angle_atom_site_label_2
+  _geom_angle_atom_site_label_3
+  _geom_angle
+  _geom_angle_site_symmetry_1
+  _geom_angle_site_symmetry_3
+  _geom_angle_publ_flag
+ Cu2 Se1 Cu2 70.00(15) . 6_545 ?
+ Cu2 Se1 Cu2 70.00(15) . 6_544 ?
+ Cu2 Se1 Cu2 106.58(16) 6_545 6_544 ?
+ Cu2 Se1 Cu3 65.48(14) . 13 ?
+ Cu2 Se1 Cu3 59.68(14) 6_544 13_554 ?
+ Cu2 Se1 Cu3 135.44(18) 6_544 13 ?
+ Cu2 Se1 Cu3 59.68(14) 6_545 13 ?
+ Cu2 Se1 Cu3 100.4(2) . 10 ?
+ Cu2 Se1 Cu3 135.44(18) 6_545 13_554 ?
+ Cu2 Se1 Cu3 65.13(9) 6_545 10 ?
+ Cu2 Se1 Cu3 65.13(9) 6_544 10 ?
+ Cu2 Se1 Cu3 65.48(14) . 13_554 ?
+ Cu2 Se1 K4 138.85(11) 6_545 . ?
+ Cu2 Se1 K4 138.85(11) 6_544 1_556 ?
+ Cu2 Se1 K4 79.55(9) 6_545 1_556 ?
+ Cu2 Se1 K4 79.55(9) 6_544 . ?
+ Cu2 Se1 K4 144.34(2) . 1_556 ?
+ Cu2 Se1 K4 144.34(2) . . ?
+ Cu3 Se1 Cu2 121.00(9) . 6_545 ?
+ Cu3 Se1 Cu2 94.41(18) . . ?
+ Cu3 Se1 Cu2 121.00(9) . 6_544 ?
+ Cu3 Se1 Cu3 62.10(16) . 13_554 ?
+ Cu3 Se1 Cu3 98.8(2) 13 13_554 ?
+ Cu3 Se1 Cu3 124.60(17) 10 13 ?
+ Cu3 Se1 Cu3 62.10(16) . 13 ?
+ Cu3 Se1 Cu3 124.60(17) 10 13_554 ?
+ Cu3 Se1 Cu3 165.2(2) . 10 ?
+ Cu3 Se1 K4 85.49(12) . 1_556 ?
+ Cu3 Se1 K4 82.50(11) 10 1_556 ?
+ Cu3 Se1 K4 140.50(16) 13_554 1_556 ?
+ Cu3 Se1 K4 83.49(12) 13 1_556 ?
+ Cu3 Se1 K4 83.49(12) 13_554 . ?
+ Cu3 Se1 K4 85.49(12) . . ?
+ Cu3 Se1 K4 82.50(11) 10 . ?
+ Cu3 Se1 K4 140.50(16) 13 . ?
+ K4 Se1 K4 71.30(4) . 1_556 ?
+ Se1 Cu2 Se1 119.36(8) . 14_554 ?
+ Se1 Cu2 Se1 119.36(8) . 14 ?
+ Se1 Cu2 Se1 106.58(16) 14 14_554 ?
+ Se1 Cu2 Cu2 81.49(7) 14_554 6_544 ?
+ Se1 Cu2 Cu2 123.09(16) 14 14_554 ?
+ Se1 Cu2 Cu2 56.25(12) . 6_544 ?
+ Se1 Cu2 Cu2 123.09(16) 14_554 14 ?
+ Se1 Cu2 Cu2 53.75(9) 14 14 ?
+ Se1 Cu2 Cu2 81.49(7) 14 6_545 ?
+ Se1 Cu2 Cu2 115.71(8) . 14_554 ?
+ Se1 Cu2 Cu2 82.98(15) . 9_655 ?
+ Se1 Cu2 Cu2 53.75(9) 14_554 14_554 ?
+ Se1 Cu2 Cu2 113.54(12) 14 9_655 ?
+ Se1 Cu2 Cu2 171.65(16) 14 6_544 ?
+ Se1 Cu2 Cu2 113.54(12) 14_554 9_655 ?
+ Se1 Cu2 Cu2 56.25(12) . 6_545 ?
+ Se1 Cu2 Cu2 115.71(8) . 14 ?
+ Se1 Cu2 Cu2 171.65(16) 14_554 6_545 ?
+ Se1 Cu2 Cu3 62.88(9) 14 2_655 ?
+ Se1 Cu2 Cu3 59.14(12) 14_554 13_554 ?
+ Se1 Cu2 Cu3 59.14(12) 14 13 ?
+ Se1 Cu2 Cu3 62.88(9) 14_554 2_655 ?
+ Se1 Cu2 Cu3 174.6(2) . 2_655 ?
+ Se1 Cu2 Cu3 61.04(14) . 13_554 ?
+ Se1 Cu2 Cu3 131.14(17) 14 13_554 ?
+ Se1 Cu2 Cu3 61.04(14) . 13 ?
+ Se1 Cu2 Cu3 131.14(17) 14_554 13 ?
+ Se1 Cu2 K4 109.35(15) . 5 ?
+ Se1 Cu2 K4 60.98(9) 14_554 5 ?
+ Se1 Cu2 K4 60.98(9) 14 5 ?
+ Cu2 Cu2 Cu2 120.21(10) 14_554 6_545 ?
+ Cu2 Cu2 Cu2 90.36(17) 6_544 6_545 ?
+ Cu2 Cu2 Cu2 59.79(10) 14 6_545 ?
+ Cu2 Cu2 Cu2 60.11(5) 9_655 14_554 ?
+ Cu2 Cu2 Cu2 90.37(17) 14 14_554 ?
+ Cu2 Cu2 Cu2 60.10(5) 9_655 6_544 ?
+ Cu2 Cu2 Cu2 59.79(10) 14_554 6_544 ?
+ Cu2 Cu2 Cu2 120.21(10) 14 6_544 ?
+ Cu2 Cu2 Cu2 60.10(5) 9_655 6_545 ?
+ Cu2 Cu2 Cu2 60.11(5) 9_655 14 ?
+ Cu2 Cu2 K4 126.40(11) 6_545 5 ?
+ Cu2 Cu2 K4 167.67(17) 9_655 5 ?
+ Cu2 Cu2 K4 126.40(11) 6_544 5 ?
+ Cu2 Cu2 K4 112.36(11) 14_554 5 ?
+ Cu2 Cu2 K4 112.36(11) 14 5 ?
+ Cu3 Cu2 Cu2 117.26(18) 13_554 6_545 ?
+ Cu3 Cu2 Cu2 87.70(11) 13_554 14_554 ?
+ Cu3 Cu2 Cu2 54.70(15) 13_554 6_544 ?
+ Cu3 Cu2 Cu2 54.70(15) 13 6_545 ?
+ Cu3 Cu2 Cu2 174.76(18) 13_554 14 ?
+ Cu3 Cu2 Cu2 91.6(2) 2_655 9_655 ?
+ Cu3 Cu2 Cu2 117.26(18) 13 6_544 ?
+ Cu3 Cu2 Cu2 114.79(15) 13 9_655 ?
+ Cu3 Cu2 Cu2 87.70(11) 13 14 ?
+ Cu3 Cu2 Cu2 174.76(18) 13 14_554 ?
+ Cu3 Cu2 Cu2 61.05(16) 2_655 14_554 ?
+ Cu3 Cu2 Cu2 120.82(11) 2_655 6_545 ?
+ Cu3 Cu2 Cu2 114.79(15) 13_554 9_655 ?
+ Cu3 Cu2 Cu2 61.05(16) 2_655 14 ?
+ Cu3 Cu2 Cu2 120.82(11) 2_655 6_544 ?
+ Cu3 Cu2 Cu3 93.80(19) 13_554 13 ?
+ Cu3 Cu2 Cu3 121.83(10) 2_655 13 ?
+ Cu3 Cu2 Cu3 121.83(10) 2_655 13_554 ?
+ Cu3 Cu2 K4 72.87(12) 13 5 ?
+ Cu3 Cu2 K4 72.87(12) 13_554 5 ?
+ Cu3 Cu2 K4 76.05(15) 2_655 5 ?
+ Se1 Cu3 Se1 117.90(16) . 13 ?
+ Se1 Cu3 Se1 108.54(18) 2 13_554 ?
+ Se1 Cu3 Se1 98.8(2) 13 13_554 ?
+ Se1 Cu3 Se1 117.90(16) . 13_554 ?
+ Se1 Cu3 Se1 104.8(2) . 2 ?
+ Se1 Cu3 Se1 108.54(18) 2 13 ?
+ Se1 Cu3 Cu2 121.19(15) . 13_554 ?
+ Se1 Cu3 Cu2 53.48(9) 13_554 13_554 ?
+ Se1 Cu3 Cu2 55.73(13) 2 13 ?
+ Se1 Cu3 Cu2 170.2(3) . 10_565 ?
+ Se1 Cu3 Cu2 121.19(15) . 13 ?
+ Se1 Cu3 Cu2 120.9(2) 13_554 13 ?
+ Se1 Cu3 Cu2 53.48(9) 13 13 ?
+ Se1 Cu3 Cu2 120.9(2) 13 13_554 ?
+ Se1 Cu3 Cu2 55.73(13) 2 13_554 ?
+ Se1 Cu3 Cu3 63.7(2) . 13 ?
+ Se1 Cu3 Cu3 123.8(2) 2 13_554 ?
+ Se1 Cu3 Cu3 63.7(2) . 13_554 ?
+ Se1 Cu3 Cu3 123.8(2) 2 13 ?
+ Se1 Cu3 K4 159.35(15) 13_554 1_556 ?
+ Se1 Cu3 K4 58.29(11) . 1_556 ?
+ Se1 Cu3 K4 100.40(7) 13 1_556 ?
+ Se1 Cu3 K4 58.29(11) . . ?
+ Se1 Cu3 K4 57.79(10) 2 1_556 ?
+ Se1 Cu3 K4 159.35(15) 13 . ?
+ Se1 Cu3 K4 100.40(7) 13_554 . ?
+ Se1 Cu3 K4 57.79(10) 2 . ?
+ Cu2 Cu3 Se1 85.01(18) 10_565 2 ?
+ Cu2 Cu3 Se1 57.45(14) 10_565 13_554 ?
+ Cu2 Cu3 Se1 57.45(14) 10_565 13 ?
+ Cu2 Cu3 Cu2 93.80(19) 13_554 13 ?
+ Cu2 Cu3 Cu2 64.25(14) 10_565 13 ?
+ Cu2 Cu3 Cu2 64.25(14) 10_565 13_554 ?
+ Cu2 Cu3 Cu3 111.0(3) 10_565 13_554 ?
+ Cu2 Cu3 Cu3 111.0(3) 10_565 13 ?
+ Cu2 Cu3 K4 66.51(11) 13 1_556 ?
+ Cu2 Cu3 K4 129.45(16) 10_565 . ?
+ Cu2 Cu3 K4 129.45(16) 10_565 1_556 ?
+ Cu2 Cu3 K4 109.14(18) 13_554 1_556 ?
+ Cu2 Cu3 K4 109.14(18) 13 . ?
+ Cu2 Cu3 K4 66.51(11) 13_554 . ?
+ Cu3 Cu3 Se1 54.20(14) 13 13 ?
+ Cu3 Cu3 Se1 54.20(14) 13_554 13_554 ?
+ Cu3 Cu3 Se1 125.8(3) 13 13_554 ?
+ Cu3 Cu3 Se1 125.8(3) 13_554 13 ?
+ Cu3 Cu3 Cu2 82.63(13) 13 13 ?
+ Cu3 Cu3 Cu2 82.63(13) 13_554 13_554 ?
+ Cu3 Cu3 Cu2 175.1(3) 13 13_554 ?
+ Cu3 Cu3 Cu2 175.1(3) 13_554 13 ?
+ Cu3 Cu3 Cu3 100.7(4) 13 13_554 ?
+ Cu3 Cu3 K4 117.8(3) 13 . ?
+ Cu3 Cu3 K4 72.6(2) 13 1_556 ?
+ Cu3 Cu3 K4 72.6(2) 13_554 . ?
+ Cu3 Cu3 K4 117.8(3) 13_554 1_556 ?
+ K4 Cu3 K4 59.65(8) . 1_556 ?
+ Se1 K4 Se1 108.70(4) 2 10 ?
+ Se1 K4 Se1 71.30(4) 1_554 . ?
+ Se1 K4 Se1 109.86(2) 9_554 2 ?
+ Se1 K4 Se1 70.14(2) 9 10 ?
+ Se1 K4 Se1 108.70(4) 10_554 2_554 ?
+ Se1 K4 Se1 180.00(4) 10 2_554 ?
+ Se1 K4 Se1 70.14(2) 1_554 2_554 ?
+ Se1 K4 Se1 109.86(2) 10_554 . ?
+ Se1 K4 Se1 180.0 10_554 2 ?
+ Se1 K4 Se1 70.14(2) 9_554 10_554 ?
+ Se1 K4 Se1 108.70(4) 9_554 1_554 ?
+ Se1 K4 Se1 109.86(2) 1_554 10 ?
+ Se1 K4 Se1 70.14(2) 10 . ?
+ Se1 K4 Se1 70.14(2) 9_554 2_554 ?
+ Se1 K4 Se1 109.86(2) 2 1_554 ?
+ Se1 K4 Se1 71.30(4) 2 2_554 ?
+ Se1 K4 Se1 71.30(4) 9_554 9 ?
+ Se1 K4 Se1 109.86(2) 9 2_554 ?
+ Se1 K4 Se1 109.86(2) 10_554 9 ?
+ Se1 K4 Se1 180.0 9_554 . ?
+ Se1 K4 Se1 70.14(2) 2 9 ?
+ Se1 K4 Se1 70.14(2) 2 . ?
+ Se1 K4 Se1 180.00(4) 1_554 9 ?
+ Se1 K4 Se1 108.70(4) 9 . ?
+ Se1 K4 Se1 109.86(2) 9_554 10 ?
+ Se1 K4 Se1 70.14(2) 10_554 1_554 ?
+ Se1 K4 Se1 71.30(4) 10_554 10 ?
+ Se1 K4 Se1 109.86(2) 2_554 . ?
+ Se1 K4 Cu2 140.53(3) 10_554 13_554 ?
+ Se1 K4 Cu2 104.71(5) 10_554 14_454 ?
+ Se1 K4 Cu2 75.29(5) 10_554 6_544 ?
+ Se1 K4 Cu2 39.47(3) . 6_544 ?
+ Se1 K4 Cu2 104.71(5) 10 14_454 ?
+ Se1 K4 Cu2 75.29(5) 1_554 13_554 ?
+ Se1 K4 Cu2 75.29(5) 10 6_544 ?
+ Se1 K4 Cu2 104.71(5) 9 13_554 ?
+ Se1 K4 Cu2 140.53(3) 1_554 14_454 ?
+ Se1 K4 Cu2 140.53(3) 10 13_554 ?
+ Se1 K4 Cu2 140.53(3) . 14_454 ?
+ Se1 K4 Cu2 39.47(3) 2_554 13_554 ?
+ Se1 K4 Cu2 39.47(3) 1_554 6_544 ?
+ Se1 K4 Cu2 75.29(5) . 13_554 ?
+ Se1 K4 Cu2 104.71(5) 9_554 13_554 ?
+ Se1 K4 Cu2 75.29(5) 9_554 5_444 ?
+ Se1 K4 Cu2 75.29(5) 2 14_454 ?
+ Se1 K4 Cu2 39.47(3) 10_554 5_444 ?
+ Se1 K4 Cu2 39.47(3) 9 14_454 ?
+ Se1 K4 Cu2 140.53(3) 2 5_444 ?
+ Se1 K4 Cu2 75.29(5) 2_554 14_454 ?
+ Se1 K4 Cu2 104.71(5) 1_554 5_444 ?
+ Se1 K4 Cu2 140.53(3) 9_554 6_544 ?
+ Se1 K4 Cu2 75.29(5) 9 5_444 ?
+ Se1 K4 Cu2 104.71(5) 2 6_544 ?
+ Se1 K4 Cu2 39.47(3) 10 5_444 ?
+ Se1 K4 Cu2 140.53(3) 9 6_544 ?
+ Se1 K4 Cu2 140.53(3) 2_554 5_444 ?
+ Se1 K4 Cu2 104.71(5) 2_554 6_544 ?
+ Se1 K4 Cu2 104.71(5) . 5_444 ?
+ Se1 K4 Cu2 39.47(3) 9_554 14_454 ?
+ Se1 K4 Cu2 39.47(3) 2 13_554 ?
+ Cu2 K4 Cu2 180.00(10) 13_554 5_444 ?
+ Cu2 K4 Cu2 90.0 5_444 6_544 ?
+ Cu2 K4 Cu2 90.0 13_554 6_544 ?
+ Cu2 K4 Cu2 90.0 13_554 14_454 ?
+ Cu2 K4 Cu2 180.0 14_454 6_544 ?
+ Cu2 K4 Cu2 90.0 5_444 14_454 ?
+
+loop_
+  _diffrn_refln_index_h
+  _diffrn_refln_index_k
+  _diffrn_refln_index_l
+  _diffrn_refln_intensity_net
+  _diffrn_refln_intensity_u
+  _diffrn_refln_scale_group_code
+ 0 0 -2 600443 3287.36 5
+ 0 0 4 71080.9 2638.36 3
+ 1 0 -1 10937.2 258.96 5
+ 0 1 -1 10775.6 363.252 2
+ 1 0 -1 11104.3 408.155 2
+ 0 -1 -1 10761.7 335.094 5
+ -1 0 -3 6914.49 598.145 5
+ 0 1 -3 6137.75 514.805 5
+ 1 1 0 73614.5 826.822 3
+ -1 1 0 73706.8 748.008 4
+ 1 -1 -2 24282.8 665.565 5
+ -1 -1 -2 23552.9 698.671 5
+ 1 1 -2 23745.1 827.158 2
+ 1 1 -2 25664.4 629.163 5
+ 1 1 4 3002.58 704.129 3
+ -1 1 4 2547.58 527.458 3
+ -1 -2 -1 69461.4 1054.66 5
+ 1 2 -1 68943.8 947.255 1
+ -2 1 1 71552.9 1312.47 3
+ 1 2 -1 68446.4 1285.44 2
+ 2 -1 -1 69610.6 1262.76 2
+ -2 1 -3 41068.1 1363.73 5
+ -2 1 3 41878 2810.43 3
+ 2 0 0 9705.98 270.327 2
+ 2 0 -2 1297.69 282.259 2
+ -2 0 -2 1684.02 218.963 5
+ 0 2 4 65.2023 256.036 3
+ -1 2 1 5104.29 424.175 3
+ 2 1 -1 5881.56 389.903 2
+ -2 -1 -1 5378.91 234.712 5
+ 2 1 -1 6362.54 553.75 7
+ 2 1 -1 5795.88 268.232 1
+ -1 2 3 1292.89 708.95 3
+ -1 2 -3 1365.99 250.282 5
+ -2 -1 -3 1586.85 331.367 5
+ -2 2 0 17161.5 527.972 4
+ 2 -2 0 18541.3 879.244 6
+ -2 2 2 10580.7 947.529 3
+ -2 -2 -2 8538.05 458.881 5
+ 2 2 -2 9475.63 692.307 2
+ 2 2 4 6226.11 927.042 3
+ 3 -2 -1 9448.43 740.441 7
+ 2 3 -1 9266.57 407.816 1
+ 2 3 -1 9967.95 590.384 2
+ -3 2 -3 8877.71 629.905 5
+ 3 -1 0 2231 216.569 2
+ 1 3 -2 1651.76 312.935 2
+ 1 3 4 2233.89 543.351 3
+ 3 0 -1 77076.2 2036.05 7
+ -3 0 1 77248.3 1116.73 3
+ 3 0 -1 77089.3 1007.33 1
+ 0 3 1 79399.1 1680.03 3
+ 3 0 -1 75823.7 2191.64 6
+ 3 0 -1 78030.3 1299.69 2
+ -3 0 -3 24819.5 1118.15 5
+ 0 3 3 21432.2 1814.15 3
+ -3 -1 0 177950 1015.71 5
+ 3 1 0 178656 1542.24 2
+ -1 3 0 176277 2310.79 4
+ -1 3 2 72894.7 2356.11 3
+ -1 3 4 20267.1 1577.52 3
+ 3 2 -1 31685 1584.9 6
+ -2 3 1 34334.1 1230.63 3
+ 3 2 -1 28722.1 776.065 1
+ -3 -2 -1 31739.2 709.383 5
+ 3 2 -1 31509.9 1046.51 2
+ 3 2 -1 30156.7 1424.53 7
+ -2 3 -3 7194.08 584.294 5
+ -3 -2 -3 8688.8 745.563 5
+ 3 -3 0 43538.8 1475.6 7
+ -3 3 0 42298.3 1030.53 4
+ 3 -3 0 42377.1 1588.78 6
+ -3 -3 -2 14545.1 666.816 5
+ -3 3 2 15675.1 1137.33 3
+ 3 3 -2 16639.4 1052.48 2
+ 3 3 4 3683.62 729.004 3
+ -3 3 -4 5933.07 522.924 5
+ 3 4 -1 55697.3 1306.03 1
+ 3 4 -1 53239.2 1609.29 2
+ -4 3 1 57178.6 1733.67 4
+ 3 4 3 24999.1 1885.32 3
+ -4 3 -3 25143.9 1022.32 5
+ 4 -2 0 5121.08 930.61 6
+ 2 4 2 191.328 235.147 3
+ 2 4 -2 1213.71 321.173 2
+ 2 4 4 268.896 277.635 3
+ -4 2 -4 681.768 203.182 5
+ 4 -1 -1 75.7128 276.779 6
+ 4 -1 -1 37.2497 66.7365 1
+ 4 -1 -1 -24.4824 159.587 2
+ 1 4 1 27.9665 155.307 3
+ -4 1 1 158.306 144.884 4
+ 1 4 -1 4.65366 55.4276 1
+ 1 4 3 212.044 291.099 3
+ -4 1 -3 -13.1879 167.005 5
+ 4 0 0 128559 1469.08 2
+ 0 4 0 129972 2660.35 4
+ 0 4 2 38867.5 1736.33 3
+ -4 0 -2 41544 1110.7 5
+ 4 0 -2 40643.3 1579.55 2
+ 0 4 4 10035.2 1127.23 3
+ 4 1 -1 605962 7170.74 7
+ -4 -1 -1 598177 3094.62 5
+ 4 1 -1 599730 3711.69 1
+ 4 1 -1 596106 4472.82 2
+ -4 -1 -3 233951 3599.99 5
+ -1 4 3 237569 5901.4 3
+ 4 2 0 11716.4 528.757 2
+ -2 4 0 13700.1 755.9 4
+ -4 -2 -2 5738.31 434.078 5
+ -2 4 2 4745.26 662.766 3
+ 4 2 -2 6297.64 740.064 2
+ 4 2 4 2393.11 732.527 3
+ 4 3 -1 120980 3503.21 7
+ 4 3 -1 119038 2053.51 1
+ -4 -3 -1 118773 1791.15 5
+ 4 3 -3 30674.5 1654.94 2
+ 4 -4 0 94748.8 2641.1 6
+ 4 -4 0 97757 2586.35 7
+ 4 4 2 38103.3 2000.58 3
+ 4 4 -2 42740.3 1757.87 2
+ 4 4 4 12491.6 1406.56 3
+ -4 4 -4 12157.2 664.24 5
+ 4 5 1 905.612 314.322 3
+ 4 5 -1 1281.28 367.435 2
+ -5 4 1 1419.11 288.484 4
+ -5 4 -3 285.411 134.334 5
+ 4 5 -3 249.446 258.085 2
+ 3 5 0 999999 7868.02 4
+ 5 -3 0 998366 12753.2 6
+ 3 5 -2 279319 4269.19 2
+ 3 5 2 282659 4939.12 3
+ -5 3 -4 104296 1902.85 5
+ 2 5 -1 15686.5 642.972 1
+ 5 -2 -1 15433.5 1345.21 6
+ 5 -2 -1 15591.2 1263.04 7
+ 2 5 1 17316.2 1047.09 3
+ 2 5 3 9841.82 1091.32 3
+ -5 2 -3 8727.18 584.115 5
+ 5 -1 0 48508 1163.76 2
+ 1 5 0 47695.3 1940.03 4
+ 1 5 2 11878.5 1034.81 3
+ 1 5 -2 8421.84 722.05 2
+ -5 1 -4 2804.34 348.372 5
+ 5 0 -1 153997 1966.97 1
+ 5 0 -1 148524 4374.51 6
+ 5 0 -1 156176 4192.33 7
+ 5 0 -1 156353 2254.2 2
+ 0 5 3 58467.5 2782.63 3
+ -5 0 -3 50648.2 1514.22 5
+ 5 1 0 6321.55 422.999 2
+ -1 5 2 1672.97 461.94 3
+ -5 -1 -2 2132.49 278.681 5
+ 5 1 -2 2389.7 517.36 2
+ 5 1 4 759.513 628.756 3
+ 5 2 -1 45317.1 2381.09 7
+ 5 2 -1 51388.8 2770.16 6
+ -5 -2 -1 48851.8 1049.28 5
+ 5 2 -3 17163.5 1310.57 2
+ -5 -2 -3 17791.1 1017.94 5
+ -3 5 0 41333 1484.16 4
+ 5 3 0 41388.3 1185.36 2
+ 5 3 -2 25583.7 1436.62 2
+ -5 -3 -2 27368.1 1110.55 5
+ 5 3 4 13290.1 1391.19 3
+ 5 4 -1 11113.3 1405.03 7
+ 5 4 -1 14038.3 1612.94 6
+ 5 4 -1 12484.1 802.24 1
+ 5 4 -1 12303.9 903.84 2
+ -4 5 1 10287.1 799.85 4
+ 5 4 -3 6758.39 814.638 2
+ 5 5 0 6904.46 641.269 2
+ 5 5 2 3064.3 645.056 3
+ 5 5 -2 4140.7 668.411 2
+ 5 6 -1 3977 648.88 2
+ 5 6 -1 3633.29 487.121 1
+ 5 6 -3 950.286 332.498 2
+ 6 -4 0 59713.4 2827.26 7
+ 6 -4 0 61103.8 3048.42 6
+ 4 6 -2 27074 1551.96 2
+ 4 6 2 27339.7 1807.88 3
+ -6 4 -4 11384.2 555.425 5
+ 6 -3 -1 13070.1 1363.61 7
+ -6 3 -3 4504.66 424.765 5
+ 2 6 0 3038.95 619.34 4
+ 6 -2 0 2330.26 1017.56 6
+ 2 6 2 502.338 311.892 3
+ 2 6 -2 1309.71 367.152 2
+ -6 2 -4 290.21 118.551 5
+ 6 -1 -1 58164.7 1525.64 2
+ 6 -1 -1 55950.1 2817.26 7
+ 6 -1 -1 58533.9 3085.07 6
+ -6 1 -3 23117.3 948.145 5
+ 6 0 0 30631.8 1224.8 2
+ 0 6 0 31598.1 1874.99 4
+ 6 0 -2 11419.6 1040.87 2
+ -6 0 -2 10166.9 573.317 5
+ 6 1 -1 17733.6 1653.29 7
+ 6 1 -1 17787.6 1786.75 6
+ 6 1 -1 19074.7 966.151 2
+ -6 -1 -1 18644.3 652.565 5
+ 6 1 -1 19578.2 864.401 1
+ -6 -1 -3 3972.83 450.152 5
+ -2 6 0 42100.9 2123.76 4
+ 6 2 -2 14683 1188.49 2
+ -6 -2 -2 14515.5 822.136 5
+ 6 2 4 3540.93 630.747 3
+ -2 6 4 3948.84 656.209 4
+ 6 3 -1 13243.3 1698.98 6
+ 6 3 -1 14728 854.387 1
+ 6 3 -1 12626.8 1582.06 7
+ 6 3 -1 15265.9 973.653 2
+ -3 6 1 11616 948.856 4
+ 6 3 3 7704.47 1179.94 3
+ 6 3 -3 7608.03 881.041 2
+ 6 4 0 5845.12 570.96 2
+ -4 6 2 1786.63 460.539 4
+ 6 4 -2 1377.36 439.824 2
+ -5 6 1 627.78 243.212 4
+ 6 5 -1 642.752 240.835 1
+ 6 5 -1 510.984 289.815 2
+ 6 5 -3 243.104 226.304 2
+ 6 6 0 55876 1831.94 2
+ 6 6 -2 48008.7 2366.6 2
+ 6 7 -1 1391.95 318.559 1
+ 6 7 -1 1067.95 394.832 2
+ 6 7 -3 468.548 256.186 2
+ -7 6 -3 441.655 128.306 5
+ 5 7 0 9441.63 861.457 2
+ 5 7 -2 8692.56 1042.5 2
+ 4 7 -1 48802 2298.05 2
+ -7 4 -3 19880.9 818.812 5
+ 7 -3 0 65096 4049.25 6
+ 7 -3 0 59717.8 3619.75 7
+ 3 7 -2 19545.6 1320.01 2
+ 7 -2 -1 19123.4 1852.11 7
+ 7 -2 -1 19283.7 1987.63 6
+ -7 2 -3 5452.37 458.768 5
+ 7 -1 0 3179.89 1056.48 6
+ 1 7 0 5371.15 863.261 4
+ 1 7 -2 385.077 254.174 2
+ -7 1 -2 558.294 146.154 5
+ 7 0 -1 755.645 199.826 1
+ 7 0 -1 365.259 399.423 7
+ 7 0 -1 713.185 521.848 6
+ 7 0 -1 702.157 234.037 2
+ -7 0 -3 1035.13 220.555 5
+ -1 7 0 15152.1 1486.71 4
+ 7 1 -2 2164.19 513.658 2
+ -7 -1 -2 3263.24 377.296 5
+ -1 7 4 120.695 186.926 4
+ 7 2 -1 51581.4 1684.22 2
+ 7 2 -1 53854.8 3112.75 7
+ 7 2 -1 52594.9 3317.99 6
+ 7 2 -1 54986.9 1578.86 1
+ -2 7 1 53351.6 2230.14 4
+ 7 2 3 18554.9 1427.17 3
+ 7 3 0 1715.1 358.23 2
+ -3 7 2 807.507 359.51 4
+ 7 3 -2 1254.24 421.055 2
+ -4 7 1 5939.02 683.619 4
+ 7 4 -1 7272.78 1389.39 7
+ 7 4 -1 6365.93 1387.41 6
+ 7 4 -1 7263.42 662.716 1
+ 7 4 -1 8011.07 820.285 2
+ -4 7 3 3459.31 919.162 4
+ 7 4 -3 1755.89 416.751 2
+ 7 5 0 58478 4175.3 6
+ 7 5 0 58535.2 1929.47 2
+ 7 5 -2 39024.6 2067.86 2
+ 7 6 -1 108467 2469.92 1
+ 7 6 -1 104715 2897.49 2
+ 7 6 -3 41321.2 1633.68 2
+ -6 7 -3 43584.9 1173.76 5
+ 7 7 0 13533.7 1029.51 2
+ 7 7 -2 12046.9 1195.63 2
+ 7 8 -1 69552.7 1763.23 1
+ 7 8 -1 70186.6 2343.89 2
+ 6 8 0 26990.6 1304.54 1
+ 6 8 0 28431.7 1629.49 2
+ 6 8 -2 17847.1 1316.96 2
+ 5 8 1 1846.97 606.686 2
+ 5 8 -1 1371.51 444.593 2
+ -8 5 -3 299.709 110.186 5
+ 8 -4 0 3102.93 835.259 6
+ 8 -4 0 2848.4 796.849 7
+ 4 8 -2 930.612 399.268 2
+ 8 -3 -1 39352.4 2936.87 7
+ 8 -3 1 32252.5 2894.98 6
+ 3 8 -1 38795 1977.06 2
+ 3 8 1 33788.6 1606.24 4
+ -8 3 -3 13405.2 699.286 5
+ 2 8 0 119051 3308.71 4
+ 8 -2 0 117316 5773.18 6
+ -8 2 -2 48197.6 1239.22 5
+ 2 8 -2 46447.1 2013.95 2
+ 1 8 1 224.478 220.37 4
+ 8 -1 -1 58.3401 396.795 7
+ 8 -1 -1 333.36 422.152 6
+ 8 -1 -1 90.8472 143.19 1
+ -8 1 -3 756.356 182.621 5
+ 0 8 0 28397.1 1891.02 4
+ 8 0 0 23208.6 2952.54 6
+ -8 0 -2 7458.15 509.942 5
+ 8 1 -1 10063 1487.31 7
+ 8 1 -1 10238.9 692.207 1
+ 8 1 -1 11377.7 1635.84 6
+ 8 1 -1 10939 833.169 2
+ -1 8 1 10999 1056.21 4
+ -1 8 3 4727.2 861.66 4
+ 8 2 0 614113 18487.2 6
+ 8 2 -2 146558 3637.1 2
+ -2 8 2 143084 4007.63 4
+ -3 8 1 4691.35 654.144 4
+ 8 3 -1 5382.05 646.871 2
+ 8 3 -1 5984.63 1308.65 7
+ 8 3 -1 4885.25 1221.48 6
+ 8 3 -1 5257.8 558.51 1
+ -3 8 3 9620.73 2287.13 4
+ 8 4 0 127874 7088.37 6
+ 8 4 -2 59948.1 2454.07 2
+ -4 8 2 60445.7 2688.36 4
+ 8 5 -1 80595.3 2456.86 2
+ 8 5 -1 79270.6 2096.32 1
+ -5 8 -3 36921.8 1109.91 5
+ 8 6 0 1705.09 419.865 2
+ 8 6 -2 1149.88 417.444 2
+ 8 7 -1 12494.8 970.296 2
+ 8 8 0 6924.13 524.701 1
+ 8 8 -2 8033.12 700.627 2
+ 8 9 -1 389.876 311.528 2
+ 8 9 1 70.8989 105.556 1
+ 7 9 0 32841.5 2136.25 2
+ 7 9 -2 8392.36 616.645 2
+ -9 7 -2 8004.92 386.993 5
+ 6 9 -1 20906.1 1346.03 2
+ 5 9 0 19750.3 1711.94 2
+ -9 5 -2 11255.8 614.676 5
+ 5 9 -2 9675.24 843.706 2
+ 4 9 -1 2317.24 497.363 2
+ -9 4 -3 1322.25 212.076 5
+ 9 -3 0 6591.89 1231.48 7
+ 9 -3 0 8816.53 1455.19 6
+ 3 9 -2 3194.7 564.336 2
+ 3 9 2 4518.84 702.386 4
+ 9 -2 -1 89104.9 4311.68 7
+ 9 -2 1 89677.7 4949.36 6
+ 2 9 1 94989.5 2754.19 4
+ -9 2 -3 53014.4 1398.45 5
+ 2 9 3 54256.7 2209.73 4
+ 9 -1 0 10577.6 1752.17 7
+ 9 -1 0 11152 1926.32 6
+ 1 9 2 7086.48 852.419 4
+ 9 0 -1 77561.6 3960.48 7
+ 9 0 -1 71498.9 4153.4 6
+ 9 0 -1 73892.6 1901.71 1
+ 0 9 1 69655.6 2483.95 4
+ 0 9 3 27998.3 1450.84 4
+ 9 1 0 146715 3300.93 1
+ 9 1 0 151933 8596.9 6
+ -1 9 2 51313.2 2341.85 4
+ -2 9 1 4041.62 628.944 4
+ 9 2 -1 4699.23 1155.09 7
+ 9 2 -1 4909.09 599.601 2
+ 9 2 -1 4251.92 1183.54 6
+ 9 2 -1 4522.79 512.638 1
+ -2 9 3 4446.92 762.599 4
+ 9 3 0 1743 1244.43 6
+ -3 9 2 385.599 282.149 4
+ 9 4 -1 36501.2 1646.99 2
+ 9 4 -1 36812.6 1468.56 1
+ 9 5 0 150.521 215.827 1
+ 9 5 0 -46.6074 295.107 7
+ 9 5 0 165.95 336.512 6
+ 9 5 -2 139.564 208.286 2
+ 9 6 -1 1615.98 294.232 1
+ 9 6 -1 1685.69 363.552 2
+ 9 7 0 5276.99 479.338 1
+ 9 7 -2 5417.21 571.101 2
+ 9 8 -1 6052.43 692.952 2
+ 9 8 1 5666.28 634.531 1
+ 7 10 -1 114.78 264.352 2
+ 6 10 0 123368 5154.44 2
+ 6 10 -2 16836 698.669 2
+ 5 10 -1 6052.21 666.111 2
+ 4 10 -2 5175.87 559.393 2
+ 10 -3 1 23491.2 1722.42 7
+ 10 -3 1 30173.6 2084.24 6
+ 10 -2 0 8649.18 1426.19 6
+ 10 -2 2 4697.49 1108.71 6
+ 2 10 -2 5322.77 658.248 2
+ 2 10 2 5773.49 666.912 4
+ 1 10 1 823.044 286.721 4
+ 10 -1 1 1086.99 688.725 6
+ 1 10 3 627.248 218.263 4
+ 10 0 0 20628.8 2519.93 7
+ 10 0 2 9482.4 1593.33 6
+ 0 10 2 9985.88 906.691 4
+ 10 1 -1 13982.6 889.263 1
+ 10 1 1 16318.5 2323.6 6
+ -1 10 3 7376.5 589.688 4
+ 10 2 0 2074.57 1115.5 6
+ 10 2 0 266.062 197.443 1
+ -2 10 2 235.796 195.202 4
+ 10 3 -1 17143.8 1956.27 7
+ 10 3 1 14143.8 2267.18 6
+ 10 3 -1 16547.3 1087.7 2
+ 10 3 -1 19001.6 1078.13 1
+ 10 4 0 -116.704 532.465 7
+ 10 4 0 461.012 230.819 1
+ 10 4 0 346.778 487.186 6
+ 10 4 2 439.181 2885.76 6
+ 10 5 -1 311.091 209.815 2
+ 10 5 -1 320.546 171.639 1
+ 10 6 0 4095.75 440.544 1
+ 10 7 1 31590.6 1584.87 1
+ 10 8 0 407.141 144.318 1
+ 6 11 -1 26086.5 1138.62 2
+ 5 11 0 1011.4 699.545 2
+ 4 11 -1 7903.43 620.116 2
+ 11 -3 0 5031.94 819.083 7
+ 3 11 0 7095.02 935.472 2
+ 3 11 -2 3061.49 362.178 2
+ 11 -2 1 7144.45 940.177 7
+ 11 -2 1 9288.96 1122.46 6
+ 2 11 -1 8476.47 685.121 2
+ 11 -1 0 39258.4 2715.96 7
+ 11 -1 0 47304.3 3089.14 6
+ 1 11 2 23757.9 1080.28 4
+ 11 -1 2 23621.4 2135.1 7
+ 11 -1 2 27080.1 2466.37 6
+ 11 0 1 840.527 537.928 7
+ 11 0 1 1495.57 638.101 6
+ 0 11 -1 1178.33 341.846 2
+ 11 1 0 3386.67 968.681 7
+ 11 1 0 4732.4 1201.8 6
+ 11 1 2 2568.89 798.996 6
+ 11 2 1 1777.06 276.121 1
+ 11 2 1 1429.13 626.837 6
+ 11 3 0 40628.7 1260.57 1
+ 11 3 0 37052.8 2763.31 7
+ 11 3 0 37669.6 2865.53 6
+ 11 3 2 46775.2 3840.25 6
+ 11 4 1 321.959 706.748 7
+ 11 4 1 133.169 125.776 1
+ 11 4 1 384.032 715.315 6
+ 11 5 0 3923.87 393.353 1
+ 11 6 1 4717.04 484.367 1
+ 4 12 0 14092.1 1070.7 2
+ 3 12 -1 400.024 154.205 2
+ 2 12 0 1919.37 404.477 2
+ 12 -1 1 9397.43 931.278 7
+ 12 -1 1 11847.5 1093.1 6
+ 1 12 -1 10590.3 649.773 2
+ 12 0 0 7171.98 1008.71 7
+ 12 1 1 388.239 296.677 7
+ 12 1 1 310.367 296.683 6
+ 12 2 0 3107.55 669.744 7
+ 12 2 0 2859.26 697.387 6
+ 12 3 1 15292.2 1444.31 7
+ 12 4 0 3147.1 287.719 1
+ 1 13 0 8049.26 496.106 2
+
+_iucr_refine_instructions_details
+;
+TITL at203_auto in I4/m #87
+    at203_auto.res
+    created by SHELXL-2019/3 at 14:48:42 on 17-Aug-2025
+CELL 1.54184 10.46191 10.46191 3.99269 90 90 90
+ZERR 2 0.0008 0.0008 0.00062 0 0 0
+LATT 2
+SYMM -Y,+X,+Z
+SYMM -X,-Y,+Z
+SYMM +Y,-X,+Z
+SFAC Cu K Se
+UNIT 13.82 2 8
+
+L.S. 4
+PLAN  5
+CONF
+fmap 2
+acta
+MORE -1
+OMIT -2 8 0
+OMIT 0 0 2
+OMIT 3 5 0
+REM <olex2.extras>
+REM <HklSrc "%.\\at203_auto.hkl">
+REM </olex2.extras>
+
+WGHT    0.200000
+EXTI    0.001084
+FVAR       2.32485
+SE1   3    0.257079    0.068523    0.000000    10.50000    0.01337    0.01631 =
+         0.02440    0.00000    0.00000   -0.00069
+CU2   1    0.478916    0.132408    0.000000    10.50000    0.02407    0.02740 =
+         0.03283    0.00000    0.00000   -0.01071
+CU3   1    0.177534    0.281537    0.000000     0.36331    0.04695    0.01972 =
+         0.04600    0.00000    0.00000    0.00902
+K4    2    0.000000    0.000000   -0.500000    10.12500    0.02618    0.02618 =
+         0.03080    0.00000    0.00000    0.00000
+HKLF 4
+
+
+
+
+REM  at203_auto in I4/m #87
+REM wR2 = 0.2863, GooF = S = 1.318, Restrained GooF = 1.318 for all data
+REM R1 = 0.1026 for 217 Fo > 4sig(Fo) and 0.1052 for all 238 data
+REM 23 parameters refined using 0 restraints
+
+END  
+     
+WGHT      0.2000      0.0000 
+
+REM Highest difference peak  2.601,  deepest hole -2.446,  1-sigma level  0.676
+Q1    1   0.2618  0.0961 -0.3078  11.00000  0.05    2.60
+Q2    1   0.4988  0.1039  0.3033  11.00000  0.05    2.36
+Q3    1   0.5000  0.0000  0.1270  10.50000  0.05    2.11
+Q4    1   0.2596  0.0630  0.2812  11.00000  0.05    1.98
+Q5    1   0.1552  0.2695 -0.2884  11.00000  0.05    1.84
+
+  REM The information below was added by Olex2.
+  REM
+  REM R1 = 0.1026 for 217 Fo > 4sig(Fo) and 0.1052 for all 462 data
+  REM 23 parameters refined using n/a restraints
+  REM Highest difference peak 2.60, deepest hole -2.45
+  REM Mean Shift 0.002, Max Shift 0.008.
+
+  REM +++ Tabular Listing of Refinement Information +++
+  REM R1_all = 0.1052
+  REM R1_gt = 0.1026
+  REM wR_ref = 0.2863
+  REM GOOF = 1.318
+  REM Shift_max = 0.008
+  REM Shift_mean = 0.002
+  REM Reflections_all = 462
+  REM Reflections_gt = 217
+  REM Parameters = 23
+  REM Hole = -2.45
+  REM Peak = 2.60
+  REM Flack = n/a
+
+  
+;
+_olex2_submission_special_instructions  'No special instructions were received'
+_oxdiff_exptl_absorpt_empirical_details
+;
+Empirical correction (ABSPACK) includes:
+- Absorption correction using spherical harmonics
+- Frame scaling
+;
+_oxdiff_exptl_absorpt_empirical_full_max  16.229
+_oxdiff_exptl_absorpt_empirical_full_min  0.240

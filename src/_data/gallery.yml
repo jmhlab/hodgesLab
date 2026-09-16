@@ -1,0 +1,8 @@
+# Crystal gallery. One line per image; files live in src/assets/img/gallery/
+#   - { file: rbcuhfs3.jpg, caption: RbCuHfS3 needles from a flux }
+- { file: crystal-1.jpg, caption: Placeholder — replace with a real crystal photo }
+- { file: crystal-2.jpg, caption: Placeholder }
+- { file: crystal-3.jpg, caption: Placeholder }
+- { file: group-1.jpg, caption: Placeholder — group photo }
+- { file: group-2.jpg, caption: Placeholder }
+- { file: group-3.jpg, caption: Placeholder }

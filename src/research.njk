@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Research
+permalink: /research/
+structuresOnPage: true
+---
+<section class="page-head">
+  <div>
+    <div class="kicker">// Research</div>
+    <h1>Synthesis first, <em>then</em> the properties.</h1>
+  </div>
+  <p class="intro">{{ research.intro | trim }}</p>
+</section>
+
+{% for a in research.areas %}
+{% set st = structures[a.structure] %}
+{% set paper = publications | find("n", a.paper) %}
+<section class="area-block" id="{{ a.id }}">
+  <div class="area-n">0{{ loop.index }}</div>
+  <div class="body">
+    <h2>{{ a.title }}</h2>
+    <p>{{ a.long | trim }}</p>
+    <div class="tags">{{ a.keywords | join(' · ') }}</div>
+    {% if paper %}
+    <div class="selected">
+      <div class="eyebrow">Selected paper</div>
+      <div class="cite">{{ paper.authors | boldMembers(site.member_names) | safe }} <span>{{ paper.title | chem | safe }}.</span> <em>{{ paper.journal }}</em> {{ paper.year }}{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.pages %}, {{ paper.pages }}{% endif %}.{% if paper.doi or paper.url %} <a href="{{ paper.url or ('https://doi.org/' ~ paper.doi) }}">↗</a>{% endif %}</div>
+    </div>
+    {% endif %}
+  </div>
+  <div>
+    <div class="area-media">
+      {% if st %}
+      <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" aria-label="{{ st.label }}"></div>
+      {% elif a.image %}<img src="{{ a.image }}" alt="{{ a.title }}">{% endif %}
+    </div>
+    {% if a.caption %}<div class="structure-caption">{{ a.caption }}</div>{% endif %}
+  </div>
+</section>
+{% endfor %}
+
+<section class="stats" aria-label="Elsewhere on the site">
+  <a class="stat" href="{{ '/publications/' | url }}"><div class="eyebrow">Read</div><div class="stat-value" style="font-size: 26px;">Publications →</div></a>
+  <a class="stat" href="{{ '/lab-tour/' | url }}"><div class="eyebrow">See</div><div class="stat-value" style="font-size: 26px;">Lab tour &amp; instruments →</div></a>
+  <a class="stat" href="{{ '/gallery/' | url }}"><div class="eyebrow">Look</div><div class="stat-value" style="font-size: 26px;">Crystal gallery →</div></a>
+  <a class="stat" href="{{ '/team/' | url }}"><div class="eyebrow">Meet</div><div class="stat-value" style="font-size: 26px;">The group →</div></a>
+</section>

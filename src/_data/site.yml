@@ -1,0 +1,72 @@
+# ---------------------------------------------------------------------------
+# Site-wide settings. Edit freely; every page reads from here.
+# ---------------------------------------------------------------------------
+name: Hodges Group
+tagline: Solid State Chemistry at Penn State
+url: https://www.hodgeschemistry.com
+description: >
+  The Hodges Research Group at Penn State synthesizes microporous oxides, metal
+  chalcogenides, and multi-anion materials for energy-related applications
+  including thermoelectrics and heterogeneous catalysis.
+
+# Headline on the homepage. Keep it short; the second line is highlighted.
+hero:
+  line1: Making solids that
+  line2: don't exist yet.
+  blurb: >
+    Microporous oxides, metal chalcogenides, and multi-anion materials for
+    thermoelectrics and heterogeneous catalysis — synthesized at high
+    temperature, characterized in house.
+  # which structure rotates behind the headline (see src/_data/structures.yml)
+  structure: KCu7Se4
+
+# Numbers in the stat strip. Update when they change.
+stats:
+  - value: "25"
+    label: Publications at PSU
+  - value: "8"
+    label: Patents
+  - value: "10"
+    label: Graduate students
+  - value: "1200 °C"
+    label: Tube furnaces, six of them
+
+# Recruiting banner
+recruiting:
+  headline: We're looking for students interested in materials synthesis and solid-state chemistry.
+  sub: Contact Jim directly if you want to learn more about joining the group.
+  button: Contact Jim
+
+contact:
+  name: James M. Hodges
+  email: hodges@psu.edu
+  address: 506 Chemistry Building, University Park, PA 16802
+  scholar: https://scholar.google.com/citations?user=X3Gtbc8AAAAJ&hl=en
+  twitter: https://twitter.com/HodgesChem
+  linkedin: https://www.linkedin.com/in/jameshodges12/
+
+# Main navigation (order matters)
+nav:
+  - { label: Team, url: /team/ }
+  - { label: Research, url: /research/ }
+  - { label: Publications, url: /publications/ }
+  - { label: Lab tour, url: /lab-tour/ }
+  - { label: Gallery, url: /gallery/ }
+  - { label: News, url: /news/ }
+
+# Names as they appear in publication author lists; these get bolded.
+member_names:
+  - "Hodges, J.M."
+  - "J.M. Hodges"
+  - "Tassanov, A."
+  - "Troesch, B."
+  - "Trinidad-Pérez, P.R."
+  - "Trinidad, P."
+  - "Spainhouer, D."
+  - "Leffel, A."
+  - "Thanthrige, S.B."
+  - "Brotherton, L."
+  - "Yessengazin, A."
+  - "Zambra, K."
+  - "Dutta, S."
+  - "Moreno, M.S."

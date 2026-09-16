@@ -1,0 +1,78 @@
+# ---------------------------------------------------------------------------
+# Awards, fellowships, service. Newest at the top. "who" is free text.
+# ---------------------------------------------------------------------------
+awards:
+  - date: 2025-08-01
+    who: Brendan Troesch
+    what: Poster presentation, ACS National Fall Meeting, Chicago, IL
+  - date: 2025-08-01
+    who: Pedro Trinidad
+    what: Poster presentation, ACS National Fall Meeting, Chicago, IL
+  - date: 2025-07-01
+    who: Ayat Tassanov
+    what: Represented Penn State at the 74th Lindau Nobel Laureate Meeting (Chemistry), with 35 Nobel Laureates present
+  - date: 2025-06-01
+    who: Ayat Tassanov
+    what: First place, poster competition, North American Solid-State Chemistry Conference, Ames, IA
+  - date: 2024-07-01
+    who: Pedro Trinidad
+    what: Second Year Graduate Student Award
+  - date: 2024-05-01
+    who: Pedro Trinidad
+    what: NASA Pennsylvania Space Grant Consortium Graduate Fellowship
+  - date: 2024-05-01
+    who: Pedro Trinidad
+    what: Selected for the ACS Lasting Encounters between Aspiring and Distinguished Scientists (LEADS) Conference
+  - date: 2024-04-01
+    who: Pedro Trinidad
+    what: NSF Graduate Research Fellowship Program (GRFP) Fellowship
+  - date: 2024-04-01
+    who: Alex Leffel
+    what: 2023 Chemistry Graduate Student Teaching Award
+  - date: 2024-04-01
+    who: Ayat Tassanov
+    what: First place, Penn State 39th Annual Graduate Exhibition
+  - date: 2024-03-01
+    who: Pedro Trinidad
+    what: National GEM Consortium Graduate Fellowship
+  - date: 2024-01-01
+    who: James M. Hodges
+    what: Chair, Solid State subdivision, ACS Division of Inorganic Chemistry
+  - date: 2023-11-01
+    who: Ayat Tassanov
+    what: Dalalian Fund Travel Award for the 2023 MRS Fall Meeting
+  - date: 2023-08-01
+    who: Ayat Tassanov
+    what: Second Year Graduate Student Award
+  - date: 2023-01-01
+    who: James M. Hodges
+    what: Chair-elect, Solid State subdivision, ACS Division of Inorganic Chemistry
+  - date: 2022-11-01
+    who: Pedro Trinidad
+    what: First Year Graduate Student Award
+
+presentations:
+  - date: 2024-06-01
+    who: Pedro Trinidad
+    title: Tailoring Electronic Properties in Thermoelectric Materials through Site-Selective Doping
+    where: 2024 Middle Atlantic Regional Meeting of the ACS, University Park, PA
+  - date: 2024-06-01
+    who: Ayat Tassanov
+    title: Polyhedral rearrangement driven by anion ordering in metal chalcogenides
+    where: 2024 Middle Atlantic Regional Meeting of the ACS, University Park, PA
+  - date: 2024-04-01
+    who: Ayat Tassanov
+    title: Prediction and accelerated laboratory discovery of AMMQ3 compounds using a tolerance factor approach
+    where: Penn State 39th Annual Graduate Exhibition, University Park, PA
+  - date: 2024-02-01
+    who: Ayat Tassanov
+    title: "Anion Ordering in Metal Chalcogenides: Design Rules for Predictive Synthesis"
+    where: 2DCC Seminar Series, University Park, PA
+  - date: 2023-11-01
+    who: Ayat Tassanov
+    title: "Anion Ordering in Metal Chalcogenides: Design Rules for Predictive Synthesis"
+    where: 2023 MRS Fall Meeting & Exhibit, Boston, MA
+  - date: 2023-05-01
+    who: Brendan Troesch
+    title: Investigating the Synthesis of M1-Type Mixed-Metal Oxide Catalysts
+    where: Pittsburgh-Cleveland Catalysis Society Conference, University Park, PA

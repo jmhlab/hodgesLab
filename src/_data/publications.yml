@@ -1,0 +1,282 @@
+# ---------------------------------------------------------------------------
+# Publications. Add a new paper at the TOP with the next number.
+#
+#   - n: 26
+#     title: Paper title
+#     authors: Last, F.M., Last, F.M., Hodges, J.M.
+#     journal: Chem. Mater.          # abbreviated
+#     year: 2026
+#     volume: "68"                    # optional
+#     pages: 1-10                     # optional
+#     doi: 10.1021/...                # optional; a link is made from it
+#     url: https://...                # optional, used instead of the doi
+#     status: Under review            # optional; shown instead of volume/pages
+#     tags: [chalcogenides, thermoelectrics]   # optional; used for filters
+#     era: psu                        # psu (2023–) or earlier (2014–2020)
+#
+# Names listed in site.yml -> member_names are shown in bold automatically.
+# ---------------------------------------------------------------------------
+- n: 25
+  title: Synthesis and Optoelectronic Structure–Property Relationships in Layered AMM′Q3 Chalcogenides
+  authors: Tassanov, A., Lee, H., Xia, Y., Hodges, J.M.
+  journal: Chem. Mater.
+  year: 2026
+  doi: 10.1021/acs.chemmater.6c00212
+  tags: [chalcogenides]
+  era: psu
+
+- n: 24
+  title: Cation Disorder in AgSbTe2 Leads to Glasslike Ultralow Thermal Conductivity
+  authors: Kwon, S., Yi, S., Hyun, S., Hodges, J.M., Xia, Y.
+  journal: Phys. Rev. Applied
+  year: 2026
+  doi: 10.1103/vcln-3c8m
+  tags: [thermoelectrics]
+  era: psu
+
+- n: 23
+  title: High-Entropy Design of Transition Metal Oxide Semiconductors with Ultra-Low Thermal Conductivity
+  authors: Robertson, R.A., et al.
+  journal: Commun. Mater.
+  year: 2026
+  doi: 10.1038/s43246-026-01103-2
+  tags: [oxides, thermoelectrics]
+  era: psu
+
+- n: 22
+  title: "Immersion Freezing Efficiency of ZnAl2O4 and MgAl2O4 Spinels, ZnO, and MgO: The Role of Oxygen Vacancies"
+  authors: Mitch, R., Tassanov, A., Troesch, B., et al.
+  journal: J. Phys. Chem. A
+  year: 2026
+  volume: "130"
+  pages: 1524–1533
+  tags: [oxides]
+  era: psu
+
+- n: 21
+  title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
+  authors: Tassanov, A., Yessengazin, A., Lee, H., et al.
+  journal: ""
+  year: 2026
+  status: Under review
+  tags: [chalcogenides]
+  era: psu
+
+- n: 20
+  title: Converting Oxide Precursors into Microporous MoVBiOx with High Activity for Oxidative Dehydrogenation of Ethane
+  authors: Troesch, B., Thanthrige, S.B., Wang, K., Noh, G., Hodges, J.M.
+  journal: ChemRxiv
+  year: 2025
+  doi: 10.26434/chemrxiv-2025-51zh8
+  tags: [oxides, catalysis]
+  era: psu
+
+- n: 19
+  title: Rational Pathways to Ordered Multianion Chalcogenides Using Retrosynthetic Crystal Chemistry
+  authors: Tassanov, A., Lee, H., Xia, Y., Hodges, J.M.
+  journal: J. Am. Chem. Soc.
+  year: 2024
+  volume: "146"
+  pages: 32627–32639
+  doi: 10.1021/jacs.4c11617
+  tags: [chalcogenides]
+  era: psu
+
+- n: 18
+  title: Layered NaBa2M3Q5 (M = Cu, Ag; Q = S, Se) Chalcogenides and Local Ordering in Their Mixed-Anion Compositions
+  authors: Tassanov, A., Lee, H., Xia, Y., Hodges, J.M.
+  journal: Inorg. Chem.
+  year: 2024
+  volume: "63"
+  pages: 15584–15591
+  doi: 10.1021/acs.inorgchem.4c00534
+  tags: [chalcogenides]
+  era: psu
+
+- n: 17
+  title: "Periodic TableTalks: A Continuing Resource for Communicating Inorganic Chemistry in the Post-Pandemic Era"
+  authors: Wilson, J.J., Hodges, J.M.
+  journal: Inorg. Chem.
+  year: 2023
+  volume: "62"
+  pages: 14135–14141
+  doi: 10.1021/acs.inorgchem.3c02525
+  tags: [outreach]
+  era: psu
+
+# ----- before Penn State -----------------------------------------------------
+- n: 16
+  title: "Mixed-Valent Copper Chalcogenides: Tuning Structures and Electronic Properties Using Multiple Anions"
+  authors: J.M. Hodges, Y. Xia, C. Malliakis, T. Slade, C. Wolverton, M.G. Kanatzidis
+  journal: Chem. Mater.
+  year: 2020
+  volume: "32"
+  pages: 10146–10154
+  doi: 10.1021/acs.chemmater.0c03620
+  tags: [chalcogenides]
+  era: earlier
+
+- n: 15
+  title: Thermoelectrics. From History, a Window on the Future
+  authors: D. Beretta, N. Neophytou, J.M. Hodges, M.G. Kanatzidis, D. Narducci, M. Martin-Gonzalez, M. Beekman, B. Balke, G. Cerretti, W. Tremel, A. Zevalkink, A.I. Hofmann, C. Muller, B. Doling, M. Campoy-Quiles, M. Caironi
+  journal: Mat. Sci. Eng. R Rep.
+  year: 2019
+  volume: "138"
+  pages: 210–255
+  url: https://www.sciencedirect.com/science/article/pii/S0927796X18301566
+  tags: [thermoelectrics]
+  era: earlier
+
+- n: 14
+  title: "Chemical Insights into PbSe-x%HgSe: High Power Factor and Improved Thermoelectric Performance by Alloying with Discordant Atoms"
+  authors: J.M. Hodges, S. Hao, J. Grovogui, X. Zhang, T. Bailey, X. Li, Z. Gan, Y. Hu, C. Uher, V.P. Dravid, C. Wolverton, M.G. Kanatzidis
+  journal: J. Am. Chem. Soc.
+  year: 2018
+  volume: "140"
+  pages: 18115–18123
+  doi: 10.1021/jacs.8b11050
+  tags: [thermoelectrics]
+  era: earlier
+
+- n: 13
+  title: "Two-Dimensional CsAg5Te3-xSx Semiconductors: Multi-Anion Chalcogenides with Dynamic Disorder and Ultralow Thermal Conductivity"
+  authors: J.M. Hodges, Y. Xia, G.C.B. Alexander, C.D. Malliakis, M.K.Y. Chan, M.G. Kanatzidis
+  journal: Chem. Mater.
+  year: 2018
+  volume: "30"
+  pages: 7245–7254
+  doi: 10.1021/acs.chemmater.8b03306
+  tags: [chalcogenides, thermoelectrics]
+  era: earlier
+
+- n: 12
+  title: "Ag2Se to KAg3Se2: Suppressing Order-Disorder Transitions via Reduced Dimensionality"
+  authors: A.J.E. Rettie, C.D. Malliakis, A.S. Botana, J.M. Hodges, F. Han, R. Huang, D.Y. Chung, M.G. Kanatzidis
+  journal: J. Am. Chem. Soc.
+  year: 2018
+  volume: "140"
+  pages: 9193–9202
+  doi: 10.1021/jacs.8b04888
+  tags: [chalcogenides]
+  era: earlier
+
+- n: 11
+  title: Lattice Thermal Transport in Group-II Alloyed PbTe
+  authors: Y. Xia, J.M. Hodges, M.G. Kanatzidis, M.K.Y. Chan
+  journal: Appl. Phys. Lett.
+  year: 2018
+  volume: "112"
+  pages: "181906"
+  doi: 10.1063/1.5002587
+  tags: [thermoelectrics]
+  era: earlier
+
+- n: 10
+  title: Synthetic Deconvolution of Interfaces and Materials Components in Hybrid Nanoparticles
+  authors: J.L. Fenton, J.M. Hodges, R.E. Schaak
+  journal: Chem. Mater.
+  year: 2017
+  volume: "29"
+  pages: 6168–6177
+  doi: 10.1021/acs.chemmater.7b02556
+  tags: [nanoparticles]
+  era: earlier
+
+- n: 9
+  title: Controlling Configurational Isomerism in Three-Component Colloidal Hybrid Nanoparticles
+  authors: J.M. Hodges, R.E. Schaak
+  journal: Acc. Chem. Res.
+  year: 2017
+  volume: "50"
+  pages: 1433–1440
+  doi: 10.1021/acs.accounts.7b00105
+  tags: [nanoparticles]
+  era: earlier
+
+- n: 8
+  title: Insights into the Seeded-Growth Synthesis of Colloidal Hybrid Nanoparticles
+  authors: J.M. Hodges, J.R. Morse, J.L. Fenton, J.D. Ackerman, L.T. Alameda, R.E. Schaak
+  journal: Chem. Mater.
+  year: 2017
+  volume: "29"
+  pages: 106–119
+  doi: 10.1021/acs.chemmater.6b02795
+  tags: [nanoparticles]
+  era: earlier
+
+- n: 7
+  title: "Microscopic Investigation of Chemoselectivity in Ag-Pt-Fe3O4 Heterotrimer Formation: Mechanistic Insights and Implications for Controlling High-Order Hybrid Nanoparticle Morphology"
+  authors: J.M. Hodges, J.R. Morse, M.E. Williams, R.E. Schaak
+  journal: J. Am. Chem. Soc.
+  year: 2016
+  volume: "137"
+  pages: 15493–15500
+  doi: 10.1021/jacs.5b10254
+  tags: [nanoparticles]
+  era: earlier
+
+- n: 6
+  title: "Preserving Both Anion and Cation Sublattice Features during a Nanocrystal Cation-Exchange Reaction: Synthesis of Metastable Wurtzite-Type CoS and MnS"
+  authors: A.E. Powell, J.M. Hodges, R.E. Schaak
+  journal: J. Am. Chem. Soc.
+  year: 2016
+  volume: "138"
+  pages: 471–474
+  doi: 10.1021/jacs.5b10624
+  tags: [nanoparticles, chalcogenides]
+  era: earlier
+
+- n: 5
+  title: Colloidally-Synthesized Cobalt Molybdenum Nanoparticles as Active and Stable Electrocatalysts for the Hydrogen Evolution Reaction under Alkaline Conditions
+  authors: J.M. McEnaney, T.L. Soucy, J.M. Hodges, J.F. Callejas, J.S. Mondschein, R.E. Schaak
+  journal: J. Mater. Chem. A
+  year: 2016
+  volume: "4"
+  pages: 3077–3081
+  url: https://pubs.rsc.org/en/content/articlelanding/2016/TA/C5TA07055D
+  tags: [nanoparticles, catalysis]
+  era: earlier
+
+- n: 4
+  title: Colloidal ZnO and Zn1-xCoxO Tetrapod Nanocrystals with Tunable Arm Lengths
+  authors: J.M. Hodges, J.L. Fenton, J.L. Gray, R.E. Schaak
+  journal: Nanoscale
+  year: 2015
+  volume: "7"
+  pages: 16671–16676
+  url: https://pubs.rsc.org/en/content/articlelanding/2015/NR/C5NR04425A
+  tags: [nanoparticles, oxides]
+  era: earlier
+
+- n: 3
+  title: A Colloidal Hybrid Nanoparticle Insertion Reaction for Transforming Heterodimers to Heterotrimers
+  authors: C.G. Read, T.R. Gordon, J.M. Hodges, R.E. Schaak
+  journal: J. Am. Chem. Soc.
+  year: 2015
+  volume: "137"
+  pages: 12514–12517
+  doi: 10.1021/jacs.5b08850
+  tags: [nanoparticles]
+  era: earlier
+
+- n: 2
+  title: Sequential Anion and Cation Exchange Reactions for Complete Material Transformations of Nanoparticles with Morphological Control
+  authors: J.M. Hodges, K. Kletetschka, J.L. Fenton, C.G. Read, R.E. Schaak
+  journal: Angew. Chem. Int. Ed.
+  year: 2015
+  volume: "54"
+  pages: 8669–8672
+  doi: 10.1002/ange.201504099
+  tags: [nanoparticles]
+  era: earlier
+
+- n: 1
+  title: "Ternary Hybrid Nanoparticle Isomers: Directing the Nucleation of Ag on Pt-Fe3O4 Using a Solid-State Protecting Group"
+  authors: J.M. Hodges, A.J. Biacchi, R.E. Schaak
+  journal: ACS Nano
+  year: 2014
+  volume: "8"
+  pages: 1047–1055
+  doi: 10.1021/nn405943z
+  tags: [nanoparticles]
+  era: earlier
