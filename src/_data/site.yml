@@ -11,13 +11,13 @@ description: >
 
 # Headline on the homepage. Keep it short; the second line is highlighted.
 hero:
-  line1: We can make
-  line2: anything.
-  kicker: "// Solid state chemistry — Penn State"
+  line1: Solid State Chemistry
+  line2: at Penn State
+  kicker: "// Hodges Research Group — Department of Chemistry"
   blurb: >
-    Solids that don't exist yet: microporous oxides, metal chalcogenides, and
-    multi-anion materials for thermoelectrics and heterogeneous catalysis —
-    synthesized at high temperature, characterized in house.
+    Microporous oxides, metal chalcogenides, and multi-anion materials for
+    thermoelectrics and heterogeneous catalysis — synthesized at high
+    temperature, characterized in house.
   # which structure rotates behind the headline (see src/_data/structures.yml)
   structure: KCu7Se4
 
@@ -34,8 +34,8 @@ stats:
 
 # Recruiting banner
 recruiting:
-  headline: We're looking for students interested in materials synthesis and solid-state chemistry.
-  sub: Contact Jim directly if you want to learn more about joining the group.
+  headline: We can make anything. Come learn how.
+  sub: We're looking for students interested in materials synthesis and solid-state chemistry. Contact Jim directly to learn more about joining the group.
   button: Contact Jim
 
 contact:
