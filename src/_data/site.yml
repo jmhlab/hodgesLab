@@ -11,12 +11,13 @@ description: >
 
 # Headline on the homepage. Keep it short; the second line is highlighted.
 hero:
-  line1: Making solids that
-  line2: don't exist yet.
+  line1: We can make
+  line2: anything.
+  kicker: "// Solid state chemistry — Penn State"
   blurb: >
-    Microporous oxides, metal chalcogenides, and multi-anion materials for
-    thermoelectrics and heterogeneous catalysis — synthesized at high
-    temperature, characterized in house.
+    Solids that don't exist yet: microporous oxides, metal chalcogenides, and
+    multi-anion materials for thermoelectrics and heterogeneous catalysis —
+    synthesized at high temperature, characterized in house.
   # which structure rotates behind the headline (see src/_data/structures.yml)
   structure: KCu7Se4
 

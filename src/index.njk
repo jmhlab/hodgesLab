@@ -9,7 +9,7 @@ structuresOnPage: true
     <div class="structure" data-structure="{{ heroStruct.file }}" data-view="{{ heroStruct.view }}" data-ortho="{{ heroStruct.ortho }}" data-spin="{{ heroStruct.spin }}" data-alpha="{{ heroStruct.alpha or 0.85 }}" data-scale="{{ heroStruct.scale or '' }}" data-cell="0" data-fit="0.95"></div>
   </div>
   <div class="hero-inner">
-    <div class="kicker">// Solid state chemistry — Penn State — 5th floor, Chemistry Building</div>
+    <div class="kicker">{{ site.hero.kicker }}</div>
     <h1>{{ site.hero.line1 }}<br><em>{{ site.hero.line2 }}</em></h1>
     <p>{{ site.hero.blurb | trim }}</p>
     <div class="hero-actions">
