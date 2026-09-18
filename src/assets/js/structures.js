@@ -41,11 +41,15 @@ function buildGroup(data, opts) {
   const verts = new Set(polys.flatMap(p => p.verts));
   const dummy = new THREE.Object3D();
 
-  // atoms
+  // atoms (a partially occupied site, occupancy < 0.9, is drawn as a translucent ghost)
+  const occ = data.occupancy || [];
+  const ghost = i => (occ[i] ?? 1) < 0.9;
   const byEl = {};
-  data.elements.forEach((el, i) => { if (!centres.has(i)) (byEl[el] ??= []).push(i); });
-  for (const [el, idx] of Object.entries(byEl)) {
-    const mat = new THREE.MeshStandardMaterial({ color: COLORS[el] ?? 0xaaaaaa, roughness: 0.45, metalness: 0.15 });
+  data.elements.forEach((el, i) => { if (!centres.has(i)) (byEl[el + (ghost(i) ? '~' : '')] ??= []).push(i); });
+  for (const [key, idx] of Object.entries(byEl)) {
+    const el = key.replace('~', ''); const isGhost = key.endsWith('~');
+    const mat = new THREE.MeshStandardMaterial({ color: COLORS[el] ?? 0xaaaaaa, roughness: 0.45, metalness: 0.15, transparent: isGhost, opacity: isGhost ? 0.38 : 1, depthWrite: !isGhost });
+    mat.userData.baseOpacity = isGhost ? 0.38 : 1;
     const mesh = new THREE.InstancedMesh(sphereGeo, mat, idx.length);
     const r = (RADII[el] ?? 0.5) * (scale[el] ?? 1);
     idx.forEach((i, k) => {
@@ -63,6 +67,7 @@ function buildGroup(data, opts) {
   for (const [a, b] of data.bonds) for (const [f, t] of [[a, b], [b, a]]) (halves[data.elements[f]] ??= []).push([f, t]);
   for (const [el, list] of Object.entries(halves)) {
     const mat = new THREE.MeshStandardMaterial({ color: new THREE.Color(COLORS[el] ?? 0xaaaaaa).multiplyScalar(0.85), roughness: 0.6, metalness: 0.1 });
+    mat.userData.baseOpacity = 1;
     const mesh = new THREE.InstancedMesh(cylGeo, mat, list.length);
     list.forEach(([f, t], k) => {
       const p = new THREE.Vector3(...data.positions[f]);
@@ -93,7 +98,9 @@ function buildGroup(data, opts) {
     geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
     geo.computeVertexNormals();
     const col = new THREE.Color(COLORS[poly.el] ?? 0xaaaaaa);
-    group.add(new THREE.Mesh(geo, new THREE.MeshPhysicalMaterial({ color: col, roughness: 0.35, metalness: 0.05, transparent: alpha < 1, opacity: alpha, flatShading: true, side: THREE.DoubleSide, clearcoat: 0.3 })));
+    const pm = new THREE.MeshPhysicalMaterial({ color: col, roughness: 0.35, metalness: 0.05, transparent: alpha < 1, opacity: alpha, flatShading: true, side: THREE.DoubleSide, clearcoat: 0.3 });
+    pm.userData.baseOpacity = alpha;
+    group.add(new THREE.Mesh(geo, pm));
     group.add(new THREE.LineSegments(new THREE.EdgesGeometry(geo, 10), new THREE.LineBasicMaterial({ color: col.clone().multiplyScalar(0.45) })));
   }
 
@@ -135,6 +142,25 @@ async function mount(el) {
   const scene = new THREE.Scene();
   const group = buildGroup(data, opts);
   scene.add(group);
+
+  // Optional second phase: data-structure-alt="<file>.json" crossfades between the two.
+  // data-labels="293 K|90 K" names them; data-hold / data-fade are seconds.
+  let alt = null, label = null;
+  if (el.dataset.structureAlt) {  // empty string = no alternate
+    const altData = await loadData(el.dataset.structureAlt);
+    alt = buildGroup(altData, opts);
+    alt.visible = false;
+    group.add(alt);            // shares the parent's rotation
+    const names = (el.dataset.labels || `${data.label || 'A'}|${altData.label || 'B'}`).split('|');
+    label = el.dataset.labelTarget ? document.querySelector(el.dataset.labelTarget) : null;
+    if (!label) { label = document.createElement('div'); label.className = 'structure-label'; el.appendChild(label); }
+    label.textContent = names[0];
+    alt.userData.names = names;
+  }
+  function setFade(g, f) {   // f: 0 hidden .. 1 shown
+    g.visible = f > 0.001;
+    g.traverse(o => { if (o.material) { const m = o.material; m.transparent = true; m.opacity = (m.userData.baseOpacity ?? 1) * f; } });
+  }
   scene.add(new THREE.HemisphereLight(0xffffff, 0x1a1d21, 0.55));
   const key = new THREE.DirectionalLight(0xfff1dc, 1.6); key.position.set(20, 30, 25); scene.add(key);
   const fill = new THREE.DirectionalLight(0x9fb4d8, 0.5); fill.position.set(-30, -10, 10); scene.add(fill);
@@ -172,10 +198,27 @@ async function mount(el) {
 
   let running = false, last = performance.now(), angle = 0;
   const tmpQ = new THREE.Quaternion();
+  const hold = parseFloat(el.dataset.hold ?? '4'), fadeT = parseFloat(el.dataset.fade ?? '1.2');
+  let phaseT = 0;
   function frame(now) {
     if (!running) return;
-    const dt = Math.min((now - last) / 1000, 0.1); last = now;
+    const raw = (now - last) / 1000; last = now;
+    const dt = Math.min(raw, 0.1);
     if (!reduceMotion) angle += opts.spin * dt;
+    if (alt) {
+      phaseT = (phaseT + Math.min(raw, 0.5)) % (2 * (hold + fadeT));
+      // 0..hold: A; hold..hold+fade: A->B; ..2hold+fade: B; then B->A
+      let f;
+      if (phaseT < hold) f = 0;
+      else if (phaseT < hold + fadeT) f = (phaseT - hold) / fadeT;
+      else if (phaseT < 2 * hold + fadeT) f = 1;
+      else f = 1 - (phaseT - 2 * hold - fadeT) / fadeT;
+      const s = f * f * (3 - 2 * f);   // ease
+      // fade the primary's children (not the alt group nested inside it)
+      group.children.forEach(o => { if (o !== alt) { if (o.material) { const m = o.material; m.transparent = true; m.opacity = (m.userData.baseOpacity ?? 1) * (1 - s); } } });
+      setFade(alt, s);
+      if (label) label.textContent = alt.userData.names[s < 0.5 ? 0 : 1];
+    }
     if (axisView) { tmpQ.setFromAxisAngle(new THREE.Vector3(0, 0, 1), angle); group.quaternion.copy(tmpQ).multiply(baseQ); }
     else { tmpQ.setFromAxisAngle(spinAxis, angle); group.quaternion.copy(tmpQ).multiply(baseQ); }
     renderer.render(scene, camera);

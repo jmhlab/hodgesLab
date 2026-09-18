@@ -120,6 +120,12 @@ sub { font-size: 0.72em; line-height: 0; }
   .hero-caption { display: none; }
 }
 
+/* --- about band ----------------------------------------------------------- */
+.about { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; padding: 64px var(--gutter); border-bottom: 1px solid var(--line); }
+.about-heading { font-size: 40px; line-height: 1; letter-spacing: -0.01em; }
+.about-body { font-size: 19px; line-height: 1.6; color: var(--muted); max-width: 900px; text-wrap: pretty; }
+@media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 16px; padding: 40px var(--gutter); } .about-heading { font-size: 32px; } .about-body { font-size: 17px; } }
+
 /* --- stat strip ----------------------------------------------------------- */
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
 .stat { padding: 28px var(--gutter); border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
@@ -279,5 +285,6 @@ sub { font-size: 0.72em; line-height: 0; }
 .structure canvas { display: block; width: 100% !important; height: 100% !important; }
 .structure-card { position: relative; background: var(--panel); border: 1px solid var(--line); aspect-ratio: 4 / 3; overflow: hidden; }
 .structure-card .structure { position: absolute; inset: 0; }
+.structure-label { position: absolute; left: 14px; top: 12px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--amber); pointer-events: none; }
 .structure-caption { font-family: var(--mono); font-size: 11px; color: var(--dim); letter-spacing: 0.06em; padding-top: 10px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

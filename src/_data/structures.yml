@@ -14,6 +14,19 @@ KCu7Se4:
   view: c
   ortho: true
   spin: 0.08
+# Two phases in one frame, crossfading: room temperature (disordered Cu, drawn as ghosts)
+# and 90 K (ordered). Same K-centred window so the tunnels line up.
+KCu7Se4_phases:
+  file: KCu7Se4_RT_win.json
+  alt: KCu7Se4_90K_win.json
+  labels: "293 K|90 K"
+  hold: 4
+  fade: 1.2
+  label: KCu₇Se₄, 293 K ↔ 90 K
+  caption: KCu₇Se₄
+  view: c
+  ortho: true
+  spin: 0.08
 pharmacosiderite:
   file: pharm_final.json
   label: Na₄[(TiO)₄(SiO₄)₃]·6H₂O

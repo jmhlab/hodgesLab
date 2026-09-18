@@ -31,7 +31,7 @@ structuresOnPage: true
   <div>
     <div class="area-media">
       {% if st %}
-      <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" aria-label="{{ st.label }}"></div>
+      <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" data-structure-alt="{{ st.alt or '' }}" data-labels="{{ st.labels or '' }}" data-hold="{{ st.hold or 4 }}" data-fade="{{ st.fade or 1.2 }}" aria-label="{{ st.label }}"></div>
       {% elif a.image %}<img src="{{ a.image }}" alt="{{ a.title }}">{% endif %}
     </div>
     {% if a.caption %}<div class="structure-caption">{{ a.caption }}</div>{% endif %}

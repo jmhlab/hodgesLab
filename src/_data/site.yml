@@ -14,12 +14,29 @@ hero:
   line1: Solid State Chemistry
   line2: at Penn State
   kicker: "// Hodges Research Group — Department of Chemistry"
-  blurb: >
-    Microporous oxides, metal chalcogenides, and multi-anion materials for
-    thermoelectrics and heterogeneous catalysis — synthesized at high
-    temperature, characterized in house.
+  blurb: We make new inorganic solids and find out what they're good for.
   # which structure rotates behind the headline (see src/_data/structures.yml)
   structure: KCu7Se4
+
+# "About" band under the hero. heading is one word; body is one paragraph.
+about:
+  heading: Synthesis.
+  body: >
+    The Hodges Group takes an interdisciplinary approach to the discovery of
+    new inorganic solids, drawing on chemistry, engineering, and physics. We
+    are interested in the science of synthesis itself: crystal growth,
+    crystallography, and the structure–property relationships that connect a
+    compound's atomic arrangement to its electronic, optoelectronic, and
+    catalytic behavior. A central aim is atomic-level control over the anions
+    in a solid, where the choice and placement of anions acts as a switch that
+    turns functionality on or off. Our targets range from mixed-anion
+    chalcogenides to group V/VI mixed-metal oxides made by hydrothermal routes,
+    an area that grew out of experience in industry, and we combine
+    high-temperature and solution synthesis with single-crystal diffraction and
+    in-house property measurement to understand what we make. Increasingly,
+    machine learning and AI guide where we look next, letting us treat
+    composition space as something to search on purpose rather than by trial
+    and error.
 
 # Numbers in the stat strip. Update when they change.
 stats:
