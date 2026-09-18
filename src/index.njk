@@ -21,7 +21,7 @@ structuresOnPage: true
       <a class="btn" href="{{ '/publications/' | url }}">Publications</a>
     </div>
   </div>
-  <div class="hero-caption">{% if site.hero.photo %}{{ site.hero.photo_caption }}{% else %}{{ heroStruct.caption or heroStruct.label }}{% if heroStruct.alt %} · <span id="hero-temp" style="color: var(--amber);"></span>{% endif %} · rendered from the group's crystal structures{% endif %}</div>
+  {% if not site.hero.photo or site.hero.photo_caption %}<div class="hero-caption">{% if site.hero.photo %}{{ site.hero.photo_caption }}{% else %}{{ heroStruct.caption or heroStruct.label }}{% if heroStruct.alt %} · <span id="hero-temp" style="color: var(--amber);"></span>{% endif %} · rendered from the group's crystal structures{% endif %}</div>{% endif %}
 </section>
 
 <section class="about">

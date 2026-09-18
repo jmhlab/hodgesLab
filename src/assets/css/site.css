@@ -112,7 +112,7 @@ sub { font-size: 0.72em; line-height: 0; }
 .hero-bg.has-photo::after {
   background:
     linear-gradient(to bottom, rgba(15,17,19,0.55) 0%, rgba(15,17,19,0.15) 30%, rgba(15,17,19,0.15) 70%, rgba(15,17,19,0.95) 100%),
-    radial-gradient(ellipse 55% 60% at 50% 50%, rgba(15,17,19,0.72) 0%, rgba(15,17,19,0.35) 60%, rgba(15,17,19,0.05) 100%); }
+    radial-gradient(ellipse 55% 60% at 50% 50%, rgba(15,17,19,0.78) 0%, rgba(15,17,19,0.40) 60%, rgba(15,17,19,0.05) 100%); }
 .hero-inner { position: relative; z-index: 1; padding: 112px var(--gutter) 104px; display: flex; flex-direction: column; align-items: center; gap: 28px; max-width: 1200px; }
 /* Sized so "Exploring the Periodic Table" always fits on one line (~15.7em wide in Space Grotesk). */
 .hero h1 { font-size: clamp(30px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -0.035em; }
