@@ -22,7 +22,7 @@ structuresOnPage: true
 
 <section class="about">
   <h2 class="about-heading">{{ site.about.heading }}</h2>
-  <p class="about-body">{{ site.about.body | trim }}</p>
+  <div class="about-body">{% for para in site.about.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}</div>
 </section>
 
 <section class="stats" aria-label="Group at a glance">

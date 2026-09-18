@@ -123,7 +123,7 @@ sub { font-size: 0.72em; line-height: 0; }
 /* --- about band ----------------------------------------------------------- */
 .about { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; padding: 64px var(--gutter); border-bottom: 1px solid var(--line); }
 .about-heading { font-size: 40px; line-height: 1; letter-spacing: -0.01em; }
-.about-body { font-size: 19px; line-height: 1.6; color: var(--muted); max-width: 900px; text-wrap: pretty; }
+.about-body { font-size: 19px; line-height: 1.6; color: var(--muted); max-width: 900px; text-wrap: pretty; display: flex; flex-direction: column; gap: 18px; }
 @media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 16px; padding: 40px var(--gutter); } .about-heading { font-size: 32px; } .about-body { font-size: 17px; } }
 
 /* --- stat strip ----------------------------------------------------------- */

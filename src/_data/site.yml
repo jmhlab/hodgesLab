@@ -21,22 +21,24 @@ hero:
 # "About" band under the hero. heading is one word; body is one paragraph.
 about:
   heading: Synthesis.
-  body: >
-    The Hodges Group takes an interdisciplinary approach to the discovery of
-    new inorganic solids, drawing on chemistry, engineering, and physics. We
-    are interested in the science of synthesis itself: crystal growth,
-    crystallography, and the structure–property relationships that connect a
-    compound's atomic arrangement to its electronic, optoelectronic, and
-    catalytic behavior. A central aim is atomic-level control over the anions
-    in a solid, where the choice and placement of anions acts as a switch that
-    turns functionality on or off. Our targets range from mixed-anion
-    chalcogenides to group V/VI mixed-metal oxides made by hydrothermal routes,
-    an area that grew out of experience in industry, and we combine
-    high-temperature and solution synthesis with single-crystal diffraction and
-    in-house property measurement to understand what we make. Increasingly,
-    machine learning and AI guide where we look next, letting us treat
-    composition space as something to search on purpose rather than by trial
-    and error.
+  # Paragraphs are separated by a blank line.
+  body: |
+    The Hodges Group discovers new inorganic solids and develops a fundamental
+    understanding of how they form and function. We approach synthesis as a
+    scientific problem in its own right, combining crystal growth,
+    high-temperature and solution synthesis, crystallography, and
+    physical-property measurements to connect atomic structure with electronic,
+    optoelectronic, and catalytic behavior.
+
+    A central goal of our research is to achieve atomic-level control over
+    anion chemistry. By controlling which anions are incorporated into a solid
+    and where they reside within its structure, we seek to understand how
+    subtle changes in local chemistry can switch functionality on, off, or into
+    entirely new regimes. Increasingly, we combine experiment with machine
+    learning and AI to navigate complex composition spaces and make the
+    discovery of new materials more deliberate and predictive. The goal is not
+    simply to find new materials, but to understand where to look for them and
+    how to design the chemistry that makes them useful.
 
 # Numbers in the stat strip. Update when they change.
 stats:
