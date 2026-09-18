@@ -9,12 +9,13 @@ description: >
   chalcogenides, and multi-anion materials for energy-related applications
   including thermoelectrics and heterogeneous catalysis.
 
-# Headline on the homepage. Keep it short; the second line is highlighted.
+# Headline on the homepage. Each line stays on one line on desktop; a "|" marks
+# where it may break on phones.
 hero:
-  line1: Exploring the Periodic Table
-  line2: with Solid State Chemistry
+  line1: Exploring the|Periodic Table
+  line2: with Solid State|Chemistry
   kicker: "// Hodges Research Group — Department of Chemistry"
-  blurb: We make new inorganic solids and find out what they're good for.
+  blurb: We can make anything.
   # Backdrop. If `photo` is set, that image (in src/assets/img/hero/) is used;
   # leave it blank to fall back to the 3D structure named below.
   photo: mnpq3.jpg

@@ -113,8 +113,11 @@ sub { font-size: 0.72em; line-height: 0; }
   background:
     linear-gradient(to bottom, rgba(15,17,19,0.55) 0%, rgba(15,17,19,0.15) 30%, rgba(15,17,19,0.15) 70%, rgba(15,17,19,0.95) 100%),
     radial-gradient(ellipse 55% 60% at 50% 50%, rgba(15,17,19,0.72) 0%, rgba(15,17,19,0.35) 60%, rgba(15,17,19,0.05) 100%); }
-.hero-inner { position: relative; z-index: 1; padding: 112px var(--gutter) 104px; display: flex; flex-direction: column; align-items: center; gap: 28px; max-width: 980px; }
-.hero h1 { font-size: clamp(40px, 5.2vw, 72px); line-height: 1.02; letter-spacing: -0.035em; }
+.hero-inner { position: relative; z-index: 1; padding: 112px var(--gutter) 104px; display: flex; flex-direction: column; align-items: center; gap: 28px; max-width: 1200px; }
+/* Sized so "Exploring the Periodic Table" always fits on one line (~15.7em wide in Space Grotesk). */
+.hero h1 { font-size: clamp(30px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -0.035em; }
+.hero h1 .h-lead, .hero h1 .h-sub { white-space: nowrap; }
+.hero h1 .ph { display: none; }
 .hero h1 .h-sub { color: var(--text); }
 .hero h1 .h-lead { color: var(--muted); font-weight: 500; }
 .hero p { font-size: clamp(17px, 1.5vw, 22px); line-height: 1.45; color: var(--muted); max-width: 640px; }
@@ -126,6 +129,11 @@ sub { font-size: 0.72em; line-height: 0; }
   .hero-inner { padding: 72px var(--gutter) 56px; }
   .hero-actions .btn { flex: 1 1 100%; }
   .hero-caption { display: none; }
+}
+@media (max-width: 700px) {
+  /* phones: four short lines instead of two long ones */
+  .hero h1 { font-size: clamp(34px, 9.6vw, 44px); }
+  .hero h1 .ph { display: inline; }
 }
 
 /* --- about band ----------------------------------------------------------- */

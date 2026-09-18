@@ -14,7 +14,7 @@ structuresOnPage: true
   </div>
   <div class="hero-inner">
     <div class="kicker">{{ site.hero.kicker }}</div>
-    <h1><span class="h-lead">{{ site.hero.line1 }}</span><br><span class="h-sub">{{ site.hero.line2 }}</span></h1>
+    <h1><span class="h-lead">{{ site.hero.line1 | replace("|", " <br class=\"ph\">") | safe }}</span><br><span class="h-sub">{{ site.hero.line2 | replace("|", " <br class=\"ph\">") | safe }}</span></h1>
     <p>{{ site.hero.blurb | trim }}</p>
     <div class="hero-actions">
       <a class="btn btn-amber" href="{{ '/research/' | url }}">Research</a>
