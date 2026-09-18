@@ -95,4 +95,4 @@ npm run serve      # then open http://localhost:8080
   live at `https://<username>.github.io/<repo>/`.
 
 Built with [Eleventy](https://www.11ty.dev/) and [three.js](https://threejs.org/).
-Type: Newsreader, Archivo, IBM Plex Mono via Google Fonts.
+Type: Space Grotesk (headings), Archivo (body), IBM Plex Mono (labels) via Google Fonts.
