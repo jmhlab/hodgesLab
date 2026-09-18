@@ -5,19 +5,23 @@ structuresOnPage: true
 ---
 {% set heroStruct = structures[site.hero.structure] %}
 <section class="hero">
-  <div class="hero-bg" aria-hidden="true">
-    <div class="structure" data-structure="{{ heroStruct.file }}" data-view="{{ heroStruct.view }}" data-ortho="{{ heroStruct.ortho }}" data-spin="{{ heroStruct.spin }}" data-alpha="{{ heroStruct.alpha or 0.85 }}" data-scale="{{ heroStruct.scale or '' }}" data-cell="0" data-fit="0.95" data-structure-alt="{{ heroStruct.alt or '' }}" data-labels="{{ heroStruct.labels or '' }}" data-hold="{{ heroStruct.hold or 4 }}" data-fade="{{ heroStruct.fade or 1.2 }}" data-label-target="#hero-temp"></div>
+  <div class="hero-bg{% if site.hero.photo %} has-photo{% endif %}" aria-hidden="true">
+    {% if site.hero.photo %}
+    <img class="hero-photo" src="{{ ('/assets/img/hero/' ~ site.hero.photo) | url }}" alt="" style="object-position: {{ site.hero.photo_focus or '50% 50%' }};">
+    {% else %}
+    <div class="structure" data-structure="{{ heroStruct.file }}" data-view="{{ heroStruct.view }}" data-ortho="{{ heroStruct.ortho }}" data-spin="{{ heroStruct.spin }}" data-alpha="{{ heroStruct.alpha or 0.85 }}" data-scale="{{ heroStruct.scale or '' }}" data-cell="0" data-fit="2.6" data-structure-alt="{{ heroStruct.alt or '' }}" data-labels="{{ heroStruct.labels or '' }}" data-hold="{{ heroStruct.hold or 4 }}" data-fade="{{ heroStruct.fade or 1.2 }}" data-label-target="#hero-temp"></div>
+    {% endif %}
   </div>
   <div class="hero-inner">
     <div class="kicker">{{ site.hero.kicker }}</div>
-    <h1>{{ site.hero.line1 }}<br><span class="h-sub">{{ site.hero.line2 }}</span></h1>
+    <h1><span class="h-lead">{{ site.hero.line1 }}</span><br><span class="h-sub">{{ site.hero.line2 }}</span></h1>
     <p>{{ site.hero.blurb | trim }}</p>
     <div class="hero-actions">
       <a class="btn btn-amber" href="{{ '/research/' | url }}">Research</a>
       <a class="btn" href="{{ '/publications/' | url }}">Publications</a>
     </div>
   </div>
-  <div class="hero-caption">{{ heroStruct.caption or heroStruct.label }}{% if heroStruct.alt %} · <span id="hero-temp" style="color: var(--amber);"></span>{% endif %} · rendered from the group's crystal structures</div>
+  <div class="hero-caption">{% if site.hero.photo %}{{ site.hero.photo_caption }}{% else %}{{ heroStruct.caption or heroStruct.label }}{% if heroStruct.alt %} · <span id="hero-temp" style="color: var(--amber);"></span>{% endif %} · rendered from the group's crystal structures{% endif %}</div>
 </section>
 
 <section class="about">

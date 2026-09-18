@@ -11,9 +11,9 @@
 KCu7Se4:
   file: KCu7Se4_RT.json
   label: KCu₇Se₄
-  view: c
+  view: c-tilt
   ortho: true
-  spin: 0.08
+  spin: 0          # still backdrop; set 0.03 for a very slow drift
 # Two phases in one frame, crossfading: room temperature (disordered Cu, drawn as ghosts)
 # and 90 K (ordered). Same K-centred window so the tunnels line up.
 KCu7Se4_phases:

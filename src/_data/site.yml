@@ -11,11 +11,16 @@ description: >
 
 # Headline on the homepage. Keep it short; the second line is highlighted.
 hero:
-  line1: Solid State Chemistry
-  line2: at Penn State
+  line1: Exploring the Periodic Table
+  line2: with Solid State Chemistry
   kicker: "// Hodges Research Group — Department of Chemistry"
   blurb: We make new inorganic solids and find out what they're good for.
-  # which structure rotates behind the headline (see src/_data/structures.yml)
+  # Backdrop. If `photo` is set, that image (in src/assets/img/hero/) is used;
+  # leave it blank to fall back to the 3D structure named below.
+  photo: gas.jpg
+  photo_focus: "50% 50%"      # which part of the photo stays centred when cropped
+  photo_caption: GaS crystals, optical micrograph
+  # which structure sits behind the headline when no photo is set (see structures.yml)
   structure: KCu7Se4
 
 # "About" band under the hero. heading is one word; body is one paragraph.
