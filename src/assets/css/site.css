@@ -84,7 +84,7 @@ sub { font-size: 0.72em; line-height: 0; }
   padding: 16px var(--gutter); border-bottom: 1px solid var(--line);
 }
 .brand { display: flex; align-items: center; gap: 12px; color: var(--amber); }
-.brand-mark { flex-shrink: 0; }
+.brand-mark { flex-shrink: 0; width: 42px; height: 42px; display: block; }
 .brand-name { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--text); }
 .brand-sub { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--dim); padding-left: 12px; border-left: 1px solid var(--line); }
 .nav-menu { display: flex; gap: 26px; font-family: var(--mono); font-size: 13px; letter-spacing: 0.04em; text-transform: uppercase; }

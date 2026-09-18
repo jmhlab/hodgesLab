@@ -9,7 +9,9 @@
   <meta property="og:description" content="{{ description or site.description | trim }}">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0f1113">
-  <link rel="icon" href="{{ '/assets/img/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/img/favicon.png' | url }}" type="image/png" sizes="64x64">
+  <link rel="icon" href="{{ '/assets/img/favicon-32.png' | url }}" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -20,7 +22,7 @@
 
 <header class="nav">
   <a class="brand" href="{{ '/' | url }}">
-    <svg class="brand-mark" width="28" height="28" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="48" height="48"/><path d="M32 8L56 32L32 56L8 32Z"/><circle cx="32" cy="32" r="7" fill="#7d6fb0" stroke="none"/></svg>
+    <img class="brand-mark" src="{{ '/assets/img/logo-mark.png' | url }}" alt="" width="42" height="42">
     <span class="brand-name">{{ site.name }}</span>
     <span class="brand-sub">PSU Chemistry</span>
   </a>
