@@ -29,6 +29,16 @@ structuresOnPage: true
   <div class="about-body">{% for para in site.about.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}</div>
 </section>
 
+<section class="pillars" aria-label="How we work">
+  {% for p in pillars %}
+  <a class="pillar" href="{{ p.link | url }}">
+    <div class="pillar-icon">{% set icon = p.icon %}{% include "pillar-icon.njk" %}</div>
+    <h3 class="pillar-title">{{ p.title }}</h3>
+    <p class="pillar-blurb">{{ p.blurb | trim }}</p>
+  </a>
+  {% endfor %}
+</section>
+
 <section class="stats" aria-label="Group at a glance">
   {% for s in site.stats %}
   <div class="stat"><div class="stat-value">{{ s.value }}</div><div class="eyebrow">{{ s.label }}</div></div>

@@ -1,0 +1,55 @@
+# ---------------------------------------------------------------------------
+# The "how we work" tiles under the Synthesis statement on the homepage.
+# Each one is a technique we use or a question we're trying to answer, not a
+# project. Keep titles to one or two words and blurbs to 2–3 sentences.
+#   icon:  one of  furnace | crystal | diffraction | wave | anion | network
+#   link:  where the tile goes (usually an anchor on the research page)
+# ---------------------------------------------------------------------------
+- title: synthesis
+  icon: furnace
+  link: /research/
+  blurb: >
+    Making a new solid is the first experiment, not the preparation for one.
+    We use high-temperature, flux, hydrothermal, and solution routes, and we
+    treat the question of why a reaction gives one phase and not another as
+    science in its own right.
+
+- title: crystal growth
+  icon: crystal
+  link: /research/
+  blurb: >
+    Single crystals are how we learn what a material really is. Growing them
+    well, and large enough to measure, is a craft we take seriously, from
+    chemical vapor transport to slow-cooled fluxes.
+
+- title: structure
+  icon: diffraction
+  link: /research/
+  blurb: >
+    Every property has a structural explanation. X-ray and neutron
+    diffraction on powders and single crystals tell us where the atoms are,
+    and, just as often, where they aren't.
+
+- title: properties
+  icon: wave
+  link: /research/
+  blurb: >
+    We measure what our materials do: electronic transport, optical response,
+    and catalytic activity. The goal is a line from atomic arrangement to
+    function that we can draw with confidence.
+
+- title: anion control
+  icon: anion
+  link: /research/
+  blurb: >
+    Choosing which anions sit in a solid, and where, is a switch for turning
+    function on and off. Mixed-anion oxides, chalcogenides, and halides let us
+    tune bonding one site at a time.
+
+- title: discovery
+  icon: network
+  link: /research/
+  blurb: >
+    Composition space is too large to search by hand. We pair experiment with
+    machine learning to decide where to look next, so that finding a new
+    material becomes deliberate rather than lucky.
