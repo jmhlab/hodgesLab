@@ -192,6 +192,12 @@ sub { font-size: 0.72em; line-height: 0; }
 }
 
 /* research page long form */
+.jump { display: flex; flex-wrap: wrap; gap: 6px 28px; padding: 0 var(--gutter) 28px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+.jump a { color: var(--muted); padding: 6px 0; }
+.jump a:hover { color: var(--amber); }
+.jump-n { color: var(--dim); margin-right: 8px; }
+.area-block { scroll-margin-top: 80px; }
+.area-block .area-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 .area-block { display: grid; grid-template-columns: 96px 1fr 520px; gap: 48px; padding: 64px var(--gutter); border-bottom: 1px solid var(--line); }
 .area-block h2 { font-size: 48px; line-height: 1.05; }
 .area-block .area-media { height: auto; aspect-ratio: 4 / 3; }

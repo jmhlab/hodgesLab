@@ -7,7 +7,7 @@
 # ---------------------------------------------------------------------------
 - title: synthesis
   icon: furnace
-  link: /research/
+  link: /research/#synthesis
   blurb: >
     Making a new solid is the first experiment, not the preparation for one.
     We use high-temperature, flux, hydrothermal, and solution routes, and we
@@ -16,7 +16,7 @@
 
 - title: crystal growth
   icon: crystal
-  link: /research/
+  link: /research/#crystal-growth
   blurb: >
     Single crystals are how we learn what a material really is. Growing them
     well, and large enough to measure, is a craft we take seriously, from
@@ -24,7 +24,7 @@
 
 - title: structure
   icon: diffraction
-  link: /research/
+  link: /research/#structure
   blurb: >
     Every property has a structural explanation. X-ray and neutron
     diffraction on powders and single crystals tell us where the atoms are,
@@ -32,7 +32,7 @@
 
 - title: properties
   icon: wave
-  link: /research/
+  link: /research/#properties
   blurb: >
     We measure what our materials do: electronic transport, optical response,
     and catalytic activity. The goal is a line from atomic arrangement to
@@ -40,7 +40,7 @@
 
 - title: anion control
   icon: anion
-  link: /research/
+  link: /research/#anion-control
   blurb: >
     Choosing which anions sit in a solid, and where, is a switch for turning
     function on and off. Mixed-anion oxides, chalcogenides, and halides let us
@@ -48,7 +48,7 @@
 
 - title: discovery
   icon: network
-  link: /research/
+  link: /research/#discovery
   blurb: >
     Composition space is too large to search by hand. We pair experiment with
     machine learning to decide where to look next, so that finding a new

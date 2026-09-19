@@ -45,28 +45,6 @@ structuresOnPage: true
   {% endfor %}
 </section>
 
-<section aria-labelledby="areas-h">
-  <div class="section-head" style="padding: 40px var(--gutter) 0;">
-    <h2 id="areas-h" class="eyebrow">Research areas</h2>
-    <a class="more" href="{{ '/research/' | url }}">All research →</a>
-  </div>
-  {% for a in research.areas %}
-  {% set st = structures[a.structure] %}
-  <div class="area-row">
-    <div class="area-n">0{{ loop.index }}</div>
-    <h3 class="area-title"><a href="{{ ('/research/#' ~ a.id) | url }}">{{ a.title }}</a></h3>
-    <p class="area-desc">{{ a.short }}</p>
-    <div class="area-media">
-      {% if st %}
-      <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" data-structure-alt="{{ st.alt or '' }}" data-labels="{{ st.labels or '' }}" data-hold="{{ st.hold or 4 }}" data-fade="{{ st.fade or 1.2 }}" aria-label="{{ st.label }}"></div>
-      {% elif a.image %}
-      <img src="{{ a.image }}" alt="{{ a.title }}">
-      {% endif %}
-    </div>
-  </div>
-  {% endfor %}
-</section>
-
 {% set latest = publications[0] %}
 <section class="latest" aria-label="Latest paper">
   <div class="eyebrow amber">Latest paper</div>
