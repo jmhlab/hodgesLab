@@ -9,47 +9,52 @@
   icon: ampoule
   link: /research/#synthesis
   blurb: >
-    Making a new solid is the first experiment, not the preparation for one.
-    We use high-temperature, flux, hydrothermal, and solution routes, and we
-    treat the question of why a reaction gives one phase and not another as
-    science in its own right.
+    Making a new solid is often the first experiment, not preparation for
+    one. We use high-temperature solid-state reactions, flux chemistry, vapor
+    transport, hydrothermal and high-pressure methods to reach materials with
+    targeted composition, structure, and properties.
 
 - title: crystal growth
   icon: flux
   link: /research/#crystal-growth
   blurb: >
-    Single crystals are how we learn what a material really is. Growing them
-    well, and large enough to measure, is a craft we take seriously, from
-    chemical vapor transport to slow-cooled fluxes.
+    Growing high-quality single crystals is a science unto itself. Beyond
+    enabling structure solutions for new compounds, large crystals let us
+    measure intrinsic and direction-dependent properties, revealing the
+    structure–property relationships that make a material functional.
 
 - title: materials discovery
   icon: loop
   link: /research/#discovery
   blurb: >
-    Composition space is too large to search by hand. We pair experiment with
-    machine learning to decide where to look next, so that finding a new
-    material becomes deliberate rather than lucky.
+    Reaction space has too many dimensions to explore one variable at a
+    time. We combine design of experiments with machine learning and AI to
+    optimize syntheses, target materials with specific features, and uncover
+    interconnected synthetic variables invisible to conventional approaches.
 
 - title: structure
   icon: cell
   link: /research/#structure
   blurb: >
-    Every property has a structural explanation. X-ray and neutron
-    diffraction on powders and single crystals tell us where the atoms are,
-    and, just as often, where they aren't.
+    Knowing the crystallographic sites that atoms occupy is essential to
+    understanding a material. We combine X-ray scattering with Raman
+    spectroscopy and HRTEM to elucidate structure–property relationships and
+    understand how synthesis affects order–disorder behavior.
 
 - title: site design
   icon: site
   link: /research/#site-design
   blurb: >
-    Choosing which atoms sit on which sites, anions especially, is a switch
-    for turning function on and off. Mixed-anion oxides, chalcogenides, and
-    halides let us tune bonding one site at a time.
+    Where atoms reside in a crystal can matter as much as which atoms are
+    present. Through systematic substitution and single-crystal diffraction,
+    we explore local ordering and turn what we learn into rules for
+    constructing atomically precise materials.
 
 - title: properties
   icon: wave
   link: /research/#properties
   blurb: >
-    We measure what our materials do: electronic transport, optical response,
-    and catalytic activity. The goal is a line from atomic arrangement to
-    function that we can draw with confidence.
+    We connect atomic structure to function through thermal and electronic
+    transport, magnetic susceptibility, and other in-house measurements,
+    while collaborations with engineers, spectroscopists, and others extend
+    our reach into catalysis, optoelectronics, and beyond.
