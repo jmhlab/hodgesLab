@@ -134,7 +134,6 @@ sub { font-size: 0.72em; line-height: 0; }
   /* phones: four short lines instead of two long ones */
   .hero h1 { font-size: clamp(34px, 9.6vw, 44px); }
   .hero h1 .ph { display: inline; }
-  .about-body { text-align: left; }   /* justified text rivers badly on narrow screens */
 }
 
 /* --- pillars: technique / challenge tiles under the About band ------------- */
@@ -322,3 +321,6 @@ sub { font-size: 0.72em; line-height: 0; }
 .structure-label { position: absolute; left: 14px; top: 12px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--amber); pointer-events: none; }
 .structure-caption { font-family: var(--mono); font-size: 11px; color: var(--dim); letter-spacing: 0.06em; padding-top: 10px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Narrow screens: justified text rivers badly, so fall back to ragged right. */
+@media (max-width: 700px) { .about-body { text-align: left; text-align-last: left; } .pillar-blurb { text-align: left; text-align-last: left; } }

@@ -18,7 +18,7 @@ hero:
   blurb: We can make anything.
   # Backdrop. If `photo` is set, that image (in src/assets/img/hero/) is used;
   # leave it blank to fall back to the 3D structure named below.
-  photo: mq_2.jpg
+  photo: mq_4.jpg
   photo_focus: "50% 50%"      # which part of the photo stays centred when cropped
   photo_caption: ""        # leave blank for no caption
   # which structure sits behind the headline when no photo is set (see structures.yml)
