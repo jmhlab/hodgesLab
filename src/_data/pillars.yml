@@ -10,9 +10,9 @@
   link: /research/#synthesis
   blurb: >
     Making a new solid is often the first experiment, not preparation for
-    one. We use high-temperature solid-state reactions, flux chemistry, vapor
-    transport, hydrothermal and high-pressure methods to reach materials with
-    targeted composition, structure, and properties.
+    one. We use high-temperature solid-state reactions, flux chemistry,
+    vapor transport, hydrothermal and high-pressure methods to reach
+    targeted compositions, structures, and properties.
 
 - title: crystal growth
   icon: flux
@@ -20,26 +20,26 @@
   blurb: >
     Growing high-quality single crystals is a science unto itself. Beyond
     enabling structure solutions for new compounds, large crystals let us
-    measure intrinsic and direction-dependent properties, revealing the
-    structure–property relationships that make a material functional.
+    measure intrinsic and direction-dependent properties, revealing
+    structure–property relationships that make materials functional.
 
 - title: materials discovery
   icon: loop
   link: /research/#discovery
   blurb: >
-    Reaction space has too many dimensions to explore one variable at a
-    time. We combine design of experiments with machine learning and AI to
-    optimize syntheses, target materials with specific features, and uncover
-    interconnected synthetic variables invisible to conventional approaches.
+    Reaction space has too many dimensions to explore one at a time. We
+    combine design of experiments with machine learning and AI to optimize
+    syntheses, target specific features, and uncover interconnected
+    variables invisible to conventional approaches.
 
 - title: structure
   icon: cell
   link: /research/#structure
   blurb: >
-    Knowing the crystallographic sites that atoms occupy is essential to
-    understanding a material. We combine X-ray scattering with Raman
+    Knowing which crystallographic sites atoms occupy is essential to
+    understanding a material. We combine X‑ray scattering with Raman
     spectroscopy and HRTEM to elucidate structure–property relationships and
-    understand how synthesis affects order–disorder behavior.
+    how synthesis affects order–disorder behavior.
 
 - title: site design
   icon: site
@@ -55,6 +55,6 @@
   link: /research/#properties
   blurb: >
     We connect atomic structure to function through thermal and electronic
-    transport, magnetic susceptibility, and other in-house measurements,
-    while collaborations with engineers, spectroscopists, and others extend
-    our reach into catalysis, optoelectronics, and beyond.
+    transport and magnetic susceptibility, while collaborations with
+    engineers, spectroscopists, and others extend our reach into catalysis,
+    optoelectronics, and beyond.
