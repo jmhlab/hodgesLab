@@ -1,6 +1,7 @@
 {#- Simple line icons for the homepage tiles. Stroke inherits currentColor. -#}
 <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-{%- if icon == "furnace" -%}
+{%- if icon == "ampoule" -%}
+  {#- sealed silica ampoule with a little powder in the bottom -#}
   <g transform="rotate(-30 32 32)">
     <path d="M26 20c0-3 2-6 6-10 4 4 6 7 6 10v32a6 6 0 0 1-12 0z"/>
     <path d="M32 10V4" stroke-width="1.8"/>
@@ -8,23 +9,34 @@
     <g fill="currentColor" stroke="none"><circle cx="29.5" cy="52" r="1.7"/><circle cx="34" cy="53" r="1.5"/><circle cx="32" cy="49" r="1.3"/><circle cx="36" cy="49.5" r="1.1"/></g>
     <path d="M28.5 22v22" stroke-width="1.2" opacity=".5"/>
   </g>
-{%- elif icon == "crystal" -%}
-  <path d="M32 8l14 14-6 30H24l-6-30z"/><path d="M18 22h28"/><path d="M32 8v44"/><path d="M24 52l8-30 8 30" stroke-width="1.6"/>
-{%- elif icon == "diffraction" -%}
-  <circle cx="32" cy="32" r="2.5" fill="currentColor" stroke="none"/>
-  <g fill="currentColor" stroke="none"><circle cx="32" cy="16" r="2"/><circle cx="32" cy="48" r="2"/><circle cx="16" cy="32" r="2"/><circle cx="48" cy="32" r="2"/>
-  <circle cx="20" cy="20" r="1.6"/><circle cx="44" cy="20" r="1.6"/><circle cx="20" cy="44" r="1.6"/><circle cx="44" cy="44" r="1.6"/>
-  <circle cx="32" cy="6" r="1.3"/><circle cx="32" cy="58" r="1.3"/><circle cx="6" cy="32" r="1.3"/><circle cx="58" cy="32" r="1.3"/>
-  <circle cx="12" cy="12" r="1.2"/><circle cx="52" cy="12" r="1.2"/><circle cx="12" cy="52" r="1.2"/><circle cx="52" cy="52" r="1.2"/></g>
-  <circle cx="32" cy="32" r="26" stroke-width="1.2" stroke-dasharray="2 4"/>
+{%- elif icon == "flux" -%}
+  {#- chemical vapour transport: sealed tube, a chunk of source at one end, needles growing at the other -#}
+  <rect x="3" y="18" width="58" height="28" rx="7"/>
+  <path d="M8 42l1.5-5 3.5-2 4 1.5 1.5 3.5-2 2.5H10z" fill="currentColor" stroke="none"/>
+  <path d="M22 32h10M29.5 29.5l2.5 2.5-2.5 2.5" stroke-width="1.3"/>
+  <g stroke-width="1.5"><path d="M56 43L36 39M56 43L40 32M56 43L46 26M56 43L52 23M56 43L30 43M56 43L48 33"/></g>
+  <g stroke-width="1.1" opacity=".6"><path d="M56 43L43 29M56 43L34 36"/></g>
+{%- elif icon == "loop" -%}
+  {#- the discovery loop: predict → make → measure → learn -#}
+  <path d="M46 20A18 18 0 0 0 14 28" /><path d="M14 28l-4-6M14 28l6-3" stroke-width="2"/>
+  <path d="M18 44a18 18 0 0 0 32-8"/><path d="M50 36l4 6M50 36l-6 3" stroke-width="2"/>
+  <g fill="currentColor" stroke="none"><circle cx="32" cy="14" r="3.2"/><circle cx="50" cy="26" r="3.2"/><circle cx="32" cy="50" r="3.2"/><circle cx="14" cy="38" r="3.2"/></g>
+  <g stroke-width="1.6"><path d="M28 30h8M32 26v8"/></g>
+{%- elif icon == "cell" -%}
+  {#- an open framework: corner-sharing tetrahedra around channels, after the group mark -#}
+  <path d="M8.0 32.3L4.2 38.8L11.8 38.8zM8.0 31.7L4.2 25.2L11.8 25.2zM16.0 46.1L12.2 52.6L19.8 52.6zM16.0 45.6L12.2 39.1L19.8 39.1zM24.0 59.4L20.2 52.9L27.8 52.9zM16.0 18.4L12.2 24.9L19.8 24.9zM16.0 17.9L12.2 11.4L19.8 11.4zM24.0 32.3L20.2 38.8L27.8 38.8zM24.0 31.7L20.2 25.2L27.8 25.2zM32.0 46.1L28.2 52.6L35.8 52.6zM32.0 45.6L28.2 39.1L35.8 39.1zM40.0 59.4L36.2 52.9L43.8 52.9zM24.0 4.6L20.2 11.1L27.8 11.1zM32.0 18.4L28.2 24.9L35.8 24.9zM32.0 17.9L28.2 11.4L35.8 11.4zM40.0 32.3L36.2 38.8L43.8 38.8zM40.0 31.7L36.2 25.2L43.8 25.2zM48.0 46.1L44.2 52.6L51.8 52.6zM48.0 45.6L44.2 39.1L51.8 39.1zM40.0 4.6L36.2 11.1L43.8 11.1zM48.0 18.4L44.2 24.9L51.8 24.9zM48.0 17.9L44.2 11.4L51.8 11.4zM56.0 32.3L52.2 38.8L59.8 38.8zM56.0 31.7L52.2 25.2L59.8 25.2z" fill="currentColor" stroke="none"/>
+{%- elif icon == "site" -%}
+  {#- a flat square lattice with one site picked out -#}
+  <path d="M8 8h48M8 24h48M8 40h48M8 56h48M8 8v48M24 8v48M40 8v48M56 8v48" stroke-width="1.3" opacity=".7"/>
+  <g fill="currentColor" stroke="none">
+    <circle cx="8" cy="8" r="2.6"/><circle cx="24" cy="8" r="2.6"/><circle cx="40" cy="8" r="2.6"/><circle cx="56" cy="8" r="2.6"/>
+    <circle cx="8" cy="24" r="2.6"/><circle cx="24" cy="24" r="2.6"/><circle cx="56" cy="24" r="2.6"/>
+    <circle cx="8" cy="40" r="2.6"/><circle cx="24" cy="40" r="2.6"/><circle cx="40" cy="40" r="2.6"/><circle cx="56" cy="40" r="2.6"/>
+    <circle cx="8" cy="56" r="2.6"/><circle cx="24" cy="56" r="2.6"/><circle cx="40" cy="56" r="2.6"/><circle cx="56" cy="56" r="2.6"/>
+  </g>
+  <circle cx="40" cy="24" r="6" fill="currentColor" stroke="none"/>
+  <circle cx="40" cy="24" r="10.5" stroke-width="1.5" stroke-dasharray="2.5 2.5"/>
 {%- elif icon == "wave" -%}
   <path d="M6 32c6 0 6-18 12-18s6 36 12 36 6-36 12-36 6 18 12 18"/><path d="M6 32h52" stroke-width="1.2" stroke-dasharray="2 4"/>
-{%- elif icon == "anion" -%}
-  <circle cx="20" cy="26" r="9"/><circle cx="44" cy="38" r="9" fill="currentColor" stroke="none"/>
-  <path d="M30 20l14-8M34 46l-14 8" stroke-width="1.6"/><path d="M38 12l6 0-1 6M26 54l-6 0 1-6" stroke-width="1.6"/>
-  <path d="M20 22v8M16 26h8" stroke-width="2"/><path d="M40 38h8" stroke="#0f1113" stroke-width="2"/>
-{%- elif icon == "network" -%}
-  <g fill="currentColor" stroke="none"><circle cx="14" cy="18" r="3"/><circle cx="14" cy="46" r="3"/><circle cx="32" cy="32" r="3.5"/><circle cx="50" cy="14" r="3"/><circle cx="50" cy="32" r="3"/><circle cx="50" cy="50" r="3"/></g>
-  <path d="M14 18l18 14L14 46M32 32l18-18M32 32h18M32 32l18 18" stroke-width="1.6"/>
 {%- endif -%}
 </svg>

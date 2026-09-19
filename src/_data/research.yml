@@ -37,6 +37,7 @@ areas:
     caption: Cs₂Hf₃S₆O — an oxychalcogenide made by design, from ribbons of HfS₆ and HfS₅O polyhedra
     paper: 19
 
+
   - id: crystal-growth
     title: Crystal growth
     short: Single crystals large enough to measure, grown by transport, flux, and slow cooling.
@@ -54,6 +55,24 @@ areas:
     image: research/crystals-mq2.jpg
     caption: Chalcogenide crystals from a flux growth, under the optical microscope
     paper: 25
+
+
+  - id: discovery
+    title: Materials discovery
+    short: Machine learning and experiment together, to decide where in composition space to look next.
+    long: |
+      Composition space is far too large to search by hand. We are building
+      tools that use the group's own synthesis outcomes, successes and
+      failures alike, together with published data to rank what to try next,
+      and then we go to the furnace and find out.
+
+      The aim is not to replace the chemist's intuition but to sharpen it, so
+      that finding a new material becomes deliberate rather than lucky. This
+      is the newest thread in the group and the one growing fastest.
+    keywords: [Machine learning, High-throughput synthesis, Composition-space mapping, Data-driven design]
+    image: research/crystals-mq1.jpg
+    caption: A crop of one synthesis outcome among many — the raw material for the models
+    paper: 23
 
   - id: structure
     title: Structure
@@ -73,6 +92,26 @@ areas:
     caption: Ti-pharmacosiderite — TiO₆ octahedra and SiO₄ tetrahedra around an open channel
     paper: 18
 
+
+  - id: site-design
+    title: Site design
+    short: Choosing which atoms occupy which sites — anions especially — as a switch for turning function on and off.
+    long: |
+      The cation gets most of the attention in solid-state chemistry, but the
+      anion sets the bonding. Swapping oxide for sulfide, or sulfide for
+      telluride, changes covalency, band gap, and structure in ways that are
+      large and, increasingly, predictable.
+
+      We make mixed-anion oxides, chalcogenides, and chalcohalides in which
+      two or more anions occupy distinct sites, and we study how that
+      ordering controls dimensionality, electronic structure, and stability.
+      This is the thread that ties most of the group's projects together.
+    keywords: [Oxychalcogenides, Chalcohalides, Mixed-anion ordering, Dimensional reduction]
+    structure: CsFeSTe
+    caption: Cs₃Fe₄S₂.₅Te₃.₅ — sulfide and telluride on separate sites in one framework
+    paper: 21
+
+
   - id: properties
     title: Properties
     short: Electronic, optical, thermal, and catalytic measurements that connect structure to function.
@@ -90,37 +129,3 @@ areas:
     caption: HfSSe — Hf layers between sheets of S and Se, a layered semiconductor
     paper: 24
 
-  - id: anion-control
-    title: Anion control
-    short: Choosing which anions sit in a solid, and where, as a switch for turning function on and off.
-    long: |
-      The cation gets most of the attention in solid-state chemistry, but the
-      anion sets the bonding. Swapping oxide for sulfide, or sulfide for
-      telluride, changes covalency, band gap, and structure in ways that are
-      large and, increasingly, predictable.
-
-      We make mixed-anion oxides, chalcogenides, and chalcohalides in which
-      two or more anions occupy distinct sites, and we study how that
-      ordering controls dimensionality, electronic structure, and stability.
-      This is the thread that ties most of the group's projects together.
-    keywords: [Oxychalcogenides, Chalcohalides, Mixed-anion ordering, Dimensional reduction]
-    structure: CsFeSTe
-    caption: Cs₃Fe₄S₂.₅Te₃.₅ — sulfide and telluride on separate sites in one framework
-    paper: 21
-
-  - id: discovery
-    title: Discovery
-    short: Machine learning and experiment together, to decide where in composition space to look next.
-    long: |
-      Composition space is far too large to search by hand. We are building
-      tools that use the group's own synthesis outcomes, successes and
-      failures alike, together with published data to rank what to try next,
-      and then we go to the furnace and find out.
-
-      The aim is not to replace the chemist's intuition but to sharpen it, so
-      that finding a new material becomes deliberate rather than lucky. This
-      is the newest thread in the group and the one growing fastest.
-    keywords: [Machine learning, High-throughput synthesis, Composition-space mapping, Data-driven design]
-    image: research/crystals-mq1.jpg
-    caption: A crop of one synthesis outcome among many — the raw material for the models
-    paper: 23
