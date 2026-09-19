@@ -28,7 +28,7 @@ permalink: /team/
       <h2 class="pi-name">{{ pi.name }}</h2>
       <div class="muted" style="margin-top: 8px;">{{ pi.title }}, {{ pi.institution }}</div>
     </div>
-    <p>{{ pi.bio | trim }}</p>
+    {% for para in pi.bio | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}
     <div class="history">
       {% for h in pi.history %}<span class="years">{{ h.years }}</span><span>{{ h.what }}</span>{% endfor %}
     </div>

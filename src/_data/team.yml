@@ -14,11 +14,23 @@ pi:
   institution: The Pennsylvania State University
   photo: jim.jpg
   email: hodges@psu.edu
-  bio: >
-    Jim is a materials chemist with a background in exploratory synthesis and
-    thermoelectrics. After earning his Ph.D. from Penn State and completing
-    postdoctoral work at Northwestern, he developed materials for catalysis and
-    adsorbent technologies at Honeywell UOP.
+  # Paragraphs are separated by a blank line.
+  bio: |
+    Jim is a solid-state chemist interested in developing new synthetic
+    methods and chemical reactivities to access new materials, and in
+    inventing strategies to control where atoms reside within crystalline
+    lattices to tune properties and create new functionality. His research
+    group brings together exploratory synthesis, crystal growth, and
+    crystallography with emerging AI-driven approaches to materials
+    discovery.
+
+    His background spans solid-state chemistry, porous materials for
+    catalysis and separations, and nanomaterials, including industrial
+    research at Honeywell UOP. He holds eight U.S. patents and has served as
+    Chair of the Solid State Chemistry subdivision of the ACS Division of
+    Inorganic Chemistry. Jim is also active in STEM education and outreach
+    through collaborations with local educators, classroom lectures, and
+    hands-on demonstrations.
   history:
     - years: 2019–2021
       what: R&D Scientist, New Materials Group, Honeywell UOP
