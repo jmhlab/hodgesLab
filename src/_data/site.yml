@@ -19,7 +19,9 @@ hero:
   # Backdrop. If `photo` is set, that image (in src/assets/img/hero/) is used;
   # leave it blank to fall back to the 3D structure named below.
   photo: mq_4.jpg
-  photo_focus: "50% 50%"      # which part of the photo stays centred when cropped
+  photo_focus: "50% 50%"        # which part of the photo stays centred when cropped (desktop)
+  photo_phone: mq_4_phone.jpg   # optional: a different crop of the photo for phones (blank = use photo)
+  photo_focus_phone: "50% 50%"  # focus point for the phone crop (left 0% … right 100%)
   photo_caption: ""        # leave blank for no caption
   # which structure sits behind the headline when no photo is set (see structures.yml)
   structure: KCu7Se4

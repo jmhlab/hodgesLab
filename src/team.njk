@@ -19,6 +19,13 @@ permalink: /team/
   </div>
 </section>
 
+{% if team.group_photo %}
+<figure class="group-photo">
+  <img src="{{ ('/assets/img/team/' ~ team.group_photo) | url }}" alt="The Hodges Group">
+  {% if team.group_photo_caption %}<figcaption>{{ team.group_photo_caption }}</figcaption>{% endif %}
+</figure>
+{% endif %}
+
 {% set pi = team.pi %}
 <section class="pi" id="pi">
   <div class="eyebrow">Principal investigator</div>

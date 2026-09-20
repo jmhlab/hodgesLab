@@ -7,7 +7,10 @@ structuresOnPage: true
 <section class="hero">
   <div class="hero-bg{% if site.hero.photo %} has-photo{% endif %}" aria-hidden="true">
     {% if site.hero.photo %}
-    <img class="hero-photo" src="{{ ('/assets/img/hero/' ~ site.hero.photo) | url }}" alt="" style="object-position: {{ site.hero.photo_focus or '50% 50%' }};">
+    <picture>
+      {% if site.hero.photo_phone %}<source media="(max-width: 700px)" srcset="{{ ('/assets/img/hero/' ~ site.hero.photo_phone) | url }}">{% endif %}
+      <img class="hero-photo" src="{{ ('/assets/img/hero/' ~ site.hero.photo) | url }}" alt="" style="--focus: {{ site.hero.photo_focus or '50% 50%' }}; --focus-phone: {{ site.hero.photo_focus_phone or site.hero.photo_focus or '50% 50%' }};">
+    </picture>
     {% else %}
     <div class="structure" data-structure="{{ heroStruct.file }}" data-view="{{ heroStruct.view }}" data-ortho="{{ heroStruct.ortho }}" data-spin="{{ heroStruct.spin }}" data-alpha="{{ heroStruct.alpha or 0.85 }}" data-scale="{{ heroStruct.scale or '' }}" data-cell="0" data-fit="2.6" data-structure-alt="{{ heroStruct.alt or '' }}" data-labels="{{ heroStruct.labels or '' }}" data-hold="{{ heroStruct.hold or 4 }}" data-fade="{{ heroStruct.fade or 1.2 }}" data-label-target="#hero-temp"></div>
     {% endif %}

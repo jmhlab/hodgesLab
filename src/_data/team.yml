@@ -7,6 +7,10 @@
 # and add "now:" with where they went.
 # ---------------------------------------------------------------------------
 
+# Group photo across the top of the page (in src/assets/img/team/). Blank = none.
+group_photo: group.jpg
+group_photo_caption: The group, summer 2025
+
 pi:
   name: James M. Hodges
   short: Jim
@@ -32,7 +36,9 @@ pi:
     through collaborations with local educators, classroom lectures, and
     hands-on demonstrations.
   history:
-    - years: 2019–2021
+    - years: 2020–present
+      what: Assistant Professor of Chemistry, Penn State
+    - years: 2019–2020
       what: R&D Scientist, New Materials Group, Honeywell UOP
     - years: 2016–2019
       what: Postdoctoral Fellow, Northwestern University · Mercouri G. Kanatzidis
@@ -46,23 +52,6 @@ pi:
     - { label: Twitter, url: "https://twitter.com/HodgesChem" }
 
 graduate:
-  - name: Ayat Tassanov
-    joined: 2021
-    from: Aqtobe, Kazakhstan
-    degree: BS Chemistry (2021), Ulsan National Institute of Science and Technology
-    interests: Cooking, fishing, gaming, hiking, being a dad
-    research: [Exploratory synthesis, Multianion materials, Chalcogenides, Thermoelectrics, Magnetic systems]
-    email: akt5745@psu.edu
-    photo: ayat.jpg
-
-  - name: Brendan Troesch
-    joined: 2021
-    from: Pittsburgh, Pennsylvania
-    degree: BA Chemistry & German (2021), Washington & Jefferson College
-    research: [Porous oxides, Thermal catalysis, Polyoxometalates]
-    email: bqt5271@psu.edu
-    photo: brendan.jpg
-
   - name: Pedro R. Trinidad-Pérez
     joined: 2022
     from: San Juan, Puerto Rico
@@ -159,7 +148,15 @@ alumni:
     - name: Dr. Daniel G. Chica
       years: "2025"
       now: Research Scientist, Materials Synthesis, Periodic Labs
-  graduate: []      # coming soon
+  graduate:
+    - name: Dr. Ayat Tassanov
+      years: "2021–2025"
+      degree: Ph.D. Chemistry
+      now: ""            # where did Ayat go? e.g. "Postdoc, ..."
+    - name: Dr. Brendan Troesch
+      years: "2021–2025"
+      degree: Ph.D. Chemistry
+      now: ""            # where did Brendan go?
   undergraduate:
     - name: Matthew Sedgwick
       years: "2024"
