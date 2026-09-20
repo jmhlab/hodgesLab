@@ -7,9 +7,12 @@
 # and add "now:" with where they went.
 # ---------------------------------------------------------------------------
 
-# Group photo across the top of the page (in src/assets/img/team/). Blank = none.
-group_photo: group.jpg
-group_photo_caption: The group, summer 2025
+# Group photos (in src/assets/img/team/). The first runs across the top of the
+# page; the second sits above the accomplishments. Leave either blank to omit.
+group_photo: group-diner.jpg
+group_photo_caption: Group breakfast
+group_photo_2: group.jpg
+group_photo_2_caption: The group, spring 2026
 
 pi:
   name: James M. Hodges
@@ -127,6 +130,13 @@ undergraduate:
     note: Penn State Millennium Scholar
     research: [Chalcogenides, Thermoelectrics]
     photo: matias.jpg
+
+  - name: LJ Johnston
+    joined: 2025
+    major: ""                 # e.g. Chemistry
+    graduation: ""            # e.g. Spring 2028
+    research: []
+    photo: lily.jpg
 
 # The non-human members. Delete this section if it stops being funny.
 others:

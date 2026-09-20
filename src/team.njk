@@ -83,6 +83,13 @@ permalink: /team/
   </div>
 </section>
 
+{% if team.group_photo_2 %}
+<figure class="group-photo">
+  <img src="{{ ('/assets/img/team/' ~ team.group_photo_2) | url }}" alt="The Hodges Group">
+  {% if team.group_photo_2_caption %}<figcaption>{{ team.group_photo_2_caption }}</figcaption>{% endif %}
+</figure>
+{% endif %}
+
 <section class="grid-2" id="accomplishments">
   <div class="section" style="border-bottom: 0;">
     <div class="section-head"><h2 class="eyebrow">Accomplishments</h2></div>
