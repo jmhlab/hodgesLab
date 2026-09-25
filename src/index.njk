@@ -46,12 +46,6 @@ structuresOnPage: true
   {% endfor %}
 </section>
 
-<section class="stats" aria-label="Group at a glance">
-  {% for s in site.stats %}
-  <div class="stat"><div class="stat-value">{{ s.value }}</div><div class="eyebrow">{{ s.label }}</div></div>
-  {% endfor %}
-</section>
-
 {% set latest = publications[0] %}
 <section class="latest" aria-label="Latest paper">
   <div class="eyebrow amber">Latest paper</div>

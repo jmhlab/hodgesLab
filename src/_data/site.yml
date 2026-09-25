@@ -68,17 +68,6 @@ about:
       scale, and establishing the structure–function relationships that
       reveal what it can do and why.
 
-# Numbers in the stat strip. Update when they change.
-stats:
-  - value: "25"
-    label: Publications at PSU
-  - value: "8"
-    label: Patents
-  - value: "10"
-    label: Graduate students
-  - value: "1200 °C"
-    label: Tube furnaces, six of them
-
 # Recruiting banner
 recruiting:
   headline: We can make anything. Come learn how.
