@@ -28,8 +28,12 @@ structuresOnPage: true
 </section>
 
 <section class="about">
-  <h2 class="about-heading">{{ site.about.heading }}</h2>
-  <div class="about-body">{% for para in site.about.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}</div>
+  {% for block in site.about %}
+  <div class="about-block">
+    <h2 class="about-heading">{{ block.heading }}</h2>
+    <div class="about-body">{% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}</div>
+  </div>
+  {% endfor %}
 </section>
 
 <section class="pillars" aria-label="How we work">

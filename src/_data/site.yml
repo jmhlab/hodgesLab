@@ -26,27 +26,47 @@ hero:
   # which structure sits behind the headline when no photo is set (see structures.yml)
   structure: KCu7Se4
 
-# "About" band under the hero. heading is one word; body is one paragraph.
+# "About" band under the hero: a few short headed statements. Each has a
+# one-word heading and one paragraph. Wrap a phrase in *asterisks* for italics.
 about:
-  heading: Synthesis.
-  # Paragraphs are separated by a blank line.
-  body: |
-    The Hodges Group discovers new inorganic solids and develops a fundamental
-    understanding of how they form and function. We approach synthesis as a
-    scientific problem in its own right, combining crystal growth,
-    high-temperature and solution synthesis, crystallography, and
-    physical-property measurements to connect atomic structure with electronic,
-    optoelectronic, and catalytic behavior.
+  - heading: Synthesis.
+    body: >
+      The Hodges Group discovers new inorganic solids and develops chemical
+      strategies to control their properties and open new regions of
+      materials space. We approach synthesis as a scientific problem in its
+      own right, using high-temperature solid-state and solution chemistries,
+      crystal-growth design, and increasingly machine learning and AI tools to
+      accelerate methods development and break through conventional synthetic
+      barriers. *We make new things.* Access to new matter—and the ability to
+      control its chemistry at the atomic scale—allows us to uncover how
+      structure gives rise to function and create new opportunities for
+      solving important problems.
 
-    A central goal of our research is to achieve atomic-level control over
-    anion chemistry. By controlling which anions are incorporated into a solid
-    and where they reside within its structure, we seek to understand how
-    subtle changes in local chemistry can switch functionality on, off, or into
-    entirely new regimes. Increasingly, we combine experiment with machine
-    learning and AI to navigate complex composition spaces and make the
-    discovery of new materials more deliberate and predictive. The goal is not
-    simply to find new materials, but to understand where to look for them and
-    how to design the chemistry that makes them useful.
+  - heading: Structure.
+    body: >
+      Synthesis and structure are inseparable. Without crystallographic
+      characterization, there is no discovery. We determine what we make at
+      the atomic scale, from long-range crystal structures to local
+      order–disorder phenomena, because we cannot understand how a material
+      behaves without first knowing precisely what it is. The combination of
+      new matter and precise structural knowledge creates unique platforms for
+      technological advance. Through invention of new materials and their
+      structural characterization, we uncover new structure–function
+      relationships, and provide the materials foundation for breakthroughs
+      across disciplines.
+
+  - heading: Collaboration.
+    body: >
+      Important problems rarely belong to a single discipline. By discovering
+      new materials and establishing precisely what they are, we create
+      platforms for chemists, physicists, engineers, and computational
+      scientists to ask questions that were not previously possible. We build
+      collaborations around these opportunities, combining complementary
+      expertise to connect fundamental chemistry with problems in energy,
+      catalysis, electronics, and beyond. Our group serves as a materials
+      engine for these efforts: creating new matter, defining it at the atomic
+      scale, and establishing the structure–function relationships that
+      reveal what it can do and why.
 
 # Numbers in the stat strip. Update when they change.
 stats:

@@ -28,6 +28,7 @@ module.exports = function (eleventyConfig) {
   // newest first by a date field
   eleventyConfig.addFilter("byDateDesc", (arr, key = "date") =>
     [...arr].sort((a, b) => new Date(b[key]) - new Date(a[key])));
+  eleventyConfig.addFilter("em", (str) => String(str ?? "").replace(/\*([^*]+)\*/g, "<em>$1</em>"));
   eleventyConfig.addFilter("split", (s, sep) => String(s).split(sep));
   eleventyConfig.addFilter("take", (arr, n) => arr.slice(0, n));
   // find one item by a field value: publications | find("n", 19)
