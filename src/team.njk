@@ -53,7 +53,7 @@ permalink: /team/
     <div class="person">
       {{ photo(p.photo, 'team', 'square', p.name) }}
       <h3 class="person-name">{{ p.name }}</h3>
-      <div class="person-meta">Joined {{ p.joined }} · {{ p.from }}<br>{{ p.degree }}{% if p.interests %}<br><span class="dim">{{ p.interests }}</span>{% endif %}</div>
+      <div class="person-meta">Joined {{ p.joined }}{% if p.from %} · {{ p.from }}{% endif %}{% if p.degree %}<br>{{ p.degree }}{% endif %}{% if p.interests %}<br><span class="dim">{{ p.interests }}</span>{% endif %}</div>
       <div class="tags">{{ p.research | join(' · ') }}</div>
       {% if p.email %}<a class="person-email" href="mailto:{{ p.email }}">{{ p.email }}</a>{% endif %}
     </div>
@@ -68,7 +68,7 @@ permalink: /team/
     <div class="person">
       {{ photo(p.photo, 'team', 'square', p.name) }}
       <h3 class="person-name">{{ p.name }}</h3>
-      <div class="person-meta">Joined {{ p.joined }} · {{ p.major }}<br>Expected graduation {{ p.graduation }}{% if p.note %}<br><span class="dim">{{ p.note }}</span>{% endif %}</div>
+      <div class="person-meta">Joined {{ p.joined }}{% if p.major %} · {{ p.major }}{% endif %}{% if p.graduation %}<br>Expected graduation {{ p.graduation }}{% endif %}{% if p.note %}<br><span class="dim">{{ p.note }}</span>{% endif %}</div>
       <div class="tags">{{ p.research | join(' · ') }}</div>
     </div>
     {% endfor %}

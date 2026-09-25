@@ -175,7 +175,7 @@ async function mount(el) {
   const dist = opts.ortho ? radius * 6 : radius / Math.tan((32 * Math.PI) / 360) * 1.05;
   camera.position.set(0, 0, dist);
   camera.lookAt(0, 0, 0);
-  if (!opts.ortho) scene.fog = new THREE.Fog(0x0f1113, dist + radius * 0.2, dist + radius * 2.4);
+  if (!opts.ortho) scene.fog = new THREE.Fog(0x1a1d21, dist + radius * 0.2, dist + radius * 2.4);
 
   // base orientation, then a slow turn about the vertical screen axis
   const base = new THREE.Euler(...(VIEWS[opts.view] || VIEWS.oblique));
