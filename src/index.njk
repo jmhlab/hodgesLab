@@ -30,20 +30,20 @@ hideRecruit: true
 
 <section class="about">
   {% for block in site.about %}
-  <div class="about-block">
+  <div class="about-col">
     <h2 class="about-heading">{{ block.heading }}</h2>
     <div class="about-body">{% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}</div>
+    <div class="col-tiles">
+      {% for p in pillars | where("under", block.key) %}
+      <a class="pillar" href="{{ p.link | url }}">
+        <div class="pillar-icon">{% set icon = p.icon %}{% include "pillar-icon.njk" %}</div>
+        <div class="pillar-text">
+          <h3 class="pillar-title">{{ p.title }}</h3>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
   </div>
-  {% endfor %}
-</section>
-
-<section class="pillars" aria-label="How we work">
-  {% for p in pillars %}
-  <a class="pillar" href="{{ p.link | url }}">
-    <div class="pillar-icon">{% set icon = p.icon %}{% include "pillar-icon.njk" %}</div>
-    <h3 class="pillar-title">{{ p.title }}</h3>
-    <p class="pillar-blurb">{{ p.blurb | trim }}</p>
-  </a>
   {% endfor %}
 </section>
 

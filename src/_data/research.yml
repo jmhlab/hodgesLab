@@ -94,7 +94,7 @@ areas:
 
 
   - id: site-design
-    title: Site design
+    title: Site control
     short: Choosing which atoms occupy which sites — anions especially — as a switch for turning function on and off.
     long: |
       The cation gets most of the attention in solid-state chemistry, but the

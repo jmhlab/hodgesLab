@@ -4,9 +4,12 @@
 # project. Keep titles to one or two words and blurbs to 2–3 sentences.
 #   icon:  one of  ampoule | flux | loop | cell | site | wave
 #   link:  where the tile goes (an anchor on the research page)
+#   under: which statement it sits beneath (synthesis | structure | collaboration)
 # ---------------------------------------------------------------------------
+
 - title: synthesis
   icon: ampoule
+  under: synthesis
   link: /research/#synthesis
   blurb: >
     Making a new solid is often the first experiment, not preparation for
@@ -14,17 +17,9 @@
     vapor transport, hydrothermal and high-pressure methods to reach
     targeted compositions, structures, and properties.
 
-- title: crystal growth
-  icon: flux
-  link: /research/#crystal-growth
-  blurb: >
-    Growing high-quality single crystals is a science unto itself. Beyond
-    enabling structure solutions for new compounds, large crystals let us
-    measure intrinsic and direction-dependent properties, revealing
-    structure–property relationships that make materials functional.
-
 - title: materials discovery
   icon: loop
+  under: synthesis
   link: /research/#discovery
   blurb: >
     Reaction space has too many dimensions to explore one at a time. We
@@ -34,6 +29,7 @@
 
 - title: structure
   icon: cell
+  under: structure
   link: /research/#structure
   blurb: >
     Knowing which crystallographic sites atoms occupy is essential to
@@ -41,8 +37,19 @@
     spectroscopy and HRTEM to elucidate structure–property relationships and
     how synthesis affects order–disorder behavior.
 
-- title: site design
+- title: crystal growth
+  icon: flux
+  under: structure
+  link: /research/#crystal-growth
+  blurb: >
+    Growing high-quality single crystals is a science unto itself. Beyond
+    enabling structure solutions for new compounds, large crystals let us
+    measure intrinsic and direction-dependent properties, revealing
+    structure–property relationships that make materials functional.
+
+- title: site control
   icon: site
+  under: collaboration
   link: /research/#site-design
   blurb: >
     Where atoms reside in a crystal can matter as much as which atoms are
@@ -52,6 +59,7 @@
 
 - title: properties
   icon: wave
+  under: collaboration
   link: /research/#properties
   blurb: >
     We connect atomic structure to function through thermal and electronic

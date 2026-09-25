@@ -29,7 +29,8 @@ hero:
 # "About" band under the hero: a few short headed statements. Each has a
 # one-word heading and one paragraph. Wrap a phrase in *asterisks* for italics.
 about:
-  - heading: Synthesis.
+  - key: synthesis
+    heading: Synthesis.
     body: >
       The Hodges Group discovers new inorganic solids and develops chemical
       strategies to control their properties and open new regions of
@@ -42,7 +43,8 @@ about:
       structure gives rise to function and create new opportunities for
       solving important problems.
 
-  - heading: Structure.
+  - key: structure
+    heading: Structure.
     body: >
       Synthesis and structure are inseparable. Without crystallographic
       characterization, there is no discovery. We determine what we make at
@@ -55,7 +57,8 @@ about:
       relationships, and provide the materials foundation for breakthroughs
       across disciplines.
 
-  - heading: Collaboration.
+  - key: collaboration
+    heading: Collaboration.
     body: >
       Important problems rarely belong to a single discipline. By discovering
       new materials and establishing precisely what they are, we create
