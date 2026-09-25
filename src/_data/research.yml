@@ -19,7 +19,7 @@ intro: >
 
 areas:
   - id: synthesis
-    title: Synthesis
+    title: Chemical reactivity
     short: High-temperature, flux, hydrothermal, and solution routes to solids nobody has made before.
     long: |
       Making a new compound is the first experiment, not the preparation for
@@ -75,7 +75,7 @@ areas:
     paper: 23
 
   - id: structure
-    title: Structure
+    title: Diffraction
     short: X-ray and neutron diffraction to find out where the atoms are — and where they aren't.
     long: |
       Every property has a structural explanation, so we measure structure

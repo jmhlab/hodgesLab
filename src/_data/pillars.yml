@@ -7,7 +7,7 @@
 #   under: which statement it sits beneath (synthesis | structure | collaboration)
 # ---------------------------------------------------------------------------
 
-- title: synthesis
+- title: chemical reactivity
   icon: ampoule
   under: synthesis
   link: /research/#synthesis
@@ -27,7 +27,7 @@
     syntheses, target specific features, and uncover interconnected
     variables invisible to conventional approaches.
 
-- title: structure
+- title: diffraction
   icon: cell
   under: structure
   link: /research/#structure
