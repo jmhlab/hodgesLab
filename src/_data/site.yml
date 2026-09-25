@@ -68,6 +68,10 @@ about:
       scale, and establishing the structure–function relationships that
       reveal what it can do and why.
 
+# Papers to read on the homepage: paper numbers from publications.yml, in the
+# order you want them shown. Leave empty to show the three most recent.
+featured_papers: []
+
 # Recruiting banner
 recruiting:
   headline: We can make anything. Come learn how.

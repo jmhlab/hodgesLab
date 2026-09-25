@@ -2,6 +2,7 @@
 layout: base.njk
 permalink: /
 structuresOnPage: true
+hideRecruit: true
 ---
 {% set heroStruct = structures[site.hero.structure] %}
 <section class="hero">
@@ -46,37 +47,22 @@ structuresOnPage: true
   {% endfor %}
 </section>
 
-{% set latest = publications[0] %}
-<section class="latest" aria-label="Latest paper">
-  <div class="eyebrow amber">Latest paper</div>
-  <div>
-    <div class="latest-title">{{ latest.title | chem | safe }}</div>
-    <div class="latest-cite">{{ latest.authors | boldMembers(site.member_names) | safe }} — <em>{{ latest.journal }}</em>, {{ latest.year }}</div>
+{# Selected papers: numbers from publications.yml, listed in site.yml → featured_papers.
+   Falls back to the three most recent while the list is empty. #}
+{% set picks = [] %}
+{% for n in site.featured_papers %}{% set pp = publications | find("n", n) %}{% if pp %}{% set picks = (picks.push(pp), picks) %}{% endif %}{% endfor %}
+{% if picks | length == 0 %}{% set picks = publications | take(3) %}{% endif %}
+<section class="reading">
+  <div class="section-head">
+    <h2 class="eyebrow">Papers to read</h2>
+    <a class="more" href="{{ '/publications/' | url }}">All publications →</a>
   </div>
-  {% if latest.doi or latest.url %}<a class="btn" href="{{ latest.url or ('https://doi.org/' ~ latest.doi) }}">Read the paper →</a>{% endif %}
-</section>
-
-<section class="grid-2">
-  <div class="section" style="border-bottom: 0;">
-    <div class="section-head">
-      <h2 class="eyebrow">Lab log</h2>
-      <a class="more" href="{{ '/news/' | url }}">All news →</a>
-    </div>
-    <div class="news-list">
-      {% for n in news | byDateDesc | take(6) %}
-      <div class="news-item"><span class="news-date">{{ n.date | dotDate }}</span><span class="news-title">{{ n.title }}</span></div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="section" style="border-bottom: 0;">
-    <div class="section-head">
-      <h2 class="eyebrow">Recent honours</h2>
-      <a class="more" href="{{ '/team/#accomplishments' | url }}">All →</a>
-    </div>
-    <div class="news-list">
-      {% for a in accomplishments.awards | byDateDesc | take(5) %}
-      <div class="news-item"><span class="news-date">{{ a.date | dotDate }}</span><span class="news-title">{{ a.who }} — {{ a.what }}</span></div>
-      {% endfor %}
-    </div>
+  <div class="reading-list">
+    {% for pp in picks %}
+    <a class="reading-item" href="{{ pp.url or ('https://doi.org/' ~ pp.doi) }}">
+      <div class="reading-title">{{ pp.title | chem | safe }}</div>
+      <div class="reading-cite">{{ pp.authors | boldMembers(site.member_names) | safe }} — <em>{{ pp.journal }}</em>, {{ pp.year }}</div>
+    </a>
+    {% endfor %}
   </div>
 </section>
