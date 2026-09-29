@@ -4,7 +4,7 @@
 # project. Keep titles to one or two words and blurbs to 2–3 sentences.
 #   icon:  one of  ampoule | flux | loop | cell | site | wave
 #   link:  where the tile goes (an anchor on the research page)
-#   under: which statement it sits beneath (synthesis | structure | collaboration)
+#   under: which statement it sits beneath (synthesis | structure | function)
 # ---------------------------------------------------------------------------
 
 - title: chemical reactivity
@@ -49,7 +49,7 @@
 
 - title: site control
   icon: site
-  under: collaboration
+  under: function
   link: /research/#site-design
   blurb: >
     Where atoms reside in a crystal can matter as much as which atoms are
@@ -59,7 +59,7 @@
 
 - title: properties
   icon: wave
-  under: collaboration
+  under: function
   link: /research/#properties
   blurb: >
     We connect atomic structure to function through thermal and electronic
