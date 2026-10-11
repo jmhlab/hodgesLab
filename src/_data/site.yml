@@ -45,7 +45,7 @@ about:
     heading: Structure.
     body: >
       Understanding a new material begins with determining its structure.
-      Without crystallographic characterization, there is no discovery.
+      *Without crystallographic characterization, there is no discovery.*
       Crystal growth is central to this effort, providing high-quality single
       crystals for structure determination and physical property
       measurements. We use X-ray diffraction, total scattering, and
@@ -57,16 +57,15 @@ about:
   - key: function
     heading: Function.
     body: >
-      Important problems rarely belong to a single discipline. By discovering
-      new materials and establishing precisely what they are, we create
-      platforms for chemists, physicists, engineers, and computational
-      scientists to ask questions that were not previously possible. We build
-      collaborations around these opportunities, combining complementary
-      expertise to connect fundamental chemistry with problems in energy,
-      catalysis, electronics, and beyond. Our group serves as a materials
-      engine for these efforts: creating new matter, defining it at the atomic
-      scale, and establishing the structure–function relationships that
-      reveal what it can do and why.
+      Well-defined crystalline solids are platforms for studying electronic
+      and optical phenomena and allow us to correlate these properties with
+      specific structural and chemical features. Careful measurement of
+      absorption and emission, electronic and thermal transport, and catalytic
+      behavior lets us connect crystallographic and local structure to
+      material function. We work closely with physicists, engineers, and
+      computational scientists to translate fundamental discoveries into
+      advances in energy-related applications. *Our group serves as the
+      materials engine for these efforts.*
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
