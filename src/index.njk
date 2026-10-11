@@ -35,12 +35,12 @@ hideRecruit: true
     <div class="about-body">{% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}</div>
     <div class="col-tiles">
       {% for p in pillars | where("under", block.key) %}
-      <a class="pillar" href="{{ p.link | url }}">
+      <div class="pillar">
         <div class="pillar-icon">{% set icon = p.icon %}{% include "pillar-icon.njk" %}</div>
         <div class="pillar-text">
           <h3 class="pillar-title">{{ p.title }}</h3>
         </div>
-      </a>
+      </div>
       {% endfor %}
     </div>
   </div>
