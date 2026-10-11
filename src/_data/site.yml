@@ -91,6 +91,7 @@ contact:
 
 # Main navigation (order matters)
 nav:
+  - { label: Home, url: / }
   - { label: Team, url: /team/ }
   - { label: Research, url: /research/ }
   - { label: Publications, url: /publications/ }
