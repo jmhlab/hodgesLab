@@ -159,7 +159,7 @@ sub { font-size: 0.72em; line-height: 0; }
 .about { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 56px; padding: 72px var(--gutter) 64px; max-width: 1400px; margin: 0 auto; border-bottom: 1px solid var(--line); }
 .about-col { display: flex; flex-direction: column; gap: 18px; }
 .about-heading { font-size: 34px; line-height: 1; letter-spacing: -0.03em; }
-.about-body { font-size: 16px; line-height: 1.6; color: var(--muted); text-align: justify; text-align-last: left; hyphens: auto; -webkit-hyphens: auto; text-wrap: pretty; display: flex; flex-direction: column; gap: 14px; }
+.about-body { font-size: 16px; line-height: 1.6; color: var(--muted); text-align: left; hyphens: manual; -webkit-hyphens: manual; text-wrap: pretty; display: flex; flex-direction: column; gap: 14px; }
 .col-tiles { display: flex; flex-direction: column; gap: 18px; margin-top: auto; padding-top: 26px; border-top: 1px solid var(--line); }
 .about-body { padding-bottom: 22px; }
 .pillar { display: grid; grid-template-columns: 88px 1fr; gap: 18px; align-items: center; color: inherit; text-decoration: none; }
@@ -167,7 +167,7 @@ sub { font-size: 0.72em; line-height: 0; }
 .pillar-icon svg { width: 60px; height: 60px; }
 .pillar:hover .pillar-icon { background: var(--amber); color: var(--bg); --panel: var(--amber); transform: translateY(-2px); }
 .pillar-title { font-family: var(--serif); font-size: 21px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
-.pillar-blurb { font-size: 14px; line-height: 1.5; color: var(--muted); margin-top: 6px; text-align: justify; text-align-last: left; hyphens: auto; -webkit-hyphens: auto; }
+.pillar-blurb { font-size: 14px; line-height: 1.5; color: var(--muted); margin-top: 6px; text-align: left; hyphens: manual; -webkit-hyphens: manual; }
 @media (max-width: 1000px) { .about { grid-template-columns: 1fr; gap: 56px; } }
 /* --- stat strip ----------------------------------------------------------- */
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
@@ -347,8 +347,6 @@ sub { font-size: 0.72em; line-height: 0; }
 .structure-label { position: absolute; left: 14px; top: 12px; font-family: var(--sans); font-weight: 600; font-size: 11px; letter-spacing: 0.08em; color: var(--amber); pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* Narrow screens: justified text rivers badly, so fall back to ragged right. */
-@media (max-width: 700px) { .about-body { text-align: left; text-align-last: left; } .pillar-blurb { text-align: left; text-align-last: left; } }
 
 /* --- team: group photo ------------------------------------------------------ */
 .group-photo { margin: 0; border-bottom: 1px solid var(--line); }
