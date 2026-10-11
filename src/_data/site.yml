@@ -44,16 +44,15 @@ about:
   - key: structure
     heading: Structure.
     body: >
-      Synthesis and structure are inseparable. Without crystallographic
-      characterization, there is no discovery. We determine what we make at
-      the atomic scale, from long-range crystal structures to local
-      order–disorder phenomena, because we cannot understand how a material
-      behaves without first knowing precisely what it is. The combination of
-      new matter and precise structural knowledge creates unique platforms for
-      technological advance. Through invention of new materials and their
-      structural characterization, we uncover new structure–function
-      relationships, and provide the materials foundation for breakthroughs
-      across disciplines.
+      Understanding a new material begins with determining its structure.
+      Without crystallographic characterization, there is no discovery.
+      Crystal growth is central to this effort, providing high-quality single
+      crystals for structure determination and physical property
+      measurements. We use X-ray diffraction, total scattering, and
+      spectroscopic probes such as Raman spectroscopy to understand structural
+      order across multiple length scales. Well-defined crystalline materials
+      allow us to identify the order–disorder features that underpin
+      transport and optical properties.
 
   - key: function
     heading: Function.
