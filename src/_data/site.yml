@@ -33,13 +33,13 @@ about:
     heading: Synthesis.
     body: >
       The Hodges Group develops new methods for preparing well-defined
-      inorganic solids across all length scales. Our work spans solution
-      chemistry, solid-state synthesis, and crystal growth over wide ranges of
-      temperature and pressure. Machine learning and statistical methods allow
-      us to navigate these multidimensional reaction spaces. *We make new
-      things.* Access to new materials enables new science and technology,
-      placing us at the center of collaborative research that addresses major
-      challenges in energy, the environment, and sustainable resources.
+      inorganic solids. Our work spans solution chemistry, solid-state
+      synthesis, and crystal growth. Machine learning and statistical methods
+      allow us to navigate these multidimensional reaction spaces. *We make
+      new things.* Access to new materials enables new science and
+      technology, placing us at the center of collaborative research that
+      addresses major challenges in energy, the environment, and sustainable
+      resources.
 
   - key: structure
     heading: Structure.
@@ -54,15 +54,14 @@ about:
   - key: function
     heading: Function.
     body: >
-      Well-defined crystalline solids are platforms for studying electronic
-      and optical phenomena and allow us to correlate these properties with
-      specific structural and chemical features. Careful measurement of
-      absorption and emission, electronic and thermal transport, and catalytic
-      behavior lets us connect crystallographic and local structure to
-      material function. We work closely with physicists, engineers, and
-      computational scientists to translate fundamental discoveries into
-      advances in energy-related applications. *Our group serves as the
-      materials engine for these efforts.*
+      Well-defined solids provide platforms for connecting structure to
+      material function. We measure optical, electronic, thermal, and
+      catalytic properties to understand how crystallographic and chemical
+      features give rise to new phenomena. Working closely with physicists,
+      engineers, and computational scientists, we establish chemical
+      principles that guide iterative advances while opening pathways to
+      unexpected discoveries. *Our group serves as the materials engine for
+      these efforts.*
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
