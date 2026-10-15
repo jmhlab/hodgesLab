@@ -2,6 +2,12 @@
 # Awards, fellowships, service. Newest at the top. "who" is free text.
 # ---------------------------------------------------------------------------
 awards:
+  - date: 2026-08-15
+    who: Ayat Tassanov
+    what: Ph.D. defended — postdoc with Kim See, University of Colorado
+  - date: 2026-06-15
+    who: Brendan Troesch
+    what: Ph.D. defended — ExxonMobil
   - date: 2025-08-01
     who: Brendan Troesch
     what: Poster presentation, ACS National Fall Meeting, Chicago, IL
@@ -52,6 +58,18 @@ awards:
     what: First Year Graduate Student Award
 
 presentations:
+  - date: 2026-07-01
+    who: Ayat Tassanov   # TODO confirm presenter
+    title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
+    where: 2026 Gordon Research Conference on Solid State Chemistry   # TODO confirm GRC/GRS, location, month
+  - date: 2026-06-01
+    who: Ayat Tassanov   # TODO confirm presenter
+    title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
+    where: 2026 Gordon Research Conference on Inorganic Chemistry   # TODO confirm GRC/GRS, location, month
+  - date: 2026-03-01
+    who: ""   # TODO who presented at ACS 2026
+    title: ""
+    where: 2026 ACS National Meeting   # TODO Spring/Fall, city
   - date: 2024-06-01
     who: Pedro Trinidad
     title: Tailoring Electronic Properties in Thermoelectric Materials through Site-Selective Doping
