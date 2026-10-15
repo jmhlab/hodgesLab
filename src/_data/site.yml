@@ -45,14 +45,11 @@ about:
     heading: Structure.
     body: >
       Understanding a new material begins with determining its structure.
-      *Without crystallographic characterization, there is no discovery.*
-      Crystal growth is central to this effort, providing high-quality single
-      crystals for structure determination and physical property
-      measurements. We use X-ray diffraction, total scattering, and
-      spectroscopic probes such as Raman spectroscopy to understand structural
-      order across multiple length scales. Well-defined crystalline materials
-      allow us to identify the order–disorder features that underpin
-      transport and optical properties.
+      *Without crystallographic characterization, there is no discovery.* We
+      combine single-crystal growth with X-ray diffraction, total scattering,
+      and spectroscopy to characterize newly synthesized materials.
+      Well-defined structures allow us to determine how subtle order–disorder
+      features influence electrical, optical, and catalytic properties.
 
   - key: function
     heading: Function.
