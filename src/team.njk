@@ -12,7 +12,7 @@ permalink: /team/
 <section class="page-head">
   <div>
     <div class="kicker">Team</div>
-    <h1>The people.</h1>
+    <h1>The team.</h1>
   </div>
   <div class="head-aside links">
     <a href="#pi">PI</a><a href="#graduate">Graduate</a><a href="#undergraduate">Undergraduate</a><a href="#accomplishments">Accomplishments</a><a href="#alumni">Alumni</a>
@@ -20,8 +20,11 @@ permalink: /team/
 </section>
 
 {% if team.group_photo %}
-<figure class="group-photo">
-  <img src="{{ ('/assets/img/team/' ~ team.group_photo) | url }}" alt="The Hodges Group">
+<figure class="group-photo collage">
+  <picture>
+    {% if team.group_photo_phone %}<source media="(max-width: 700px)" srcset="{{ ('/assets/img/team/' ~ team.group_photo_phone) | url }}">{% endif %}
+    <img src="{{ ('/assets/img/team/' ~ team.group_photo) | url }}" alt="The Hodges Group">
+  </picture>
   {% if team.group_photo_caption %}<figcaption>{{ team.group_photo_caption }}</figcaption>{% endif %}
 </figure>
 {% endif %}

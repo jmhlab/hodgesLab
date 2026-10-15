@@ -9,8 +9,9 @@
 
 # Group photos (in src/assets/img/team/). The first runs across the top of the
 # page; the second sits above the accomplishments. Leave either blank to omit.
-group_photo: group-diner.jpg
-group_photo_caption: Group breakfast
+group_photo: team-collage.jpg
+group_photo_phone: team-collage-phone.jpg   # optional stacked version for phones
+group_photo_caption: ""
 group_photo_2: group.jpg
 group_photo_2_caption: The group, spring 2026
 
