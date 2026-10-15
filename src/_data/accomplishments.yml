@@ -59,17 +59,9 @@ awards:
 
 presentations:
   - date: 2026-07-01
-    who: Ayat Tassanov   # TODO confirm presenter
-    title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
-    where: 2026 Gordon Research Conference on Solid State Chemistry   # TODO confirm GRC/GRS, location, month
-  - date: 2026-06-01
-    who: Ayat Tassanov   # TODO confirm presenter
-    title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
-    where: 2026 Gordon Research Conference on Inorganic Chemistry   # TODO confirm GRC/GRS, location, month
-  - date: 2026-03-01
-    who: ""   # TODO who presented at ACS 2026
-    title: ""
-    where: 2026 ACS National Meeting   # TODO Spring/Fall, city
+    who: Pedro Trinidad-Pérez
+    title: Synthesis and Thermoelectric Properties of p-type KCu₇S₄₋ₓSeₓ Sulfoselenides
+    where: Gordon Research Seminar and Gordon Research Conference on Solid State Chemistry, 2026 (posters)
   - date: 2024-06-01
     who: Pedro Trinidad
     title: Tailoring Electronic Properties in Thermoelectric Materials through Site-Selective Doping
