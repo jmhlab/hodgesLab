@@ -36,6 +36,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("byTenure", (arr) => [...(arr || [])].sort((a, b) => {
     const ja = Number(a.joined) || 0, jb = Number(b.joined) || 0;
     if (ja !== jb) return ja - jb;
+    const oa = a.order ?? 99, ob = b.order ?? 99;
+    if (oa !== ob) return oa - ob;
     const la = String(a.name).trim().split(/\s+/).pop().toLowerCase();
     const lb = String(b.name).trim().split(/\s+/).pop().toLowerCase();
     return la.localeCompare(lb);

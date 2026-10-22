@@ -53,7 +53,7 @@ graduate:
     email: prt5096@psu.edu
     photo: pedro.jpg
 
-  - name: Daniel Spainhouer
+  - name: Daniel W. Spainhour
     joined: 2022
     from: Tallahassee, Florida
     degree: BS Chemistry (2022), Florida State University
@@ -79,7 +79,7 @@ graduate:
     email: kbt5408@psu.edu
     photo: sonali.jpg
 
-  - name: Laine Brotherton
+  - name: Laine C. Brotherton
     joined: 2024
     from: Ann Arbor, Michigan
     degree: BS Chemistry (2024), University of Michigan
@@ -95,7 +95,7 @@ graduate:
     email: azy5231@psu.edu
     photo: azamat.jpg
 
-  - name: Keela Zambra
+  - name: Keela K. Zambre
     joined: 2025
     from: West Lafayette, Indiana
     degree: BS Chemistry (2025), Purdue University
@@ -114,6 +114,7 @@ graduate:
 undergraduate:
   - name: Matias S. Moreno
     joined: 2025
+    order: 1                  # optional: lower numbers list first within the same year
     major: Materials Science and Engineering
     graduation: Spring 2027
     note: Penn State Millennium Scholar
