@@ -53,15 +53,15 @@ about:
   - key: function
     heading: Function
     body: >
-      Structure matters because of what it lets a material do. We measure
-      electrical and thermal transport as a function of temperature,
-      photoluminescence and optical absorption, and gas adsorption and
-      surface area, and we work with collaborators who bring the measurements
-      we lack. The targets are practical: semiconductors for optoelectronics,
-      thermoelectrics with low lattice thermal conductivity, and
-      heterogeneous catalysts for selective oxidation, each of which tests
-      whether a feature we built into a structure does the job we built it
-      for.
+      Our goal is functional materials that solve problems, and property
+      measurements are the final test of whether a material does what it was
+      designed to do. We measure electrical and thermal transport as a
+      function of temperature, photoluminescence and optical absorption, and
+      gas adsorption and surface area, and we work with collaborators who
+      bring the measurements we lack. The targets are practical:
+      semiconductors for optoelectronics, thermoelectrics with low lattice
+      thermal conductivity, and heterogeneous catalysts for selective
+      oxidation.
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
