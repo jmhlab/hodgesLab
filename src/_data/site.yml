@@ -32,36 +32,27 @@ about:
   - key: synthesis
     heading: Synthesis
     body: >
-      We invent new techniques for preparing inorganic solids with well-defined
-      compositions and structures, using solution, solid-state, and gas-phase
-      chemistry together with crystal growth. Data-driven approaches allow us
-      to navigate complex, multidimensional reaction space and, increasingly,
-      machine-learning and AI tools are facilitating unexpected discovery.
-      The materials we make are the engine for collaborative,
-      interdisciplinary programs at Penn State seeking answers to big
-      challenges.
+      We prepare inorganic solids by colloidal chemistry, hydrothermal
+      synthesis, high-temperature solid-state reactions, growth from molten
+      flux media, and high-pressure heating, choosing the route that gives
+      access to the target composition and structure.
 
   - key: structure
     heading: Structure
     body: >
-      Understanding a new material begins with determining its structure.
-      *Without crystallographic characterization, there is no discovery.* We
-      combine single-crystal growth with X-ray diffraction, total scattering,
-      and spectroscopy to characterize newly synthesized materials.
-      Well-defined structures allow us to determine how subtle order–disorder
-      features influence electrical, optical, and catalytic properties.
+      We characterize what we make by powder and single-crystal X-ray
+      diffraction, thermal analysis, vibrational and absorption
+      spectroscopies, and electron microscopy, with particular attention to
+      site occupancy and order-disorder features that a routine refinement
+      can miss.
 
   - key: function
     heading: Function
     body: >
-      Well-defined solids provide platforms for connecting structure to
-      material function. We measure optical, electronic, thermal, and
-      catalytic properties to understand how crystallographic and chemical
-      features give rise to new phenomena. Working closely with physicists,
-      engineers, and computational scientists, we establish chemical
-      principles that guide iterative advances while opening pathways to
-      unexpected discoveries. *Our group serves as the materials engine for
-      these efforts.*
+      We measure variable-temperature thermal and electronic transport,
+      photoluminescence, adsorption, and surface area, connecting composition
+      and structure to performance in optoelectronics, thermoelectrics, and
+      heterogeneous catalysis.
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
