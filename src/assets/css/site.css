@@ -543,3 +543,7 @@ html { color-scheme: dark; }
 
 .research-lead .lead + .lead { margin-top: 10px; font-size: 17px; color: var(--muted); }
 .research-lead .lead { margin: 0; }
+
+/* TOC graphics: wide banners get a wider column */
+.pub.has-toc { grid-template-columns: 300px 1fr; }
+@media (max-width: 700px) { .pub.has-toc { grid-template-columns: 1fr; } .pub-toc { max-width: 320px; } }
