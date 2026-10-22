@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 <section class="page-head page-head-slim research-lead">
-  <p class="lead">{{ research.intro | trim | replace("\n", " ") }}</p>
+  {% for para in research.intro | trim | split("\n\n") %}<p class="lead{% if loop.first %} lead-first{% endif %}">{{ para | replace("\n", " ") }}</p>{% endfor %}
 </section>
 
 <section class="themes">
