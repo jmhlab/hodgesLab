@@ -521,3 +521,12 @@ html { color-scheme: dark; }
 .research-intro p:first-child { color: var(--text); font-size: 18px; }
 .research-intro p + p { margin-top: 14px; }
 .themes { margin-top: 32px; }
+
+/* research tiles: fill the row's height, top tile level with the heading */
+.theme { align-items: stretch; }
+.theme-tiles { height: 100%; justify-content: space-between; padding-top: 0; gap: 24px; }
+.theme-tiles .pillar { grid-template-columns: 96px 1fr; gap: 20px; }
+.theme-tiles .pillar-icon { width: 96px; height: 96px; }
+.theme-tiles .pillar-icon svg { width: 64px; height: 64px; }
+.theme-tiles .pillar-title { font-size: 21px; }
+@media (max-width: 900px) { .theme-tiles { height: auto; justify-content: flex-start; } .theme-tiles .pillar { grid-template-columns: 72px 1fr; } .theme-tiles .pillar-icon { width: 72px; height: 72px; } .theme-tiles .pillar-icon svg { width: 48px; height: 48px; } }
