@@ -12,6 +12,10 @@
 #   caption:   line under the structure / photo
 #   paper:     number of a paper in publications.yml to feature (optional)
 # ---------------------------------------------------------------------------
+# Photo behind the opening paragraphs (in src/assets/img/hero/); blank for none.
+lead_photo: mnpq3.jpg
+lead_photo_focus: "50% 50%"
+
 intro: |
   Technology is often limited by the materials we can make. A material target
   does not guarantee an accessible solid; competing pathways often favor

@@ -3,7 +3,8 @@ layout: base.njk
 title: Research
 permalink: /research/
 ---
-<section class="page-head page-head-slim research-lead">
+<section class="page-head page-head-slim research-lead{% if research.lead_photo %} has-photo{% endif %}">
+  {% if research.lead_photo %}<div class="lead-bg" aria-hidden="true"><img src="{{ ('/assets/img/hero/' ~ research.lead_photo) | url }}" alt="" style="object-position: {{ research.lead_photo_focus or '50% 50%' }};"></div>{% endif %}
   {% for para in research.intro | trim | split("\n\n") %}<p class="lead{% if loop.first %} lead-first{% endif %}">{{ para | replace("\n", " ") }}</p>{% endfor %}
 </section>
 
