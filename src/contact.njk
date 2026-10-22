@@ -1,0 +1,29 @@
+---
+layout: base.njk
+title: Contact
+permalink: /contact/
+---
+<section class="page-head page-head-slim">
+  <div>
+    <div class="kicker">Contact</div>
+    <h1>Get in touch.</h1>
+  </div>
+</section>
+<section class="contact">
+  <div class="contact-block">
+    <div class="eyebrow">Principal investigator</div>
+    <p>{{ site.contact.name }}<br><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+  </div>
+  <div class="contact-block">
+    <div class="eyebrow">Address</div>
+    <p>{{ site.contact.address | replace(", ", "<br>") | safe }}</p>
+  </div>
+  <div class="contact-block">
+    <div class="eyebrow">Prospective students</div>
+    <p>We welcome inquiries from students interested in materials synthesis and solid-state chemistry at every level. Email Jim directly.</p>
+  </div>
+  <div class="contact-block">
+    <div class="eyebrow">Elsewhere</div>
+    <p><a href="{{ site.contact.scholar }}">Google Scholar</a><br><a href="{{ site.contact.twitter }}">Twitter</a><br><a href="{{ site.contact.linkedin }}">LinkedIn</a></p>
+  </div>
+</section>

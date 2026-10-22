@@ -33,7 +33,6 @@
     {% for item in site.nav %}
       <a href="{{ item.url | url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.label }}</a>
     {% endfor %}
-    <a class="nav-join" href="mailto:{{ site.contact.email }}?subject=Joining%20the%20Hodges%20Group">Join →</a>
   </nav>
 </header>
 
@@ -41,16 +40,6 @@
 {{ content | safe }}
 </main>
 
-{% if not hideRecruit %}
-<section class="recruit">
-  <div class="recruit-text">
-    <div class="eyebrow">Open positions</div>
-    <h2 class="recruit-headline">{{ site.recruiting.headline }}</h2>
-    <p class="recruit-sub">{{ site.recruiting.sub }}</p>
-  </div>
-  <a class="btn btn-dark" href="mailto:{{ site.contact.email }}?subject=Joining%20the%20Hodges%20Group">{{ site.recruiting.button }} →</a>
-</section>
-{% endif %}
 
 <footer class="footer">
   <div class="footer-contact">

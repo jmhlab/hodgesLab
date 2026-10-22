@@ -354,3 +354,48 @@ sub { font-size: 0.72em; line-height: 0; }
 .group-photo img { display: block; width: 100%; max-height: 760px; object-fit: cover; object-position: 50% 40%; }
 .group-photo figcaption { padding: 10px var(--gutter); font-family: var(--sans); font-size: 12px; letter-spacing: 0.01em; color: var(--dim); }
 .group-photo.collage img { max-height: none; height: auto; object-fit: contain; background: var(--bg); }
+
+/* ==========================================================================
+   Streamline pass (Oct 2026): dark ground everywhere, compact people page,
+   contact page. Overrides the light-body tokens above.
+   ========================================================================== */
+:root {
+  --bg: var(--d-bg); --panel: var(--d-panel); --line: var(--d-line); --line-strong: var(--d-line-strong);
+  --text: var(--d-text); --muted: var(--d-muted); --dim: var(--d-dim); --amber: var(--d-amber); --amber-ink: var(--d-bg);
+}
+html { color-scheme: dark; }
+.btn-dark { background: var(--d-amber); color: var(--d-bg); border-color: var(--d-amber); }
+.hero h1 .h-lead { color: var(--text); font-weight: 700; }
+.hero h1 .h-sub { color: var(--muted); font-weight: 500; font-size: 0.62em; letter-spacing: -0.01em; }
+.hero-inner { gap: 36px; }
+.reading { max-width: 1400px; margin: 0 auto; }
+
+.page-head-slim { grid-template-columns: 1fr; padding-bottom: 32px; }
+.page-head-slim h1 { font-size: clamp(36px, 4.5vw, 56px); }
+
+.pp-section { padding: 40px var(--gutter); border-bottom: 1px solid var(--line); max-width: 1100px; }
+.pp-section > .eyebrow { margin-bottom: 20px; }
+.pp-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 40px; }
+@media (max-width: 760px) { .pp-list { grid-template-columns: 1fr; } }
+.pp { display: flex; align-items: center; gap: 16px; }
+.pp-photo { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--panel); border: 1px solid var(--line-strong); }
+.pp-photo img { width: 100%; height: 100%; object-fit: cover; }
+.pp-photo.ph::after { content: ""; display: block; width: 100%; height: 100%; background: linear-gradient(135deg, var(--d-panel), var(--d-line)); }
+.pp-name { font-family: var(--serif); font-weight: 600; font-size: 17px; letter-spacing: -0.01em; }
+.pp-line { font-size: 13.5px; color: var(--muted); line-height: 1.45; margin-top: 2px; }
+.pp-pi { align-items: flex-start; }
+.pp-pi .pp-photo { flex-basis: 112px; width: 112px; height: 112px; }
+.pp-pi .pp-name { font-size: 22px; }
+.pp-bio { font-size: 15px; color: var(--muted); line-height: 1.55; margin-top: 12px; max-width: 640px; }
+.pp-alumni-list { display: flex; flex-direction: column; }
+.pp-alumni-row { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 14px; }
+.pp-alumni-row .what { color: var(--muted); }
+@media (max-width: 600px) { .pp-alumni-row { grid-template-columns: 1fr; gap: 2px; } }
+
+.contact { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 56px; padding: 48px var(--gutter) 72px; max-width: 900px; }
+.contact .eyebrow { margin-bottom: 10px; }
+.contact p { color: var(--muted); line-height: 1.6; }
+.contact a { color: var(--text); }
+.contact a:hover { color: var(--amber); }
+@media (max-width: 600px) { .contact { grid-template-columns: 1fr; } }
+.stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }

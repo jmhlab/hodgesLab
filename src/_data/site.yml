@@ -12,10 +12,10 @@ description: >
 # Headline on the homepage. Each line stays on one line on desktop; a "|" marks
 # where it may break on phones.
 hero:
-  line1: Exploring the|Periodic Table
-  line2: with Solid State|Chemistry
-  kicker: Hodges Research Group · Department of Chemistry
-  blurb: We can make anything.
+  line1: Hodges Group
+  line2: Solid State Chemistry|at Penn State
+  kicker: ""
+  blurb: ""
   # Backdrop. If `photo` is set, that image (in src/assets/img/hero/) is used;
   # leave it blank to fall back to the 3D structure named below.
   photo: mq_2_2.jpg
@@ -65,7 +65,7 @@ about:
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
-featured_papers: [25, 19, 22]
+featured_papers: []
 
 # Recruiting banner
 recruiting:
@@ -84,12 +84,10 @@ contact:
 # Main navigation (order matters)
 nav:
   - { label: Home, url: / }
-  - { label: Team, url: /team/ }
   - { label: Research, url: /research/ }
+  - { label: People, url: /people/ }
   - { label: Publications, url: /publications/ }
-  - { label: Lab tour, url: /lab-tour/ }
-  - { label: Gallery, url: /gallery/ }
-  - { label: News, url: /news/ }
+  - { label: Contact, url: /contact/ }
 
 # Names as they appear in publication author lists; these get bolded.
 member_names:

@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: People
+permalink: /people/
+---
+{% macro badge(p, line) %}
+<div class="pp">
+  <div class="pp-photo{% if not p.photo %} ph{% endif %}">{% if p.photo %}<img src="{{ ('/assets/img/team/' ~ p.photo) | url }}" alt="{{ p.name }}" loading="lazy" onerror="this.parentNode.classList.add('ph'); this.remove();">{% endif %}</div>
+  <div class="pp-text">
+    <div class="pp-name">{{ p.name }}</div>
+    <div class="pp-line">{{ line | safe }}</div>
+  </div>
+</div>
+{% endmacro %}
+
+<section class="page-head page-head-slim">
+  <div>
+    <div class="kicker">People</div>
+    <h1>The group.</h1>
+  </div>
+</section>
+
+{% set pi = team.pi %}
+<section class="pp-section">
+  <h2 class="eyebrow">Principal investigator</h2>
+  <div class="pp pp-pi">
+    <div class="pp-photo{% if not pi.photo %} ph{% endif %}">{% if pi.photo %}<img src="{{ ('/assets/img/team/' ~ pi.photo) | url }}" alt="{{ pi.name }}">{% endif %}</div>
+    <div class="pp-text">
+      <div class="pp-name">{{ pi.name }}</div>
+      <div class="pp-line">{{ pi.title }}, {{ pi.institution }}</div>
+      <div class="pp-line"><a href="mailto:{{ pi.email }}">{{ pi.email }}</a>{% for l in pi.links %} · <a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</div>
+      {% for para in pi.bio | trim | split("\n\n") %}<p class="pp-bio">{{ para | replace("\n", " ") }}</p>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pp-section">
+  <h2 class="eyebrow">Graduate students</h2>
+  <div class="pp-list">
+    {% for p in team.graduate %}{% set bits = [] %}{% if p.degree %}{% set bits = (bits.push(p.degree), bits) %}{% endif %}{% if p.joined %}{% set bits = (bits.push('joined ' ~ p.joined), bits) %}{% endif %}{{ badge(p, bits | join(' · ')) }}{% endfor %}
+  </div>
+</section>
+
+<section class="pp-section">
+  <h2 class="eyebrow">Undergraduate students</h2>
+  <div class="pp-list">
+    {% for p in team.undergraduate %}{% set bits = [] %}{% if p.major %}{% set bits = (bits.push(p.major), bits) %}{% endif %}{% if p.joined %}{% set bits = (bits.push('joined ' ~ p.joined), bits) %}{% endif %}{{ badge(p, bits | join(' · ')) }}{% endfor %}
+  </div>
+</section>
+
+{% if team.others | length %}
+<section class="pp-section">
+  <h2 class="eyebrow">Also in the group</h2>
+  <div class="pp-list">
+    {% for p in team.others %}{{ badge(p, p.role) }}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="pp-section pp-alumni">
+  <h2 class="eyebrow">Alumni</h2>
+  <div class="pp-alumni-list">
+    {% for a in team.alumni.postdocs %}<div class="pp-alumni-row"><span class="who">{{ a.name }}</span><span class="what">Postdoctoral researcher, {{ a.years }}{% if a.now %} → {{ a.now }}{% endif %}</span></div>{% endfor %}
+    {% for a in team.alumni.graduate %}<div class="pp-alumni-row"><span class="who">{{ a.name }}</span><span class="what">{{ a.degree or 'Graduate student' }}, {{ a.years }}{% if a.now %} → {{ a.now }}{% endif %}</span></div>{% endfor %}
+    {% for a in team.alumni.undergraduate %}<div class="pp-alumni-row"><span class="who">{{ a.name }}</span><span class="what">Undergraduate researcher, {{ a.years }}{% if a.now %} → {{ a.now }}{% endif %}</span></div>{% endfor %}
+  </div>
+</section>

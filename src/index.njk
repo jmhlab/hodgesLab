@@ -17,34 +17,16 @@ hideRecruit: true
     {% endif %}
   </div>
   <div class="hero-inner">
-    <div class="kicker">{{ site.hero.kicker }}</div>
+    {% if site.hero.kicker %}<div class="kicker">{{ site.hero.kicker }}</div>{% endif %}
     <h1><span class="h-lead">{{ site.hero.line1 | replace("|", " <br class=\"ph\">") | safe }}</span><br><span class="h-sub">{{ site.hero.line2 | replace("|", " <br class=\"ph\">") | safe }}</span></h1>
-    <p>{{ site.hero.blurb | trim }}</p>
+    {% if site.hero.blurb %}<p>{{ site.hero.blurb | trim }}</p>{% endif %}
     <div class="hero-actions">
       <a class="btn btn-amber" href="{{ '/research/' | url }}">Research</a>
+      <a class="btn" href="{{ '/people/' | url }}">People</a>
       <a class="btn" href="{{ '/publications/' | url }}">Publications</a>
     </div>
   </div>
   {% if not site.hero.photo or site.hero.photo_caption %}<div class="hero-caption">{% if site.hero.photo %}{{ site.hero.photo_caption }}{% else %}{{ heroStruct.caption or heroStruct.label }}{% if heroStruct.alt %} · <span id="hero-temp" style="color: var(--amber);"></span>{% endif %} · rendered from the group's crystal structures{% endif %}</div>{% endif %}
-</section>
-
-<section class="about">
-  {% for block in site.about %}
-  <div class="about-col">
-    <h2 class="about-heading">{{ block.heading }}</h2>
-    <div class="about-body">{% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}</div>
-    <div class="col-tiles">
-      {% for p in pillars | where("under", block.key) %}
-      <div class="pillar">
-        <div class="pillar-icon">{% set icon = p.icon %}{% include "pillar-icon.njk" %}</div>
-        <div class="pillar-text">
-          <h3 class="pillar-title">{{ p.title }}</h3>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {% endfor %}
 </section>
 
 {# Selected papers: numbers from publications.yml, listed in site.yml → featured_papers.
@@ -54,7 +36,7 @@ hideRecruit: true
 {% if picks | length == 0 %}{% set picks = publications | take(3) %}{% endif %}
 <section class="reading">
   <div class="section-head">
-    <h2 class="eyebrow">Papers to read</h2>
+    <h2 class="eyebrow">Recent papers</h2>
     <a class="more" href="{{ '/publications/' | url }}">All publications →</a>
   </div>
   <div class="reading-list">
