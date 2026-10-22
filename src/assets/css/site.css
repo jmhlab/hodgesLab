@@ -586,3 +586,8 @@ html { color-scheme: dark; }
 .research-lead.has-photo .lead { position: relative; z-index: 1; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
 .research-lead.has-photo .lead + .lead { color: var(--d-text); opacity: 0.85; }
 .research-lead { display: block; }
+
+/* research: four-panel photo strip behind the opening section */
+.lead-bg-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+.lead-bg-grid img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 700px) { .lead-bg-grid { grid-template-columns: repeat(2, 1fr); } }

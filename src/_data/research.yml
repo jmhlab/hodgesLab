@@ -13,8 +13,10 @@
 #   paper:     number of a paper in publications.yml to feature (optional)
 # ---------------------------------------------------------------------------
 # Photo behind the opening paragraphs (in src/assets/img/hero/); blank for none.
-lead_photo: mnpq3.jpg
+lead_photo: mnpq3.jpg            # used only if lead_photos is empty
 lead_photo_focus: "50% 50%"
+# Four photos side by side behind the opening section (left to right).
+lead_photos: [5_2.jpg, mnpq3.jpg, mq_1.jpg, mq_4.jpg]
 
 intro: |
   Technology is often limited by the materials we can make. A material target
