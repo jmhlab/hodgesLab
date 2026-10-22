@@ -13,11 +13,12 @@
 #   paper:     number of a paper in publications.yml to feature (optional)
 # ---------------------------------------------------------------------------
 intro: |
-  Every new material begins as a synthesis problem. A target composition does
-  not guarantee an accessible solid, since competing reaction pathways often
-  favor undesired phases. Predictive frameworks that guide syntheses toward
-  assemblies of atoms with well-defined structures can unlock new
-  possibilities in energy and information technology.
+  Technology is often limited by the materials we can make. A material target
+  does not guarantee an accessible solid; competing pathways often favor
+  undesired phases, especially when working with elements with disparate
+  reactivities. New chemistry that circumvents synthetic bottlenecks can
+  unlock materials with new bonding motifs, structure types, and advanced
+  function.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
