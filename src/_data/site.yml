@@ -43,14 +43,15 @@ about:
   - key: structure
     heading: Structure
     body: >
-      Synthesis goes hand in hand with characterization: every material is
-      characterized before anything else is claimed about it. We determine structures by powder and single-crystal X-ray
-      diffraction, follow phase formation and stability by thermal analysis,
-      and probe bonding and composition by vibrational and absorption
-      spectroscopies and electron microscopy. Where atoms sit, and how
-      ordered they are, decides what a material does, so we refine site
-      occupancies and look for the order-disorder features that routine
-      analyses overlook.
+      Synthesis goes hand in hand with characterization: every material must
+      be characterized before anything else is claimed about it. We determine
+      structures by powder and single-crystal X-ray diffraction, follow phase
+      transformations with thermal analysis, and probe bonding modes with
+      Raman and IR spectroscopy, while optical absorption is the starting
+      point for characterizing semiconducting compounds. Where atoms sit in a
+      crystal, and subtle order-disorder behavior, can define the properties
+      of an extended solid, so we place particular emphasis on X-ray
+      scattering techniques.
 
   - key: function
     heading: Function
