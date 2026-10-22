@@ -22,10 +22,17 @@
   title: Charge-Encoded Anion Sublattices Drive Ordering and Phase Selection in Layered Chalcogenides
   authors: Tassanov, A., Lee, H., Zambre, K.K., Trinidad-Pérez, P.R., Xia, Y., Hodges, J.M.
   journal: ChemRxiv
-  year: 2026
   status: In review
   url: https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15009583/v1
   tags: []
+
+- era: preprint
+  title: Converting Oxide Precursors into Microporous MoVBiOx with High Activity for Oxidative Dehydrogenation of Ethane
+  authors: Troesch, B., Thanthrige, S.B., Wang, K., Noh, G., Hodges, J.M.
+  journal: ChemRxiv
+  status: In review
+  doi: 10.26434/chemrxiv-2025-51zh8
+  tags: [oxides, catalysis]
 
 - n: 26
   title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
@@ -71,15 +78,6 @@
   volume: "130"
   pages: 1524–1533
   tags: [oxides]
-  era: psu
-
-- n: 20
-  title: Converting Oxide Precursors into Microporous MoVBiOx with High Activity for Oxidative Dehydrogenation of Ethane
-  authors: Troesch, B., Thanthrige, S.B., Wang, K., Noh, G., Hodges, J.M.
-  journal: ChemRxiv
-  year: 2025
-  doi: 10.26434/chemrxiv-2025-51zh8
-  tags: [oxides, catalysis]
   era: psu
 
 - n: 19
