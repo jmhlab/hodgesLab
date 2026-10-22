@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 structuresOnPage: true
 ---
-<section class="page-head">
+<section class="page-head page-head-slim">
   <div>
     <div class="kicker">Research</div>
     <h1>Making solids that don't exist&nbsp;yet.</h1>
@@ -12,38 +12,22 @@ structuresOnPage: true
   <p class="intro">{{ research.intro | trim }}</p>
 </section>
 
-<nav class="jump" aria-label="Sections">
-  {% for a in research.areas %}<a href="#{{ a.id }}"><span class="jump-n">0{{ loop.index }}</span>{{ a.title }}</a>{% endfor %}
-</nav>
-
+<section class="rgrid">
 {% for a in research.areas %}
 {% set st = structures[a.structure] %}
 {% set paper = publications | find("n", a.paper) %}
-<section class="area-block" id="{{ a.id }}">
-  <div class="area-n">0{{ loop.index }}</div>
-  <div class="body">
-    <h2>{{ a.title }}</h2>
-    {% for para in a.long | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}
-    <div class="tags">{{ a.keywords | join(' · ') }}</div>
-    {% if paper %}
-    <div class="selected">
-      <div class="eyebrow">Selected paper</div>
-      <div class="cite">{{ paper.authors | boldMembers(site.member_names) | safe }} <span>{{ paper.title | chem | safe }}.</span> <em>{{ paper.journal }}</em> {{ paper.year }}{% if paper.volume %}, {{ paper.volume }}{% endif %}{% if paper.pages %}, {{ paper.pages }}{% endif %}.{% if paper.doi or paper.url %} <a href="{{ paper.url or ('https://doi.org/' ~ paper.doi) }}">↗</a>{% endif %}</div>
-    </div>
-    {% endif %}
-  </div>
-  <div>
-    <div class="area-media">
+  <article class="rcard" id="{{ a.id }}">
+    <div class="rcard-media">
       {% if st %}
       <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" data-structure-alt="{{ st.alt or '' }}" data-labels="{{ st.labels or '' }}" data-hold="{{ st.hold or 4 }}" data-fade="{{ st.fade or 1.2 }}" aria-label="{{ st.label }}"></div>
-      {% elif a.image %}<img src="{{ ('/assets/img/' ~ a.image) | url }}" alt="{{ a.title }}">{% endif %}
+      {% elif a.image %}<img src="{{ ('/assets/img/' ~ a.image) | url }}" alt="{{ a.title }}" loading="lazy">{% endif %}
     </div>
-    {% if a.caption %}<div class="structure-caption">{{ a.caption }}</div>{% endif %}
-  </div>
-</section>
+    {% if a.caption %}<div class="rcard-cap">{{ a.caption }}</div>{% endif %}
+    <h2 class="rcard-title">{{ a.title }}</h2>
+    <p class="rcard-text">{{ a.long | trim | replace("\n", " ") }}</p>
+    {% if paper %}
+    <a class="rcard-paper" href="{{ paper.url or ('https://doi.org/' ~ paper.doi) }}"><span class="rcard-paper-k">Read</span> {{ paper.title | chem | safe }} <span class="rcard-paper-j"><em>{{ paper.journal }}</em> {{ paper.year }}</span></a>
+    {% endif %}
+  </article>
 {% endfor %}
-
-<section class="stats" aria-label="Elsewhere on the site">
-  <a class="stat" href="{{ '/publications/' | url }}"><div class="eyebrow">Read</div><div class="stat-value" style="font-size: 26px;">Publications →</div></a>
-  <a class="stat" href="{{ '/people/' | url }}"><div class="eyebrow">Meet</div><div class="stat-value" style="font-size: 26px;">The group →</div></a>
 </section>

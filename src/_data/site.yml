@@ -87,7 +87,6 @@ nav:
   - { label: Research, url: /research/ }
   - { label: People, url: /people/ }
   - { label: Publications, url: /publications/ }
-  - { label: Contact, url: /contact/ }
 
 # Names as they appear in publication author lists; these get bolded.
 member_names:

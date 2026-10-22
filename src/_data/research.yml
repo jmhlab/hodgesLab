@@ -14,24 +14,18 @@
 # ---------------------------------------------------------------------------
 intro: >
   We make new inorganic solids and work out how they form and what they do.
-  The six threads below run through everything in the group; most projects
-  pull on several at once.
+  Six threads run through everything in the group; most projects pull on
+  several at once.
 
 areas:
   - id: synthesis
     title: Chemical reactivity
     short: High-temperature, flux, hydrothermal, and solution routes to solids nobody has made before.
     long: |
-      Making a new compound is the first experiment, not the preparation for
-      one. We use sealed-tube and flux reactions above 1000 °C, hydrothermal
-      and solvothermal chemistry, and solution routes, and we choose among
-      them deliberately: which one gives access to a target depends on what
-      the intermediates are and how fast they move.
-
-      We are especially interested in why a reaction gives one phase rather
-      than another. Retrosynthetic thinking, borrowed from molecular
-      chemistry, turns out to work surprisingly well for extended solids
-      once you know which building blocks are stable and how they connect.
+      Making a new compound is the first experiment, not preparation for
+      one. We use sealed-tube, flux, hydrothermal, and solution routes, chosen
+      for what the intermediates are and how fast they move, and we study why
+      a reaction gives one phase rather than another.
     keywords: [Flux growth, Sealed-tube reactions, Hydrothermal synthesis, Retrosynthetic crystal chemistry]
     structure: Cs2Hf3S6O
     caption: Cs₂Hf₃S₆O — an oxychalcogenide made by design, from ribbons of HfS₆ and HfS₅O polyhedra
@@ -42,15 +36,10 @@ areas:
     title: Crystal growth
     short: Single crystals large enough to measure, grown by transport, flux, and slow cooling.
     long: |
-      Single crystals are how we learn what a material really is. Powder tells
-      you a phase exists; a crystal tells you its structure, its anisotropy,
-      and its intrinsic properties without grain boundaries getting in the
-      way.
-
-      We grow crystals by chemical vapor transport, from molten fluxes, and by
-      slow cooling of stoichiometric melts, and we spend real effort on making
-      them larger and cleaner. Many of the photographs on this site are of
-      crystals grown by students in their first year.
+      Single crystals are how we learn what a material really is: its
+      structure, its anisotropy, and its intrinsic properties. We grow them by
+      vapor transport, from molten fluxes, and by slow cooling, and we work at
+      making them larger and cleaner.
     keywords: [Chemical vapor transport, Flux growth, Bridgman, Optical microscopy]
     image: research/crystals-mq2.jpg
     caption: Chalcogenide crystals from a flux growth, under the optical microscope
@@ -61,14 +50,10 @@ areas:
     title: Materials discovery
     short: Machine learning and experiment together, to decide where in composition space to look next.
     long: |
-      Composition space is far too large to search by hand. We are building
+      Composition space is too large to search by hand. We are building
       tools that use the group's own synthesis outcomes, successes and
-      failures alike, together with published data to rank what to try next,
-      and then we go to the furnace and find out.
-
-      The aim is not to replace the chemist's intuition but to sharpen it, so
-      that finding a new material becomes deliberate rather than lucky. This
-      is the newest thread in the group and the one growing fastest.
+      failures alike, to rank what to try next, and then we go to the furnace
+      and find out.
     keywords: [Machine learning, High-throughput synthesis, Composition-space mapping, Data-driven design]
     image: research/crystals-mq1.jpg
     caption: A crop of one synthesis outcome among many — the raw material for the models
@@ -78,15 +63,11 @@ areas:
     title: Diffraction
     short: X-ray and neutron diffraction to find out where the atoms are — and where they aren't.
     long: |
-      Every property has a structural explanation, so we measure structure
-      carefully. Single-crystal and powder X-ray diffraction in the lab,
-      synchrotron and neutron experiments at national facilities, and total
-      scattering for the disordered cases.
-
-      Vacancies, mixed occupancy, and local ordering are often where the
-      interesting chemistry hides. Anion ordering in a mixed-anion compound
-      can be invisible to a quick refinement and decisive for its band gap,
-      so we look for it on purpose.
+      Every property has a structural explanation. Single-crystal and
+      powder X-ray diffraction in the lab, synchrotron and neutron experiments
+      at national facilities, and total scattering for the disordered cases,
+      with particular attention to the vacancies and ordering that quick
+      refinements miss.
     keywords: [Single-crystal XRD, Powder diffraction, Neutron scattering, Pair distribution function, Anion ordering]
     structure: pharmacosiderite
     caption: Ti-pharmacosiderite — TiO₆ octahedra and SiO₄ tetrahedra around an open channel
@@ -97,15 +78,10 @@ areas:
     title: Site control
     short: Choosing which atoms occupy which sites — anions especially — as a switch for turning function on and off.
     long: |
-      The cation gets most of the attention in solid-state chemistry, but the
-      anion sets the bonding. Swapping oxide for sulfide, or sulfide for
-      telluride, changes covalency, band gap, and structure in ways that are
-      large and, increasingly, predictable.
-
-      We make mixed-anion oxides, chalcogenides, and chalcohalides in which
-      two or more anions occupy distinct sites, and we study how that
-      ordering controls dimensionality, electronic structure, and stability.
-      This is the thread that ties most of the group's projects together.
+      The cation gets the attention, but the anion sets the bonding. We
+      make mixed-anion oxides, chalcogenides, and chalcohalides in which two or
+      more anions occupy distinct sites, and we study how that ordering
+      controls dimensionality, electronic structure, and stability.
     keywords: [Oxychalcogenides, Chalcohalides, Mixed-anion ordering, Dimensional reduction]
     structure: CsFeSTe
     caption: Cs₃Fe₄S₂.₅Te₃.₅ — sulfide and telluride on separate sites in one framework
@@ -116,14 +92,9 @@ areas:
     title: Properties
     short: Electronic, optical, thermal, and catalytic measurements that connect structure to function.
     long: |
-      We measure what our materials do. Electrical transport and Seebeck
-      coefficient for thermoelectrics, optical absorption for band gaps, and
-      thermal conductivity, which in the best cases we can push toward the
-      glassy limit through structural disorder.
-
-      For the oxides, the measurement is often a catalytic one: activity and
-      selectivity for oxidative dehydrogenation, run in flow reactors with
-      the products followed by gas chromatography.
+      We measure what our materials do: electrical transport and Seebeck
+      coefficient, optical absorption, thermal conductivity, and, for the
+      oxides, catalytic activity and selectivity in flow reactors.
     keywords: [Thermoelectrics, Thermal conductivity, Seebeck, Optical band gap, Heterogeneous catalysis]
     structure: HfSSe
     caption: HfSSe — Hf layers between sheets of S and Se, a layered semiconductor
