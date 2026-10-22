@@ -32,12 +32,13 @@ about:
   - key: synthesis
     heading: Synthesis
     body: >
-      We prepare inorganic solids by colloidal chemistry, hydrothermal
-      synthesis, high-temperature solid-state reactions, growth from molten
-      flux media, and high-pressure heating. No single route reaches every
-      target, so the most useful new chemistry often comes from combining
-      them, such as carrying a solution-made precursor into a flux, where one
-      technique opens a door the other cannot.
+      We prepare inorganic solids using hydrothermal synthesis,
+      high-temperature solid-state reactions, crystal growth from molten flux
+      media, and chemical vapor transport. No single route reaches every
+      target, and innovation often comes when combining approaches. We
+      navigate complex, multidimensional reaction space with data-driven
+      approaches and, increasingly, meta-analysis using machine-learning and
+      AI tools.
 
   - key: structure
     heading: Structure
