@@ -39,7 +39,7 @@ hideRecruit: true
     {% for pp in picks %}
     <a class="reading-item" href="{{ pp.url or ('https://doi.org/' ~ pp.doi) }}">
       <div class="reading-title">{{ pp.title | chem | safe }}</div>
-      <div class="reading-cite">{{ pp.authors | boldMembers(site.member_names) | safe }} — <em>{{ journalNames[pp.journal] or pp.journal }}</em>, {{ pp.year }}</div>
+      <div class="reading-cite">{{ pp.authors }} — <em>{{ journalNames[pp.journal] or pp.journal }}</em>, {{ pp.year }}</div>
     </a>
     {% endfor %}
   </div>

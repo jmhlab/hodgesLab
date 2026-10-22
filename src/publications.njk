@@ -13,7 +13,7 @@ permalink: /publications/
 <article class="pub{% if p.toc %} has-toc{% endif %}">
   {% if p.toc %}<a class="pub-toc" href="{{ p.url or ('https://doi.org/' ~ p.doi) }}"><img src="{{ ('/assets/img/toc/' ~ p.toc) | url }}" alt="" loading="lazy"></a>{% endif %}
   <div class="pub-body">
-    {% if p.n %}<span class="pub-n">{{ p.n }}.</span> {% endif %}{% if p.doi or p.url %}<a class="pub-title" href="{{ p.url or ('https://doi.org/' ~ p.doi) }}">{{ p.title | chem | safe }}</a>{% else %}<span class="pub-title">{{ p.title | chem | safe }}</span>{% endif %}. <span class="pub-authors">{{ p.authors | boldMembers(site.member_names) | safe }}</span> <span class="pub-ref"><em>{{ p.journal }}</em>{% if p.status %} {{ p.status }}{% endif %}{% if p.year %} <b>{{ p.year }}</b>{% endif %}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</span>
+    {% if p.n %}<span class="pub-n">{{ p.n }}.</span> {% endif %}{% if p.doi or p.url %}<a class="pub-title" href="{{ p.url or ('https://doi.org/' ~ p.doi) }}">{{ p.title | chem | safe }}</a>{% else %}<span class="pub-title">{{ p.title | chem | safe }}</span>{% endif %}. <span class="pub-authors">{{ p.authors }}</span> <span class="pub-ref"><em>{{ p.journal }}</em>{% if p.status %} {{ p.status }}{% endif %}{% if p.year %} <b>{{ p.year }}</b>{% endif %}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}.</span>
   </div>
 </article>
 {% endmacro %}
@@ -38,7 +38,7 @@ permalink: /publications/
   {% for p in patents %}
   <article class="pub">
     <div class="pub-body">
-      <span class="pub-n">P{{ p.n }}.</span> <span class="pub-title">{{ p.title }}</span>. <span class="pub-authors">{{ p.inventors | boldMembers(site.member_names) | safe }}</span> <span class="pub-ref">{{ p.number }}{% if p.status %}, {{ p.status | lower }}{% endif %} <b>{{ p.year }}</b>{% if p.assignee %}. {{ p.assignee }}{% endif %}.</span>
+      <span class="pub-n">P{{ p.n }}.</span> <span class="pub-title">{{ p.title }}</span>. <span class="pub-authors">{{ p.inventors }}</span> <span class="pub-ref">{{ p.number }}{% if p.status %}, {{ p.status | lower }}{% endif %} <b>{{ p.year }}</b>{% if p.assignee %}. {{ p.assignee }}{% endif %}.</span>
     </div>
   </article>
   {% endfor %}
