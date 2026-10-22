@@ -32,6 +32,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("em", (str) => String(str ?? "").replace(/\*([^*]+)\*/g, "<em>$1</em>"));
   eleventyConfig.addFilter("split", (s, sep) => String(s).split(sep));
   eleventyConfig.addFilter("take", (arr, n) => arr.slice(0, n));
+  // group members: longest tenure first (by "joined"), alphabetical by last name within a year
+  eleventyConfig.addFilter("byTenure", (arr) => [...(arr || [])].sort((a, b) => {
+    const ja = Number(a.joined) || 0, jb = Number(b.joined) || 0;
+    if (ja !== jb) return ja - jb;
+    const la = String(a.name).trim().split(/\s+/).pop().toLowerCase();
+    const lb = String(b.name).trim().split(/\s+/).pop().toLowerCase();
+    return la.localeCompare(lb);
+  }));
+  // alumni: chronological by the first year in "years" ("2021–2025" -> 2021)
+  eleventyConfig.addFilter("byYears", (arr) => [...(arr || [])].sort((a, b) =>
+    (parseInt(String(a.years)) || 0) - (parseInt(String(b.years)) || 0) || String(a.name).localeCompare(String(b.name))));
   // find one item by a field value: publications | find("n", 19)
   eleventyConfig.addFilter("find", (arr, key, val) => (arr || []).find((x) => x[key] == val));
   // group publications by year, newest first

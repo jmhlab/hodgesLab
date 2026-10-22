@@ -488,3 +488,18 @@ html { color-scheme: dark; }
 .pub-divider::before, .pub-divider::after { content: ""; flex: 1; border-top: 1px solid var(--line-strong); }
 .patents { padding-top: 0; }
 @media (max-width: 700px) { .pub.has-toc { grid-template-columns: 1fr; gap: 14px; } .pub-toc { max-width: 260px; } }
+
+/* --- people: PI portrait, member panels ------------------------------------ */
+.pp-pi .pp-photo { flex-basis: 123px; width: 123px; height: 154px; border-radius: 3px; }
+.pp-pi .pp-photo img { object-position: 50% 20%; }
+.panels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 28px; }
+.panel { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 24px 16px; background: var(--panel); border: 1px solid var(--line); }
+.panel-photo { width: 150px; height: 150px; border-radius: 3px; overflow: hidden; background: var(--d-line); border: 1px solid var(--line-strong); }
+.panel-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.panel-photo.ph::after { content: ""; display: block; width: 100%; height: 100%; background: linear-gradient(135deg, var(--d-panel), var(--d-line)); }
+.panel-name { font-family: var(--serif); font-weight: 600; font-size: 17px; letter-spacing: -0.01em; margin-top: 4px; }
+.panel-line { font-size: 13.5px; color: var(--muted); line-height: 1.45; }
+.pp-alumni-h { font-family: var(--sans); font-weight: 600; font-size: 14px; color: var(--text); margin: 24px 0 6px; }
+.pp-alumni-h:first-of-type { margin-top: 0; }
+@media (max-width: 900px) { .panels { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; } }
+@media (max-width: 560px) { .panels { grid-template-columns: 1fr; } }

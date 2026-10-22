@@ -24,15 +24,11 @@ pi:
   email: hodges@psu.edu
   # Paragraphs are separated by a blank line.
   bio: |
-    Jim is a solid-state chemist. His group develops synthetic methods for
-    new inorganic solids and strategies for controlling where atoms sit in
-    a crystal, combining exploratory synthesis, crystal growth, and
-    crystallography with data-driven approaches to materials discovery.
-
-    Before Penn State he was a Senior Scientist at Honeywell UOP, where he
-    led materials discovery for catalysis and separations; that work produced
-    four issued U.S. patents. He has served as Chair of the Solid State
-    Chemistry subdivision of the ACS Division of Inorganic Chemistry.
+    Jim is a materials chemist. His group develops synthetic strategies used
+    to build new inorganic solids with atomically precise features and
+    targeted electronic, optical, and catalytic properties. Prior to Penn
+    State, he was a Senior Scientist in the New Materials Group at Honeywell
+    UOP.
   history:
     - years: 2020–present
       what: Assistant Professor of Chemistry, Penn State
