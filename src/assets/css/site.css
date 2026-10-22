@@ -453,7 +453,8 @@ html { color-scheme: dark; }
 
 /* research: three centered text blocks */
 .themes { border-top: 1px solid var(--line); }
-.theme { display: block; max-width: 720px; margin: 0 auto; padding: 48px var(--gutter); border-bottom: 0; }
+.theme { display: block; max-width: none; margin: 0; padding: 48px var(--gutter); border-bottom: 0; }
+.theme > * { max-width: 720px; }
 .theme + .theme { border-top: 1px solid var(--line); }
 .theme-title { font-size: 36px; line-height: 1.05; margin-bottom: 16px; }
 .theme p { font-size: 17px; line-height: 1.6; color: var(--muted); }
