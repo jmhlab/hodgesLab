@@ -503,3 +503,14 @@ html { color-scheme: dark; }
 .pp-alumni-h:first-of-type { margin-top: 0; }
 @media (max-width: 900px) { .panels { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; } }
 @media (max-width: 560px) { .panels { grid-template-columns: 1fr; } }
+
+/* --- research: text left, technique tiles right ---------------------------- */
+.theme { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 56px; align-items: start; }
+.theme > * { max-width: none; }
+.theme-text { max-width: 600px; }
+.theme-tiles { display: flex; flex-direction: column; gap: 22px; padding-top: 6px; }
+.theme-tiles .pillar-icon { width: 72px; height: 72px; }
+.theme-tiles .pillar-icon svg { width: 48px; height: 48px; }
+.theme-tiles .pillar { grid-template-columns: 72px 1fr; gap: 16px; }
+.theme-tiles .pillar-title { font-size: 19px; }
+@media (max-width: 900px) { .theme { grid-template-columns: 1fr; gap: 24px; } .theme-tiles { flex-direction: row; flex-wrap: wrap; gap: 16px 32px; } }

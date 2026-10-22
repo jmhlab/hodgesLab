@@ -13,8 +13,18 @@ permalink: /research/
 {% for t in research.themes %}
 {% set block = site.about | find("key", t.key) %}
   <article class="theme" id="{{ t.key }}">
-    <h2 class="theme-title">{{ block.heading }}</h2>
-    {% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}
+    <div class="theme-text">
+      <h2 class="theme-title">{{ block.heading }}</h2>
+      {% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}
+    </div>
+    <div class="theme-tiles">
+      {% for p in pillars | where("under", t.key) %}
+      <div class="pillar">
+        <div class="pillar-icon">{% set icon = p.icon %}{% include "pillar-icon.njk" %}</div>
+        <div class="pillar-text"><h3 class="pillar-title">{{ p.title }}</h3></div>
+      </div>
+      {% endfor %}
+    </div>
   </article>
 {% endfor %}
 </section>
