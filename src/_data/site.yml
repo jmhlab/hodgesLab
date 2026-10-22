@@ -43,11 +43,14 @@ about:
   - key: structure
     heading: Structure
     body: >
-      We characterize what we make by powder and single-crystal X-ray
-      diffraction, thermal analysis, vibrational and absorption
-      spectroscopies, and electron microscopy, with particular attention to
-      site occupancy and order-disorder features that a routine refinement
-      can miss.
+      Every new material is characterized before anything else is claimed
+      about it. We determine structures by powder and single-crystal X-ray
+      diffraction, follow phase formation and stability by thermal analysis,
+      and probe bonding and composition by vibrational and absorption
+      spectroscopies and electron microscopy. Where atoms sit, and how
+      ordered they are, decides what a material does, so we refine site
+      occupancies and look for the order-disorder features that routine
+      analyses overlook.
 
   - key: function
     heading: Function
