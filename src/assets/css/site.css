@@ -550,3 +550,9 @@ html { color-scheme: dark; }
 
 /* TOC graphics: white mat around every image so artwork never touches the dark ground */
 .pub-toc { padding: 10px; background: #fff; }
+
+/* TOC under the citation, all at the same height */
+.pub.has-toc { display: block; }
+.pub-toc { display: inline-block; margin-top: 14px; }
+.pub-toc img { height: 150px; width: auto; max-width: 100%; }
+@media (max-width: 700px) { .pub-toc { max-width: 100%; } .pub-toc img { height: auto; width: 100%; max-width: 420px; } }

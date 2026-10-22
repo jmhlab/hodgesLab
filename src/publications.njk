@@ -11,12 +11,12 @@ permalink: /publications/
 
 {% macro paper(p) %}
 <article class="pub{% if p.toc %} has-toc{% endif %}">
-  {% if p.toc %}<a class="pub-toc" href="{{ p.url or ('https://doi.org/' ~ p.doi) }}"><img src="{{ ('/assets/img/toc/' ~ p.toc) | url }}" alt="" loading="lazy"></a>{% endif %}
   <div class="pub-body">
     {% if p.n %}<div class="pub-n">{{ p.n }}</div>{% endif %}
     <h2 class="pub-title">{% if p.doi or p.url %}<a href="{{ p.url or ('https://doi.org/' ~ p.doi) }}">{{ p.title | chem | safe }}</a>{% else %}{{ p.title | chem | safe }}{% endif %}</h2>
     <div class="pub-authors">{{ p.authors | boldMembers(site.member_names) | safe }}</div>
     <div class="pub-ref"><em>{{ p.journal }}</em> {% if p.status %}{{ p.status }}{% if p.year %}, {% endif %}{% endif %}{% if p.year %}{{ p.year }}{% endif %}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.doi %}. <a href="https://doi.org/{{ p.doi }}">{{ p.doi }}</a>{% endif %}</div>
+    {% if p.toc %}<a class="pub-toc" href="{{ p.url or ('https://doi.org/' ~ p.doi) }}"><img src="{{ ('/assets/img/toc/' ~ p.toc) | url }}" alt="" loading="lazy"></a>{% endif %}
   </div>
 </article>
 {% endmacro %}
