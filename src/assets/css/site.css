@@ -541,4 +541,5 @@ html { color-scheme: dark; }
 .research-lead .lead { font-family: var(--sans); font-weight: 400; font-size: 19px; line-height: 1.6; letter-spacing: 0; color: var(--text); max-width: 760px; }
 .theme-tiles { padding-top: 6px; }
 
-.research-lead .lead + .lead { margin-top: 16px; font-size: 17px; color: var(--muted); }
+.research-lead .lead + .lead { margin-top: 10px; font-size: 17px; color: var(--muted); }
+.research-lead .lead { margin: 0; }
