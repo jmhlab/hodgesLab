@@ -13,7 +13,7 @@
 #   paper:     number of a paper in publications.yml to feature (optional)
 # ---------------------------------------------------------------------------
 intro: |
-  Technology is limited by the materials we can make. A chemical target does
+  Every new material begins as a synthesis problem. A target composition does
   not guarantee an accessible solid, since competing reaction pathways often
   favor undesired phases. Predictive frameworks that guide syntheses toward
   assemblies of atoms with well-defined structures can unlock new
