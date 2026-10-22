@@ -13,6 +13,8 @@
 #     status: Under review            # optional; shown instead of volume/pages
 #     tags: [chalcogenides, thermoelectrics]   # optional; used for filters
 #     era: psu                        # psu (2023–) or earlier (2014–2020)
+#     toc: paper25.png                # optional; a TOC graphic in src/assets/img/toc/ shown beside
+#                                     # the entry (use for group-led papers)
 #
 # Names listed in site.yml -> member_names are shown in bold automatically.
 # ---------------------------------------------------------------------------

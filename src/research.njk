@@ -2,7 +2,6 @@
 layout: base.njk
 title: Research
 permalink: /research/
-structuresOnPage: true
 ---
 <section class="page-head page-head-slim">
   <div>
@@ -14,18 +13,9 @@ structuresOnPage: true
 <section class="themes">
 {% for t in research.themes %}
 {% set block = site.about | find("key", t.key) %}
-{% set st = structures[t.structure] %}
   <article class="theme" id="{{ t.key }}">
-    <div class="theme-media">
-      {% if st %}
-      <div class="structure" data-structure="{{ st.file }}" data-view="{{ st.view }}" data-ortho="{{ st.ortho }}" data-spin="{{ st.spin }}" data-alpha="{{ st.alpha or 0.85 }}" data-scale="{{ st.scale or '' }}" data-cell="0" data-fit="1.3" data-structure-alt="{{ st.alt or '' }}" data-labels="{{ st.labels or '' }}" data-hold="{{ st.hold or 4 }}" data-fade="{{ st.fade or 1.2 }}" aria-label="{{ st.label }}"></div>
-      {% elif t.image %}<img src="{{ ('/assets/img/' ~ t.image) | url }}" alt="{{ block.heading }}" loading="lazy">{% endif %}
-    </div>
-    <div class="theme-text">
-      <h2 class="theme-title">{{ block.heading }}</h2>
-      {% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}
-      {% if t.caption %}<div class="theme-cap">{{ t.caption }}</div>{% endif %}
-    </div>
+    <h2 class="theme-title">{{ block.heading }}</h2>
+    {% for para in block.body | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") | em | safe }}</p>{% endfor %}
   </article>
 {% endfor %}
 </section>
