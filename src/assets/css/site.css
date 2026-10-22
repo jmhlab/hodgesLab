@@ -536,3 +536,7 @@ html { color-scheme: dark; }
 .research-lead .lead { font-family: var(--serif); font-weight: 500; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.4; letter-spacing: -0.01em; color: var(--text); max-width: 880px; text-wrap: pretty; }
 .themes { margin-top: 0; }
 .theme-tiles { justify-content: flex-start; gap: 28px; }
+
+/* research lead: body-sized; tiles flush with the heading's cap height */
+.research-lead .lead { font-family: var(--sans); font-weight: 400; font-size: 19px; line-height: 1.6; letter-spacing: 0; color: var(--text); max-width: 760px; }
+.theme-tiles { padding-top: 6px; }
