@@ -19,8 +19,8 @@
 # Names listed in site.yml -> member_names are shown in bold automatically.
 # ---------------------------------------------------------------------------
 - era: preprint
-  title: "[Preprint title]"
-  authors: "[Authors]"
+  title: Charge-Encoded Anion Sublattices Drive Ordering and Phase Selection in Layered Chalcogenides
+  authors: Tassanov, A., Lee, H., Zambre, K.K., Trinidad-Pérez, P.R., Xia, Y., Hodges, J.M.
   journal: ChemRxiv
   year: 2026
   status: In review
