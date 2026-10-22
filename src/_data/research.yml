@@ -13,12 +13,11 @@
 #   paper:     number of a paper in publications.yml to feature (optional)
 # ---------------------------------------------------------------------------
 intro: |
-  Technology is limited by the materials we can make. A target composition
-  does not guarantee an accessible solid: competing reaction pathways often
-  yield undesirable phases. Syntheses that guide reactions to targeted
-  products with well-defined structures, in a predictable manner, open new
-  possibilities for energy conversion, information technology, and the more
-  efficient use of critical resources.
+  Technology is limited by the materials we can make. A chemical target does
+  not guarantee an accessible solid, since competing reaction pathways often
+  favor undesired phases. Predictive frameworks that can guide syntheses
+  toward targeted products with well-defined features can unlock new
+  possibilities in energy and information technology.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
