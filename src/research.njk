@@ -9,6 +9,10 @@ permalink: /research/
   </div>
 </section>
 
+<section class="research-intro">
+  {% for para in research.intro | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}
+</section>
+
 <section class="themes">
 {% for t in research.themes %}
 {% set block = site.about | find("key", t.key) %}

@@ -12,10 +12,23 @@
 #   caption:   line under the structure / photo
 #   paper:     number of a paper in publications.yml to feature (optional)
 # ---------------------------------------------------------------------------
-intro: >
-  We make new inorganic solids and work out how they form and what they do.
-  Six threads run through everything in the group; most projects pull on
-  several at once.
+intro: |
+  Technology is limited by the materials we can make. A target composition
+  does not guarantee an accessible solid: competing reaction pathways yield
+  other phases, or the right phase with the wrong disorder. Syntheses that
+  guide reactions to targeted products with well-defined structures open new
+  possibilities for energy conversion, information technology, and the more
+  efficient use of critical resources.
+
+  We develop reaction pathways to atomically precise inorganic solids,
+  emphasizing difficult-to-synthesize compositions for which few or no
+  compounds have been reported. These largely unexplored regions of
+  composition space offer opportunities to uncover new bonding arrangements,
+  structure types, and unusual physical phenomena. We access them through
+  solution, solid-state, and gas-phase chemistry. Growing high-quality single
+  crystals is often critical, enabling precise structural characterization
+  and physical property measurements that reveal how composition and atomic
+  arrangement govern behavior.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,

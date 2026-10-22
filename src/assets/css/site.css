@@ -514,3 +514,10 @@ html { color-scheme: dark; }
 .theme-tiles .pillar { grid-template-columns: 72px 1fr; gap: 16px; }
 .theme-tiles .pillar-title { font-size: 19px; }
 @media (max-width: 900px) { .theme { grid-template-columns: 1fr; gap: 24px; } .theme-tiles { flex-direction: row; flex-wrap: wrap; gap: 16px 32px; } }
+
+/* --- research intro -------------------------------------------------------- */
+.research-intro { padding: 40px var(--gutter) 8px; max-width: calc(720px + 2 * var(--gutter)); }
+.research-intro p { font-size: 17px; line-height: 1.6; color: var(--muted); }
+.research-intro p:first-child { color: var(--text); font-size: 18px; }
+.research-intro p + p { margin-top: 14px; }
+.themes { margin-top: 32px; }
