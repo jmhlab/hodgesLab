@@ -30,7 +30,7 @@ hero:
 # one-word heading and one paragraph. Wrap a phrase in *asterisks* for italics.
 about:
   - key: synthesis
-    heading: Synthesis.
+    heading: Synthesis
     body: >
       The Hodges Group develops new methods for preparing well-defined
       inorganic solids. Our work spans solution chemistry, solid-state
@@ -42,7 +42,7 @@ about:
       resources.
 
   - key: structure
-    heading: Structure.
+    heading: Structure
     body: >
       Understanding a new material begins with determining its structure.
       *Without crystallographic characterization, there is no discovery.* We
@@ -52,7 +52,7 @@ about:
       features influence electrical, optical, and catalytic properties.
 
   - key: function
-    heading: Function.
+    heading: Function
     body: >
       Well-defined solids provide platforms for connecting structure to
       material function. We measure optical, electronic, thermal, and
