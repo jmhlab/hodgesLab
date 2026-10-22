@@ -65,7 +65,7 @@ about:
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
-featured_papers: []
+featured_papers: [25, 21, 19]
 
 # Recruiting banner
 recruiting:
@@ -78,8 +78,6 @@ contact:
   email: hodges@psu.edu
   address: 506 Chemistry Building, University Park, PA 16802
   scholar: https://scholar.google.com/citations?user=X3Gtbc8AAAAJ&hl=en
-  twitter: https://twitter.com/HodgesChem
-  linkedin: https://www.linkedin.com/in/jameshodges12/
 
 # Main navigation (order matters)
 nav:

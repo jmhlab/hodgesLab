@@ -24,21 +24,15 @@ pi:
   email: hodges@psu.edu
   # Paragraphs are separated by a blank line.
   bio: |
-    Jim is a solid-state chemist interested in developing new synthetic
-    methods and chemical reactivities to access new materials, and in
-    inventing strategies to control where atoms reside within crystalline
-    lattices to tune properties and create new functionality. His research
-    group brings together exploratory synthesis, crystal growth, and
-    crystallography with emerging AI-driven approaches to materials
-    discovery.
+    Jim is a solid-state chemist. His group develops synthetic methods for
+    new inorganic solids and strategies for controlling where atoms sit in
+    a crystal, combining exploratory synthesis, crystal growth, and
+    crystallography with data-driven approaches to materials discovery.
 
-    His background spans solid-state chemistry, porous materials for
-    catalysis and separations, and nanomaterials, including industrial
-    research at Honeywell UOP. He holds eight U.S. patents and has served as
-    Chair of the Solid State Chemistry subdivision of the ACS Division of
-    Inorganic Chemistry. Jim is also active in STEM education and outreach
-    through collaborations with local educators, classroom lectures, and
-    hands-on demonstrations.
+    Before Penn State he was a Senior Scientist at Honeywell UOP, where he
+    led materials discovery for catalysis and separations; that work produced
+    four issued U.S. patents. He has served as Chair of the Solid State
+    Chemistry subdivision of the ACS Division of Inorganic Chemistry.
   history:
     - years: 2020–present
       what: Assistant Professor of Chemistry, Penn State
@@ -52,8 +46,6 @@ pi:
       what: B.S. Chemistry, Rider University
   links:
     - { label: Google Scholar, url: "https://scholar.google.com/citations?user=X3Gtbc8AAAAJ&hl=en" }
-    - { label: LinkedIn, url: "https://www.linkedin.com/in/jameshodges12/" }
-    - { label: Twitter, url: "https://twitter.com/HodgesChem" }
 
 graduate:
   - name: Pedro R. Trinidad-Pérez

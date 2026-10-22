@@ -17,6 +17,21 @@ intro: >
   Six threads run through everything in the group; most projects pull on
   several at once.
 
+# ---------------------------------------------------------------------------
+# Research page (streamlined): three themes, text from site.yml -> about,
+# each paired with a live structure (structures.yml) or an image.
+# ---------------------------------------------------------------------------
+themes:
+  - key: synthesis
+    structure: Cs2Hf3S6O
+    caption: Cs₂Hf₃S₆O, an oxychalcogenide made by design
+  - key: structure
+    structure: KCu7Se4_phases
+    caption: KCu₇Se₄, copper ordering on cooling from 293 K to 90 K
+  - key: function
+    structure: HfSSe
+    caption: HfSSe, a layered mixed-anion semiconductor
+
 areas:
   - id: synthesis
     title: Chemical reactivity
