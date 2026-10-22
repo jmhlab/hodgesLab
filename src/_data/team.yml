@@ -122,7 +122,7 @@ undergraduate:
 
   - name: LJ Johnston
     joined: 2025
-    major: ""                 # e.g. Chemistry
+    major: Chemistry
     graduation: ""            # e.g. Spring 2028
     research: []
     photo: lily.jpg
@@ -146,7 +146,7 @@ alumni:
   postdocs:
     - name: Dr. Daniel G. Chica
       years: "2025"
-      now: Research Scientist, Materials Synthesis, Periodic Labs
+      now: Research Scientist, Periodic Labs
   graduate:
     - name: Dr. Ayat Tassanov
       years: "2021–2025"
@@ -155,7 +155,7 @@ alumni:
     - name: Dr. Brendan Troesch
       years: "2021–2025"
       degree: Ph.D. Chemistry
-      now: ""            # where did Brendan go?
+      now: Research Scientist, ExxonMobil
   undergraduate:
     - name: Matthew Sedgwick
       years: "2024"
