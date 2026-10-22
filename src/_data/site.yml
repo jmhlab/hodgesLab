@@ -32,14 +32,14 @@ about:
   - key: synthesis
     heading: Synthesis
     body: >
-      The Hodges Group develops new methods for preparing well-defined
-      inorganic solids. Our work spans solution chemistry, solid-state
-      synthesis, and crystal growth. Machine learning and statistical methods
-      allow us to navigate these multidimensional reaction spaces. *We make
-      new things.* Access to new materials enables new science and
-      technology, placing us at the center of collaborative research that
-      addresses major challenges in energy, the environment, and sustainable
-      resources.
+      We develop methods for preparing inorganic solids with well-defined
+      compositions and structures, using solution, solid-state, and gas-phase
+      chemistry together with crystal growth. Because the outcome of a
+      reaction depends on many variables at once, we use data-driven
+      approaches to plan syntheses and to learn as much from the ones that
+      fail as from the ones that work. The materials that result are the
+      starting point for collaborations with physicists, engineers, and
+      computational scientists at Penn State and beyond.
 
   - key: structure
     heading: Structure
