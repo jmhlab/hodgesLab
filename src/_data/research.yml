@@ -20,12 +20,6 @@ intro: |
   possibilities for energy conversion, information technology, and the more
   efficient use of critical resources.
 
-  We develop tools for building atomically precise inorganic solids,
-  emphasizing difficult-to-synthesize compositions where few or no compounds
-  have been reported. These less explored regions offer unique opportunities
-  to find new bonding motifs, structure types, and unusual physical
-  phenomena.
-
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
 # each paired with a live structure (structures.yml) or an image.

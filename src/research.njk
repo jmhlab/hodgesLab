@@ -3,14 +3,8 @@ layout: base.njk
 title: Research
 permalink: /research/
 ---
-<section class="page-head page-head-slim">
-  <div>
-    <h1>Making solids that don't exist&nbsp;yet</h1>
-  </div>
-</section>
-
-<section class="research-intro">
-  {% for para in research.intro | trim | split("\n\n") %}<p>{{ para | replace("\n", " ") }}</p>{% endfor %}
+<section class="page-head page-head-slim research-lead">
+  <p class="lead">{{ research.intro | trim | replace("\n", " ") }}</p>
 </section>
 
 <section class="themes">

@@ -530,3 +530,9 @@ html { color-scheme: dark; }
 .theme-tiles .pillar-icon svg { width: 64px; height: 64px; }
 .theme-tiles .pillar-title { font-size: 21px; }
 @media (max-width: 900px) { .theme-tiles { height: auto; justify-content: flex-start; } .theme-tiles .pillar { grid-template-columns: 72px 1fr; } .theme-tiles .pillar-icon { width: 72px; height: 72px; } .theme-tiles .pillar-icon svg { width: 48px; height: 48px; } }
+
+/* research: lead paragraph in place of the title; tiles evenly stacked */
+.research-lead { padding: 56px var(--gutter) 44px; }
+.research-lead .lead { font-family: var(--serif); font-weight: 500; font-size: clamp(20px, 2.2vw, 26px); line-height: 1.4; letter-spacing: -0.01em; color: var(--text); max-width: 880px; text-wrap: pretty; }
+.themes { margin-top: 0; }
+.theme-tiles { justify-content: flex-start; gap: 28px; }
