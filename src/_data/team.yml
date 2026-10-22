@@ -20,7 +20,7 @@ pi:
   short: Jim
   title: Assistant Professor of Chemistry
   institution: The Pennsylvania State University
-  photo: jim.jpg
+  photo: jim_portrait.jpg
   email: hodges@psu.edu
   # Paragraphs are separated by a blank line.
   bio: |
