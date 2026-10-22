@@ -563,3 +563,17 @@ html { color-scheme: dark; }
 .pub-title, .pub-authors, .pub-ref { max-width: none; }
 .pub-toc { display: inline-block; }
 .pub-divider { max-width: 820px; margin-left: auto; margin-right: auto; }
+
+/* publications: narrow centered column, image above a single left-aligned citation paragraph */
+.pubs { max-width: 760px; margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+.pub, .pub.has-toc { display: block; padding: 26px 0; text-align: left; }
+.pub-body { text-align: left; max-width: none; margin: 0; font-size: 15.5px; line-height: 1.7; color: var(--muted); }
+.pub-body .pub-n { font-family: var(--sans); font-size: 15.5px; color: var(--dim); margin: 0; }
+.pub-body .pub-title { font-family: var(--sans); font-size: 15.5px; font-weight: 500; color: var(--text); line-height: inherit; }
+.pub-body a.pub-title:hover { color: var(--amber); }
+.pub-body .pub-authors, .pub-body .pub-ref { font-size: 15.5px; margin: 0; display: inline; }
+.pub-body .pub-ref b { font-weight: 600; color: var(--text); }
+.pub-toc { display: block; width: fit-content; margin: 0 auto 16px; }
+.pub-toc img { height: auto; width: auto; max-height: 190px; max-width: 100%; }
+.pub-divider { max-width: none; }
+@media (max-width: 700px) { .pub-toc img { max-height: none; width: 100%; max-width: 420px; } }
