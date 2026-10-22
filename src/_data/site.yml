@@ -34,11 +34,10 @@ about:
     body: >
       We prepare inorganic solids by colloidal chemistry, hydrothermal
       synthesis, high-temperature solid-state reactions, growth from molten
-      flux media, and high-pressure heating, choosing the route that gives
-      access to the target composition and structure. The most useful new
-      chemistry often comes from combining these methods, for example a
-      solution-made precursor carried into a flux, where one technique
-      opens a door the other cannot.
+      flux media, and high-pressure heating. No single route reaches every
+      target, so the most useful new chemistry often comes from combining
+      them, such as carrying a solution-made precursor into a flux, where one
+      technique opens a door the other cannot.
 
   - key: structure
     heading: Structure
