@@ -12,12 +12,30 @@
 #     url: https://...                # optional, used instead of the doi
 #     status: Under review            # optional; shown instead of volume/pages
 #     tags: [chalcogenides, thermoelectrics]   # optional; used for filters
-#     era: psu                        # psu (2023–) or earlier (2014–2020)
+#     era: psu                        # preprint (in review, listed first) | psu (2023–) | earlier (2014–2020)
 #     toc: paper25.png                # optional; a TOC graphic in src/assets/img/toc/ shown beside
 #                                     # the entry (use for group-led papers)
 #
 # Names listed in site.yml -> member_names are shown in bold automatically.
 # ---------------------------------------------------------------------------
+- era: preprint
+  title: "[Preprint title]"
+  authors: "[Authors]"
+  journal: ChemRxiv
+  year: 2026
+  status: In review
+  url: https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15009583/v1
+  tags: []
+
+- n: 26
+  title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
+  authors: Tassanov, A., Yessengazin, A., Lee, H., et al.
+  journal: Angew. Chem. Int. Ed.
+  year: 2026
+  status: Under review
+  tags: [chalcogenides]
+  era: psu
+
 - n: 25
   title: Synthesis and Optoelectronic Structure–Property Relationships in Layered AMM′Q3 Chalcogenides
   authors: Tassanov, A., Lee, H., Xia, Y., Hodges, J.M.
@@ -53,15 +71,6 @@
   volume: "130"
   pages: 1524–1533
   tags: [oxides]
-  era: psu
-
-- n: 21
-  title: "Dimensional Reduction of Transition Metal Dichalcogenides by Oxide Insertion: Quasi-1D Oxychalcogenide Semiconductors"
-  authors: Tassanov, A., Yessengazin, A., Lee, H., et al.
-  journal: Angew. Chem. Int. Ed.
-  year: 2026
-  status: Under review
-  tags: [chalcogenides]
   era: psu
 
 - n: 20

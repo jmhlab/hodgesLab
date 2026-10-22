@@ -13,7 +13,7 @@ permalink: /publications/
 <article class="pub{% if p.toc %} has-toc{% endif %}">
   {% if p.toc %}<a class="pub-toc" href="{{ p.url or ('https://doi.org/' ~ p.doi) }}"><img src="{{ ('/assets/img/toc/' ~ p.toc) | url }}" alt="" loading="lazy"></a>{% endif %}
   <div class="pub-body">
-    <div class="pub-n">{{ p.n }}</div>
+    {% if p.n %}<div class="pub-n">{{ p.n }}</div>{% endif %}
     <h2 class="pub-title">{% if p.doi or p.url %}<a href="{{ p.url or ('https://doi.org/' ~ p.doi) }}">{{ p.title | chem | safe }}</a>{% else %}{{ p.title | chem | safe }}{% endif %}</h2>
     <div class="pub-authors">{{ p.authors | boldMembers(site.member_names) | safe }}</div>
     <div class="pub-ref"><em>{{ p.journal }}</em> {% if p.status %}{{ p.status }}, {% endif %}{{ p.year }}{% if p.volume %}, {{ p.volume }}{% endif %}{% if p.pages %}, {{ p.pages }}{% endif %}{% if p.doi %}. <a href="https://doi.org/{{ p.doi }}">{{ p.doi }}</a>{% endif %}</div>
@@ -22,11 +22,18 @@ permalink: /publications/
 {% endmacro %}
 
 <section class="pubs" id="papers">
-  {% for p in publications | selectattr("era", "equalto", "psu") %}{{ paper(p) }}{% endfor %}
+  {% set preprints = publications | where("era", "preprint") %}
+  {% if preprints | length %}
+  <div class="pub-divider"><span>Preprints (in review)</span></div>
+  {% for p in preprints %}{{ paper(p) }}{% endfor %}
+  <div class="pub-divider"><span>Publications</span></div>
+  {% endif %}
+
+  {% for p in publications | where("era", "psu") %}{{ paper(p) }}{% endfor %}
 
   <div class="pub-divider"><span>Prior to Penn State</span></div>
 
-  {% for p in publications | selectattr("era", "equalto", "earlier") %}{{ paper(p) }}{% endfor %}
+  {% for p in publications | where("era", "earlier") %}{{ paper(p) }}{% endfor %}
 </section>
 
 <section class="pubs patents" id="patents">
