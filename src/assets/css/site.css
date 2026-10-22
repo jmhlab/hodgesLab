@@ -565,7 +565,7 @@ html { color-scheme: dark; }
 .pub-divider { max-width: 820px; margin-left: auto; margin-right: auto; }
 
 /* publications: narrow centered column, image above a single left-aligned citation paragraph */
-.pubs { max-width: 760px; margin: 0 auto; padding-left: var(--gutter); padding-right: var(--gutter); }
+.pubs { max-width: 800px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
 .pub, .pub.has-toc { display: block; padding: 26px 0; text-align: left; }
 .pub-body { text-align: left; max-width: none; margin: 0; font-size: 15.5px; line-height: 1.7; color: var(--muted); }
 .pub-body .pub-n { font-family: var(--sans); font-size: 15.5px; color: var(--dim); margin: 0; }
