@@ -38,10 +38,7 @@ permalink: /publications/
   {% for p in patents %}
   <article class="pub">
     <div class="pub-body">
-      <div class="pub-n">P{{ p.n }}</div>
-      <h2 class="pub-title">{{ p.title }}</h2>
-      <div class="pub-authors">{{ p.inventors | boldMembers(site.member_names) | safe }}</div>
-      <div class="pub-ref">{{ p.number }}, {{ p.year }}</div>
+      <span class="pub-n">P{{ p.n }}.</span> <span class="pub-title">{{ p.title }}</span>. <span class="pub-authors">{{ p.inventors | boldMembers(site.member_names) | safe }}</span> <span class="pub-ref">{{ p.number }}{% if p.status %}, {{ p.status | lower }}{% endif %} <b>{{ p.year }}</b>{% if p.assignee %}. {{ p.assignee }}{% endif %}.</span>
     </div>
   </article>
   {% endfor %}
