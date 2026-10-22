@@ -13,7 +13,7 @@ description: >
 # where it may break on phones.
 hero:
   line1: Hodges Group
-  line2: Solid State Chemistry|at Penn State
+  line2: Exploring the Periodic Table|with Solid State Chemistry
   kicker: ""
   blurb: ""
   # Backdrop. If `photo` is set, that image (in src/assets/img/hero/) is used;
@@ -65,7 +65,7 @@ about:
 
 # Papers to read on the homepage: paper numbers from publications.yml, in the
 # order you want them shown. Leave empty to show the three most recent.
-featured_papers: [25, 21, 19]
+featured_papers: [21, 25, 19]
 
 # Recruiting banner
 recruiting:
