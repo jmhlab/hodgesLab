@@ -21,12 +21,12 @@ intro: |
 
   Our group develops synthetic tools for building inorganic solids with
   atomically precise features and targeted electronic, optical, and catalytic
-  properties. Our central contribution has been to the chemistry of
-  mixed-anion materials, where we established retrosynthetic crystal
-  chemistry as a framework for predicting anion ordering and building
-  chalcogenide solids with predetermined structure and properties. A second
-  thrust applies the same atomic-level control to selective oxidation
-  catalysts with site-isolated active sites.
+  properties. A particular emphasis in the group has been on the chemistry of
+  mixed-anion materials, establishing chemical frameworks for predicting
+  anion ordering behavior and exploring new reactivities used to generate
+  unexplored oxychalcogenide phase space. A second thrust applies the same
+  atomic-level control in oxidation catalysts using site-isolated active
+  sites.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
