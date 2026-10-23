@@ -29,6 +29,55 @@ intro: |
   exotic properties.
 
 # ---------------------------------------------------------------------------
+# Projects, shown between the opening paragraph and the three method blocks.
+#   title, body (one paragraph), image (in src/assets/img/toc/), link (optional)
+# ---------------------------------------------------------------------------
+projects:
+  - title: Anion ordering in mixed-chalcogen solids
+    image: toc_jacs_2026.png
+    link: https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15009583/v1
+    body: >
+      Sulfide, selenide, and telluride mix freely in most crystals, but in
+      structures with more than one anion site they order, and that ordering
+      changes band gaps and structures in ways that are rarely tracked. We
+      showed that the charge on each anion site, computed from the host
+      structure, predicts where each anion goes and when a mixture forces a
+      new structure altogether, and used it to make KCuZrTeSeS, the first
+      compound with all three chalcogens on separate sites.
+
+  - title: Oxychalcogenides by design
+    image: toc_angew_2026.png
+    link: https://doi.org/10.1002/anie.1906484
+    body: >
+      Oxide and sulfide do not mix in the solid state, so almost all known
+      oxychalcogenides are simple stacks of alternating layers. By reacting
+      layered HfS2 with alkali carbonates, we insert rows of oxide into the
+      layers and cut them into nanometer-wide ribbons, giving the A2Hf3Q6O
+      family: two new structure types, band gaps tunable across the visible,
+      band-edge emission, and transport that is effectively one-dimensional.
+
+  - title: Retrosynthetic crystal chemistry
+    image: toc_jacs_2024b.png
+    link: https://doi.org/10.1021/jacs.4c11617
+    body: >
+      Organic chemists reason backward from a target to the reagents that
+      make it; solid-state chemistry has lacked an equivalent. We start from
+      the structural feature we want, find known single-anion structures that
+      contain it, and choose anion mixtures and conditions that preserve it,
+      which has produced ordered multianion chalcogenides and the layered
+      NaBa2M3Q5 family.
+
+  - title: Porous oxides for selective oxidation
+    image: ""
+    link: https://doi.org/10.26434/chemrxiv-2025-51zh8
+    body: >
+      Converting molecular oxide precursors into microporous MoVBiOx gives
+      catalysts with site-isolated active sites and high activity for
+      oxidative dehydrogenation of ethane. The same atomic-level control we
+      use for chalcogenides applies here: which metal sits where, and how
+      ordered the framework is, decides selectivity.
+
+# ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
 # each paired with a live structure (structures.yml) or an image.
 # ---------------------------------------------------------------------------

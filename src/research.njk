@@ -9,7 +9,24 @@ permalink: /research/
   {% for para in research.intro | trim | split("\n\n") %}<p class="lead{% if loop.first %} lead-first{% endif %}">{{ para | replace("\n", " ") }}</p>{% endfor %}
 </section>
 
+{% if research.projects %}
+<section class="projects">
+  <h2 class="section-title">What we work on</h2>
+  {% for pr in research.projects %}
+  <article class="project">
+    <div class="project-text">
+      <h3 class="project-title">{{ pr.title }}</h3>
+      <p>{{ pr.body | trim | replace("\n", " ") | chem | safe }}</p>
+      {% if pr.link %}<a class="project-link" href="{{ pr.link }}">Read the paper →</a>{% endif %}
+    </div>
+    {% if pr.image %}<a class="project-media" href="{{ pr.link or '#' }}"><img src="{{ ('/assets/img/toc/' ~ pr.image) | url }}" alt="" loading="lazy"></a>{% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+
 <section class="themes">
+  <h2 class="section-title">How we work</h2>
 {% for t in research.themes %}
 {% set block = site.about | find("key", t.key) %}
   <article class="theme" id="{{ t.key }}">
