@@ -62,11 +62,17 @@ projects:
     image: toc_movbiox_2025.png
     link: https://doi.org/10.26434/chemrxiv-2025-51zh8
     body: >
-      Converting molecular oxide precursors into microporous MoVBiOx gives
-      catalysts with site-isolated active sites and high activity for
-      oxidative dehydrogenation of ethane. The same atomic-level control we
-      use for chalcogenides applies here: which metal sits where, and how
-      ordered the framework is, decides selectivity.
+      MoV-based oxides with the M1 phase are an important family of catalysts
+      for oxidative dehydrogenation of light alkanes. M1 materials are
+      typically synthesized from complex precursors using multi-step
+      protocols that include high-temperature annealing to induce
+      crystallization. We have described a single-step hydrothermal synthesis
+      of phase-pure MoV0.3Bi0.05Ox, a Bi-containing M1 analogue that is
+      inaccessible by conventional methods. The approach reacts simple oxide
+      precursors in the presence of carboxylic acids and ethylene glycol to
+      give the M1 product in high yield. The protocol offers a scalable
+      alternative to traditional M1 syntheses, and we are adapting this
+      chemistry to other synthetically challenging mixed-metal oxide systems.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
