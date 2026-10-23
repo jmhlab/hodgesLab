@@ -51,12 +51,18 @@ projects:
     image: toc_angew_2026b.png
     link: https://doi.org/10.1002/anie.1906484
     body: >
-      Oxide and sulfide do not mix in the solid state, so almost all known
-      oxychalcogenides are simple stacks of alternating layers. By reacting
-      layered HfS2 with alkali carbonates, we insert rows of oxide into the
-      layers and cut them into nanometer-wide ribbons, giving the A2Hf3Q6O
-      family: two new structure types, band gaps tunable across the visible,
-      band-edge emission, and transport that is effectively one-dimensional.
+      Heteroanionic solids offer unique levers for tuning structures and
+      properties, but accessing multianion phase space remains challenging
+      because of mismatches in anion reactivity. We have discovered a new
+      family of A2Hf3Q6O oxychalcogenides, the first reported in the
+      A–Hf–Q–O quaternary space. To gain control over the heteroanion
+      stoichiometry, we react pre-synthesized HfQ2 with A2CO3, which releases
+      A2O intermediates at high temperature that react with the binary
+      precursors. Conceptually, rows of bridging O atoms are inserted into
+      the layered TMD sheets, breaking the octahedral connectivity and
+      partitioning the layers into nanometer-wide 1D [Hf3Q6] ribbons. The
+      materials are direct-gap semiconductors with band gaps from 1.8 to 2.6
+      eV and giant emission anisotropy.
 
   - title: Porous oxides for selective oxidation
     image: toc_movbiox_2025.png
