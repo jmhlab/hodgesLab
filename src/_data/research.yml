@@ -19,14 +19,14 @@ lead_photo_focus: "50% 50%"
 lead_photos: [5_2.jpg, mnpq3.jpg, mq_1.jpg, mq_4.jpg]
 
 intro: |
-  We are a solid-state chemistry group interested in new solids made from
-  challenging combinations of elements. That interest leads us into
-  less-explored regions of composition space where few or no compounds
-  exist. These are fertile areas for exploratory research, but they demand
-  creative synthetic strategies to direct atoms with disparate reactivities
-  into well-defined structures. The reward is unusual bonding, which can
-  impart exotic properties and yield building blocks that interlink into
-  new structure types.
+  Our research group seeks new synthetic tools for building inorganic solids
+  with challenging combinations of elements. This leads us into less
+  explored regions of the periodic table and composition space where few or
+  no compounds exist. These are fertile areas for exploratory efforts, but
+  demand creative strategies for directing atoms with disparate reactivities
+  into well-defined structures. The reward is new materials with unusual
+  bonding, and structural building blocks that assemble into phases with
+  exotic properties.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
