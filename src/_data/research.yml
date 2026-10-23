@@ -19,20 +19,14 @@ lead_photo_focus: "50% 50%"
 lead_photos: [5_2.jpg, mnpq3.jpg, mq_1.jpg, mq_4.jpg]
 
 intro: |
-  Technology is often limited by the materials we can make. A material target
-  does not guarantee an accessible solid; competing pathways often favor
-  undesired phases, especially when working with elements that have disparate
-  reactivities. New chemistry that circumvents synthetic bottlenecks can
-  unlock materials with new bonding motifs, structure types, and function.
-
-  Our group develops synthetic tools for building inorganic solids with
-  atomically precise features and targeted electronic, optical, and catalytic
-  properties. A particular emphasis in the group has been on the chemistry of
-  mixed-anion materials, establishing chemical frameworks for predicting
-  anion ordering behavior and exploring new reactivities used to generate
-  unexplored oxychalcogenide phase space. A second thrust applies the same
-  atomic-level control in oxidation catalysts using site-isolated active
-  sites.
+  We are a solid-state chemistry group interested in new solids made from
+  challenging combinations of elements. That interest leads us into
+  less-explored regions of composition space where few or no compounds
+  exist. These are fertile areas for exploratory research, but they demand
+  creative synthetic strategies to direct atoms with disparate reactivities
+  into well-defined structures. The reward is unusual bonding, which can
+  impart exotic properties and yield building blocks that interlink into
+  new structure types.
 
 # ---------------------------------------------------------------------------
 # Research page (streamlined): three themes, text from site.yml -> about,
