@@ -605,3 +605,4 @@ html { color-scheme: dark; }
 .project-media img { width: 100%; height: auto; display: block; }
 .themes .section-title { padding-top: 40px; }
 @media (max-width: 900px) { .project { grid-template-columns: 1fr; gap: 20px; padding: 28px var(--gutter); } .project-media { max-width: 420px; } }
+.project-text p + p { margin-top: 12px; }

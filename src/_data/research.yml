@@ -36,14 +36,23 @@ projects:
   - title: Anion ordering in mixed-chalcogen solids
     image: toc_jacs_2026.png
     link: https://chemrxiv.org/doi/abs/10.26434/chemrxiv.15009583/v1
-    body: >
-      Sulfide, selenide, and telluride mix freely in most crystals, but in
-      structures with more than one anion site they order, and that ordering
-      changes band gaps and structures in ways that are rarely tracked. We
-      showed that the charge on each anion site, computed from the host
-      structure, predicts where each anion goes and when a mixture forces a
-      new structure altogether, and used it to make KCuZrTeSeS, the first
-      compound with all three chalcogens on separate sites.
+    body: |
+      Although chalcogens tend to form solid solutions in simple crystals,
+      ordering does occur in structures with more than one anion site.
+      Order-disorder phenomena affect their properties in numerous ways, but
+      often go unnoticed and are poorly understood. The research team is
+      seeking to establish a deeper understanding of the fundamental
+      mechanisms that define atomic-scale ordering in chalcogenides and other
+      extended solids. Our interdisciplinary approach, which unifies
+      experiment and theory, is establishing chemical models for predicting
+      local and long-range ordering phenomena.
+
+      The synthetic side of this effort is retrosynthetic crystal chemistry:
+      starting from the structural feature we want, finding known
+      single-anion structures that contain it, and choosing anion mixtures
+      and conditions that preserve it. This approach has produced ordered
+      multianion chalcogenides, including KCuZrTeSeS, the first compound with
+      all three chalcogens on separate sites.
 
   - title: Oxychalcogenides by design
     image: toc_angew_2026.png
@@ -55,17 +64,6 @@ projects:
       layers and cut them into nanometer-wide ribbons, giving the A2Hf3Q6O
       family: two new structure types, band gaps tunable across the visible,
       band-edge emission, and transport that is effectively one-dimensional.
-
-  - title: Retrosynthetic crystal chemistry
-    image: toc_jacs_2024b.png
-    link: https://doi.org/10.1021/jacs.4c11617
-    body: >
-      Organic chemists reason backward from a target to the reagents that
-      make it; solid-state chemistry has lacked an equivalent. We start from
-      the structural feature we want, find known single-anion structures that
-      contain it, and choose anion mixtures and conditions that preserve it,
-      which has produced ordered multianion chalcogenides and the layered
-      NaBa2M3Q5 family.
 
   - title: Porous oxides for selective oxidation
     image: ""
